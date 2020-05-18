@@ -1,0 +1,205 @@
+/*--------------======================    领养页面的css  ============================--------------------*/
+/*整体的城市选择样式*/
+.adopt-city{
+    height: 110px;
+    background-color: #d9d9d9;
+    border:2px solid #FF0000;  /*设置边框和颜色*/
+    border-left:0;  /*只保留顶部的颜色*/
+    border-right:0;
+    border-bottom:0;
+    border-radius:5px   /*设置圆角*/
+}
+
+/*城市名称区域---总的一大块*/
+.select-city{
+    margin: auto;   /*水平居中*/
+    width: 98%;
+    height: 40px;
+    border-radius:5px   /*设置圆角*/
+}
+
+/*城市显示的部分*/
+.show-city{
+    height:30px;
+    background-color: #F9F0DA;
+    position: relative;  /*这里设置的是相对位置，设置后下面的top等才能生效，目的是div中的div居中*/
+    left: 0px;
+    top: 5px;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    border: 3px;
+    border-radius:5px;   /*设置圆角*/
+    line-height: 30px;  /*div中的字体高度*/
+}
+/*宠物选择部分*/
+.select-pet{
+    height:30px;
+    background-color: #eceaea;
+    position: relative;  /*这里设置的是相对位置，设置后下面的top等才能生效，目的是div中的div居中*/
+    left: 0px;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    border: 3px;
+    border-radius:5px;   /*设置圆角*/
+    line-height: 30px;  /*div中的字体高度，调整后让其居中*/
+}
+
+/*领养信息--左侧*/
+.adopt-message{
+    width: 75%;
+    height: auto;
+    float: left;
+}
+
+/*发布领养信息，右侧*/
+.adopt-publish-message{
+    width: 24%;
+    background-color: #f7f3f2;
+    height: 400px;
+    float: right;
+}
+/*不同消息过滤  最新消息 搞定了*/
+.adopt-message-status{
+    height: 40px;
+    border:2px solid #FF0000;  /*设置边框和颜色*/
+    border-left: 0;  /*只保留底部的颜色*/
+    border-right: 0;
+    border-top: 0;
+}
+
+/*被选中的当前状态字体 */
+.adopt-message-status-font{
+    background-color: crimson;
+    color: white;
+    width: 80px;
+    height: 37px;
+    line-height: 40px;
+    text-align: center;
+    float: left;
+    border:1px solid white;  /*设置边框和颜色*/
+    border-left: 0;  /*只保留底部的颜色*/
+    border-right: 0;
+    border-top: 0;
+}
+
+
+/*未被选中的状态字体 */
+.adopt-message-status-font-active{
+    background-color: white;
+    color: black;
+    width: 80px;
+    height: 37px;
+    line-height: 40px;
+    text-align: center;
+    float: left;
+    border:1px solid white;  /*设置边框和颜色*/
+    border-left: 0;  /*只保留底部的颜色*/
+    border-right: 0;
+    border-top: 0;
+}
+
+
+/*中间空格*/
+.adopt-message-status-font-black{
+    background-color: #eceaea;
+    color: white;
+    width: 20px;
+    height: 37px;
+    line-height: 40px;
+    text-align: center;
+    float: left;
+    border:1px solid white;  /*设置边框和颜色*/
+    border-left: 0;  /*只保留底部的颜色*/
+    border-right: 0;
+    border-top: 0;
+}
+
+/*总条数的样式*/
+.total-amount{
+    height:auto;
+    position: relative;  /*这里设置的是相对位置，设置后下面的top等才能生效，目的是div中的div居中*/
+    left: 0px;
+    top: 5px;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    border: 3px;
+    border-radius:5px;   /*设置圆角*/
+    line-height: 30px;  /*div中的字体高度*/
+}
+
+
+/*开始展示数据库中的数据*/
+.show-adopt-message{
+    height: auto;
+}
+
+/*自定义搜索框样式*/
+.input{
+    height: 35px;
+    width: 250px;
+    padding-left: 10px;
+    border:2px solid #FF0000;  /*设置边框和颜色*/
+    float: left;
+}
+
+/*搜索按钮*/
+.search-btn{
+    height: 35px;
+    width: 12%;
+    background-color: #FF0000;
+    color: white;
+    float: left;
+}
+
+
+
+
+/*--------------------=====================  领养信息发布页面CSS   ===================-------------------*/
+/*发布信息主体选项div*/
+.select-message{
+    height: 850px;background-color: #f7f3f2;
+}
+
+/*将信息放在一个表格中*/
+.table-message{
+    position: relative;
+    left: 80px;
+    top: 30px
+}
+/*每一个tr*/
+.tr-message{
+    height: 50px;
+}
+
+/*每一个td*/
+.td-message{
+    text-align: right;
+    width: 80px;
+}
+
+/*输入框*/
+.input-message{
+    height: 30px;
+    border: 2px solid gainsboro;
+    padding-left: 10px;
+}
+
+
+.addclass{
+    color : red;
+    font-size: larger;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hsshy.beam.admin.modular.sys.dao.OperationLogMapper">
+
+    <!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.hsshy.beam.admin.modular.sys.entity.OperationLog" id="BaseResultMap">
+        <result property="id" column="id"/>
+        <result property="logType" column="log_type"/>
+        <result property="logName" column="log_name"/>
+        <result property="userId" column="user_id"/>
+        <result property="className" column="class_name"/>
+        <result property="method" column="method"/>
+        <result property="succeed" column="succeed"/>
+        <result property="message" column="message"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateTime" column="update_time"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+		            a.`id` AS "id", 
+                a.`log_type` AS "logType", 
+                a.`log_name` AS "logName", 
+                a.`user_id` AS "userId", 
+                a.`class_name` AS "className", 
+                a.`method` AS "method", 
+                a.`succeed` AS "succeed", 
+                a.`message` AS "message", 
+                a.`create_time` AS "createTime", 
+                a.`update_time` AS "updateTime"
+        </sql>
+    <delete id="deleteAll">
+        delete from sys_operation_log
+    </delete>
+
+    <select id="selectPageList" resultType="com.hsshy.beam.admin.modular.sys.entity.OperationLog">
+        select
+        <include refid="Base_Column_List"/>,
+        u.name as userName
+        from sys_operation_log a left join sys_user u on a.user_id = u.id
+        <where>
+            <if test="operationLog.logType != null and operationLog.logType != ''">
+                and a.log_type like concat("%",#{operationLog.logType},"%")
+            </if>
+            <if test="operationLog.logName != null and operationLog.logName != ''">
+                and a.log_name like concat("%",#{operationLog.logName},"%")
+            </if>
+            <if test="operationLog.userName != null and operationLog.userName != ''">
+                and u.name like concat("%",#{operationLog.userName},"%")
+            </if>
+            <if test="operationLog.className != null and operationLog.className != ''">
+                and a.class_name like concat("%",#{operationLog.className},"%")
+            </if>
+            <if test="operationLog.method != null and operationLog.method != ''">
+                and a.method like concat("%",#{operationLog.method},"%")
+            </if>
+            <if test="operationLog.succeed != null and operationLog.succeed != ''">
+                and a.succeed like concat("%",#{operationLog.succeed},"%")
+            </if>
+        </where>
+        order by a.create_time desc
+    </select>
+
+</mapper>

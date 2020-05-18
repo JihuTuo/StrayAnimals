@@ -1,0 +1,5 @@
+# AutoConfiguration
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.hsshy.beam.common.config.DefaultFastjsonConfig,\
+com.hsshy.beam.common.config.DefaultProperties
+

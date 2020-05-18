@@ -1,0 +1,538 @@
+[INFO ] 2020-05-17 08:14:44 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 15728 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-05-17 08:14:44 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-05-17 08:14:44 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-05-17 08:14:44 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-05-17 08:14:44 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[INFO ] 2020-05-17 08:14:44 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+[INFO ] 2020-05-17 08:14:44 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 53ms. Found 0 repository interfaces.
+[INFO ] 2020-05-17 08:14:44 [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$94cffb81] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2020-05-17 08:14:44 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-05-17 08:14:44 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-05-17 08:14:44 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-05-17 08:14:44 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-05-17 08:14:44 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-05-17 08:14:44 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 7227 ms
+[INFO ] 2020-05-17 08:14:44 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-05-17 08:14:44 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-05-17 08:14:44 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-05-17 08:14:44 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-05-17 08:14:44 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-05-17 08:14:44 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 14.93 seconds (JVM running for 21.569)
+[INFO ] 2020-05-17 11:00:51 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 4488 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-05-17 11:00:51 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-05-17 11:00:51 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-05-17 11:00:51 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-05-17 11:00:51 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[INFO ] 2020-05-17 11:00:51 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+[INFO ] 2020-05-17 11:00:51 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38ms. Found 0 repository interfaces.
+[INFO ] 2020-05-17 11:00:51 [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ef753c8d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2020-05-17 11:00:51 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-05-17 11:00:51 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-05-17 11:00:51 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-05-17 11:00:51 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-05-17 11:00:51 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-05-17 11:00:51 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5684 ms
+[INFO ] 2020-05-17 11:00:51 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-05-17 11:00:51 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-05-17 11:00:51 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-05-17 11:00:51 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-05-17 11:00:51 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-05-17 11:00:51 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 11.281 seconds (JVM running for 16.691)
+[INFO ] 2020-05-17 11:00:51 [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-05-17 11:00:51 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-05-17 11:00:51 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+[INFO ] 2020-05-17 11:20:11 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 15244 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-05-17 11:20:11 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-05-17 11:20:11 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-05-17 11:20:11 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-05-17 11:20:11 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[INFO ] 2020-05-17 11:20:11 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+[INFO ] 2020-05-17 11:20:11 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29ms. Found 0 repository interfaces.
+[INFO ] 2020-05-17 11:20:11 [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c06bd941] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2020-05-17 11:20:11 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-05-17 11:20:11 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-05-17 11:20:11 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-05-17 11:20:11 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-05-17 11:20:11 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-05-17 11:20:11 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2319 ms
+[INFO ] 2020-05-17 11:20:11 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-05-17 11:20:11 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-05-17 11:20:11 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-05-17 11:20:11 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-05-17 11:20:11 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-05-17 11:20:11 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 5.987 seconds (JVM running for 8.92)
+[INFO ] 2020-05-17 11:20:11 [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-05-17 11:20:11 [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-05-17 11:20:11 [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+[INFO ] 2020-05-17 12:41:01 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 12436 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-05-17 12:41:01 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-05-17 12:41:01 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-05-17 12:41:01 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-05-17 12:41:01 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[INFO ] 2020-05-17 12:41:01 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+[INFO ] 2020-05-17 12:41:01 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24ms. Found 0 repository interfaces.
+[INFO ] 2020-05-17 12:41:01 [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f32cf45e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2020-05-17 12:41:01 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-05-17 12:41:01 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-05-17 12:41:01 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-05-17 12:41:01 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-05-17 12:41:01 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-05-17 12:41:01 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2313 ms
+[INFO ] 2020-05-17 12:41:01 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-05-17 12:41:01 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-05-17 12:41:01 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-05-17 12:41:01 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-05-17 12:41:01 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-05-17 12:41:01 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 5.085 seconds (JVM running for 7.772)
+[INFO ] 2020-05-17 12:41:01 [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-05-17 12:41:01 [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-05-17 12:41:01 [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+[INFO ] 2020-05-17 12:50:26 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 11040 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-05-17 12:50:26 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-05-17 12:50:26 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-05-17 12:50:26 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-05-17 12:50:26 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[INFO ] 2020-05-17 12:50:26 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+[INFO ] 2020-05-17 12:50:26 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38ms. Found 0 repository interfaces.
+[INFO ] 2020-05-17 12:50:26 [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ca1aa70a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2020-05-17 12:50:26 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-05-17 12:50:26 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-05-17 12:50:26 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-05-17 12:50:26 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-05-17 12:50:26 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-05-17 12:50:26 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2804 ms
+[INFO ] 2020-05-17 12:50:26 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-05-17 12:50:26 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-05-17 12:50:26 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-05-17 12:50:26 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-05-17 12:50:26 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-05-17 12:50:26 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 5.78 seconds (JVM running for 8.199)
+[INFO ] 2020-05-17 12:50:26 [http-nio-8080-exec-5] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-05-17 12:50:26 [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-05-17 12:50:26 [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet - Completed initialization in 13 ms
+[INFO ] 2020-05-17 12:52:03 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 7008 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-05-17 12:52:03 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-05-17 12:52:03 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-05-17 12:52:03 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-05-17 12:52:03 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[INFO ] 2020-05-17 12:52:03 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+[INFO ] 2020-05-17 12:52:03 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38ms. Found 0 repository interfaces.
+[INFO ] 2020-05-17 12:52:03 [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1fb25942] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2020-05-17 12:52:03 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-05-17 12:52:03 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-05-17 12:52:03 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-05-17 12:52:03 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-05-17 12:52:03 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-05-17 12:52:03 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2752 ms
+[INFO ] 2020-05-17 12:52:03 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-05-17 12:52:03 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-05-17 12:52:03 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-05-17 12:52:03 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-05-17 12:52:03 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-05-17 12:52:03 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 5.641 seconds (JVM running for 8.182)
+[INFO ] 2020-05-17 12:52:03 [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-05-17 12:52:03 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-05-17 12:52:03 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+[INFO ] 2020-05-17 13:05:24 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 3164 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-05-17 13:05:24 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-05-17 13:05:24 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-05-17 13:05:24 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-05-17 13:05:24 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[INFO ] 2020-05-17 13:05:24 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+[INFO ] 2020-05-17 13:05:24 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37ms. Found 0 repository interfaces.
+[INFO ] 2020-05-17 13:05:24 [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$76578d8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2020-05-17 13:05:24 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-05-17 13:05:24 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-05-17 13:05:24 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-05-17 13:05:24 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-05-17 13:05:24 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-05-17 13:05:24 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2871 ms
+[INFO ] 2020-05-17 13:05:24 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-05-17 13:05:24 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-05-17 13:05:24 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-05-17 13:05:24 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-05-17 13:05:24 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-05-17 13:05:24 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 6.292 seconds (JVM running for 9.479)
+[INFO ] 2020-05-17 13:05:24 [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-05-17 13:05:24 [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-05-17 13:05:24 [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+[INFO ] 2020-05-17 13:13:23 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 16536 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-05-17 13:13:23 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-05-17 13:13:23 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-05-17 13:13:23 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-05-17 13:13:23 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[INFO ] 2020-05-17 13:13:23 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+[INFO ] 2020-05-17 13:13:23 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26ms. Found 0 repository interfaces.
+[INFO ] 2020-05-17 13:13:23 [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e6656602] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2020-05-17 13:13:23 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-05-17 13:13:23 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-05-17 13:13:23 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-05-17 13:13:23 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-05-17 13:13:23 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-05-17 13:13:23 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2369 ms
+[INFO ] 2020-05-17 13:13:23 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-05-17 13:13:23 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-05-17 13:13:23 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-05-17 13:13:23 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-05-17 13:13:23 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-05-17 13:13:23 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 5.497 seconds (JVM running for 7.67)
+[INFO ] 2020-05-17 13:13:23 [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-05-17 13:13:23 [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-05-17 13:13:23 [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet - Completed initialization in 15 ms
+[INFO ] 2020-05-17 13:17:21 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 17004 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-05-17 13:17:21 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-05-17 13:17:21 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-05-17 13:17:21 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-05-17 13:17:41 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 11056 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-05-17 13:17:41 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-05-17 13:17:41 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-05-17 13:17:41 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-05-17 13:17:41 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[INFO ] 2020-05-17 13:17:41 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+[INFO ] 2020-05-17 13:17:41 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31ms. Found 0 repository interfaces.
+[INFO ] 2020-05-17 13:17:41 [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f2c0af28] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2020-05-17 13:17:41 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-05-17 13:17:41 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-05-17 13:17:41 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-05-17 13:17:41 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-05-17 13:17:41 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-05-17 13:17:41 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3450 ms
+[INFO ] 2020-05-17 13:17:41 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-05-17 13:17:41 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-05-17 13:17:41 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-05-17 13:17:41 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-05-17 13:17:41 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-05-17 13:17:41 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 10.257 seconds (JVM running for 13.456)
+[INFO ] 2020-05-17 13:17:41 [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-05-17 13:17:41 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-05-17 13:17:41 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 14 ms
+[INFO ] 2020-05-17 13:17:41 [Thread-31] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-05-17 13:17:41 [Thread-31] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+[INFO ] 2020-05-17 13:17:41 [Thread-31] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+[INFO ] 2020-05-17 13:21:53 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 9676 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-05-17 13:21:53 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-05-17 13:21:53 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-05-17 13:21:53 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-05-17 13:21:53 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[INFO ] 2020-05-17 13:21:53 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+[INFO ] 2020-05-17 13:21:53 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41ms. Found 0 repository interfaces.
+[INFO ] 2020-05-17 13:21:53 [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c7f2e446] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2020-05-17 13:21:53 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-05-17 13:21:53 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-05-17 13:21:53 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-05-17 13:21:53 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-05-17 13:21:53 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-05-17 13:21:53 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2908 ms
+[INFO ] 2020-05-17 13:21:53 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-05-17 13:21:53 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-05-17 13:21:53 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-05-17 13:21:53 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-05-17 13:21:53 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-05-17 13:21:53 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 6.581 seconds (JVM running for 9.414)
+[INFO ] 2020-05-17 13:21:53 [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-05-17 13:21:53 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-05-17 13:21:53 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+[INFO ] 2020-05-17 13:21:53 [Thread-20] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-05-17 13:21:53 [Thread-20] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+[INFO ] 2020-05-17 13:21:53 [Thread-20] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+[INFO ] 2020-05-17 13:57:45 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 9676 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-05-17 13:57:45 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-05-17 13:57:45 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[INFO ] 2020-05-17 13:57:45 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+[INFO ] 2020-05-17 13:57:45 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22ms. Found 0 repository interfaces.
+[INFO ] 2020-05-17 13:57:45 [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c7f2e446] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2020-05-17 13:57:45 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-05-17 13:57:45 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-05-17 13:57:45 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-05-17 13:57:45 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-05-17 13:57:45 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-05-17 13:57:45 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 843 ms
+[INFO ] 2020-05-17 13:57:45 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-2} inited
+[INFO ] 2020-05-17 13:57:45 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-05-17 13:57:45 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-05-17 13:57:45 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-05-17 13:57:45 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-05-17 13:57:45 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 2.232 seconds (JVM running for 2157.028)
+[INFO ] 2020-05-17 13:57:45 [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 2020-05-17 13:57:45 [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-05-17 13:57:45 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-05-17 13:57:45 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+[INFO ] 2020-05-17 14:04:11 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 6396 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-05-17 14:04:11 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-05-17 14:04:11 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-05-17 14:04:11 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-05-17 14:04:11 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[INFO ] 2020-05-17 14:04:11 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+[INFO ] 2020-05-17 14:04:11 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36ms. Found 0 repository interfaces.
+[INFO ] 2020-05-17 14:04:11 [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1bc4ca] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2020-05-17 14:04:11 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-05-17 14:04:11 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-05-17 14:04:11 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-05-17 14:04:11 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-05-17 14:04:11 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-05-17 14:04:11 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2758 ms
+[INFO ] 2020-05-17 14:04:11 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-05-17 14:04:11 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-05-17 14:04:11 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-05-17 14:04:11 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-05-17 14:04:11 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-05-17 14:04:11 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 5.767 seconds (JVM running for 7.966)
+[INFO ] 2020-05-17 14:04:11 [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-05-17 14:04:11 [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-05-17 14:04:11 [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet - Completed initialization in 15 ms
+[INFO ] 2020-05-17 15:40:14 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 13472 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-05-17 15:40:14 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-05-17 15:40:14 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-05-17 15:40:14 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-05-17 15:40:14 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[INFO ] 2020-05-17 15:40:14 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+[INFO ] 2020-05-17 15:40:14 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40ms. Found 0 repository interfaces.
+[INFO ] 2020-05-17 15:40:14 [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b4ab0ea3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2020-05-17 15:40:14 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-05-17 15:40:14 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-05-17 15:40:14 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-05-17 15:40:14 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-05-17 15:40:14 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-05-17 15:40:14 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2752 ms
+[INFO ] 2020-05-17 15:40:14 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-05-17 15:40:14 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-05-17 15:40:14 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-05-17 15:40:14 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-05-17 15:40:14 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-05-17 15:40:14 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 5.749 seconds (JVM running for 7.839)
+[INFO ] 2020-05-17 15:40:14 [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-05-17 15:40:14 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-05-17 15:40:14 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 15 ms
+[INFO ] 2020-05-17 15:43:22 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 3976 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-05-17 15:43:22 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-05-17 15:43:22 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-05-17 15:43:22 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-05-17 15:43:22 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[INFO ] 2020-05-17 15:43:22 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+[INFO ] 2020-05-17 15:43:22 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33ms. Found 0 repository interfaces.
+[INFO ] 2020-05-17 15:43:22 [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$abaf2f15] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2020-05-17 15:43:22 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-05-17 15:43:22 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-05-17 15:43:22 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-05-17 15:43:22 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-05-17 15:43:22 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-05-17 15:43:22 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2710 ms
+[INFO ] 2020-05-17 15:43:22 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-05-17 15:43:22 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-05-17 15:43:22 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-05-17 15:43:22 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-05-17 15:43:22 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-05-17 15:43:22 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 6.614 seconds (JVM running for 8.882)
+[INFO ] 2020-05-17 15:43:22 [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-05-17 15:43:22 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-05-17 15:43:22 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 15 ms
+[INFO ] 2020-05-17 18:52:38 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 6672 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-05-17 18:52:38 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-05-17 18:52:38 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-05-17 18:52:38 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-05-17 18:52:38 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[INFO ] 2020-05-17 18:52:38 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+[INFO ] 2020-05-17 18:52:38 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32ms. Found 0 repository interfaces.
+[INFO ] 2020-05-17 18:52:38 [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9c78820d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2020-05-17 18:52:38 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-05-17 18:52:38 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-05-17 18:52:38 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-05-17 18:52:38 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-05-17 18:52:38 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-05-17 18:52:38 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3653 ms
+[INFO ] 2020-05-17 18:52:38 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-05-17 18:52:38 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-05-17 18:52:38 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-05-17 18:52:38 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-05-17 18:52:38 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-05-17 18:52:38 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 7.021 seconds (JVM running for 9.903)
+[INFO ] 2020-05-17 18:52:38 [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-05-17 18:52:38 [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-05-17 18:52:38 [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 15 ms
+[INFO ] 2020-05-17 19:00:07 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 16020 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-05-17 19:00:07 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-05-17 19:00:07 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-05-17 19:00:07 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-05-17 19:00:07 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[INFO ] 2020-05-17 19:00:07 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+[INFO ] 2020-05-17 19:00:07 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36ms. Found 0 repository interfaces.
+[INFO ] 2020-05-17 19:00:07 [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ebe3e29c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2020-05-17 19:00:07 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-05-17 19:00:07 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-05-17 19:00:07 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-05-17 19:00:07 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-05-17 19:00:07 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-05-17 19:00:07 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3260 ms
+[INFO ] 2020-05-17 19:00:07 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-05-17 19:00:07 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-05-17 19:00:07 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-05-17 19:00:07 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-05-17 19:00:07 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-05-17 19:00:07 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 6.631 seconds (JVM running for 9.05)
+[INFO ] 2020-05-17 19:00:07 [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-05-17 19:00:07 [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-05-17 19:00:07 [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 22 ms
+[INFO ] 2020-05-17 19:07:40 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 17848 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-05-17 19:07:40 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-05-17 19:07:40 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-05-17 19:07:40 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-05-17 19:07:40 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[INFO ] 2020-05-17 19:07:40 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+[INFO ] 2020-05-17 19:07:40 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41ms. Found 0 repository interfaces.
+[INFO ] 2020-05-17 19:07:40 [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9e2ecae6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2020-05-17 19:07:40 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-05-17 19:07:40 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-05-17 19:07:40 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-05-17 19:07:40 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-05-17 19:07:40 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-05-17 19:07:40 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2808 ms
+[INFO ] 2020-05-17 19:07:40 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-05-17 19:07:40 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-05-17 19:07:40 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-05-17 19:07:40 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-05-17 19:07:40 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-05-17 19:07:40 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 7.054 seconds (JVM running for 9.383)
+[INFO ] 2020-05-17 19:07:40 [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-05-17 19:07:40 [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-05-17 19:07:40 [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 18 ms
+[INFO ] 2020-05-17 19:10:41 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 18072 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-05-17 19:10:41 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-05-17 19:10:41 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-05-17 19:10:41 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-05-17 19:10:41 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[INFO ] 2020-05-17 19:10:41 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+[INFO ] 2020-05-17 19:10:41 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30ms. Found 0 repository interfaces.
+[INFO ] 2020-05-17 19:10:41 [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8b2be6bf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2020-05-17 19:10:41 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-05-17 19:10:41 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-05-17 19:10:41 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-05-17 19:10:41 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-05-17 19:10:41 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-05-17 19:10:41 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2542 ms
+[INFO ] 2020-05-17 19:10:41 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-05-17 19:10:41 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-05-17 19:10:41 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-05-17 19:10:41 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-05-17 19:10:41 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-05-17 19:10:41 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 9.443 seconds (JVM running for 13.298)
+[INFO ] 2020-05-17 19:10:41 [http-nio-8080-exec-6] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-05-17 19:10:41 [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-05-17 19:10:41 [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet - Completed initialization in 15 ms
+[INFO ] 2020-05-17 19:10:41 [Thread-28] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-05-17 19:10:41 [Thread-28] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+[INFO ] 2020-05-17 19:10:41 [Thread-28] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+[INFO ] 2020-05-17 19:19:43 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 9060 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-05-17 19:19:43 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-05-17 19:19:43 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-05-17 19:19:43 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-05-17 19:19:43 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[INFO ] 2020-05-17 19:19:43 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+[INFO ] 2020-05-17 19:19:43 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26ms. Found 0 repository interfaces.
+[INFO ] 2020-05-17 19:19:43 [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bb1ff00e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2020-05-17 19:19:43 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-05-17 19:19:43 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-05-17 19:19:43 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-05-17 19:19:43 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-05-17 19:19:43 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-05-17 19:19:43 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2302 ms
+[INFO ] 2020-05-17 19:19:43 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-05-17 19:19:43 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-05-17 19:19:43 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-05-17 19:19:43 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-05-17 19:19:43 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-05-17 19:19:43 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 5.509 seconds (JVM running for 8.443)
+[INFO ] 2020-05-17 19:19:43 [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-05-17 19:19:43 [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-05-17 19:19:43 [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 22 ms
+[INFO ] 2020-05-17 19:22:44 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 16480 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-05-17 19:22:44 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-05-17 19:22:44 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-05-17 19:22:44 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-05-17 19:22:44 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[INFO ] 2020-05-17 19:22:44 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+[INFO ] 2020-05-17 19:22:44 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38ms. Found 0 repository interfaces.
+[INFO ] 2020-05-17 19:22:44 [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$17485513] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2020-05-17 19:22:44 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-05-17 19:22:44 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-05-17 19:22:44 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-05-17 19:22:44 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-05-17 19:22:44 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-05-17 19:22:44 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2874 ms
+[INFO ] 2020-05-17 19:22:44 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-05-17 19:22:44 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-05-17 19:22:44 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-05-17 19:22:44 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-05-17 19:22:44 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-05-17 19:22:44 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 6.736 seconds (JVM running for 9.043)
+[INFO ] 2020-05-17 19:22:44 [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-05-17 19:22:44 [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-05-17 19:22:44 [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet - Completed initialization in 19 ms
+[INFO ] 2020-05-17 19:35:02 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 2952 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-05-17 19:35:02 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-05-17 19:35:02 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-05-17 19:35:02 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-05-17 19:35:02 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[INFO ] 2020-05-17 19:35:02 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+[INFO ] 2020-05-17 19:35:02 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40ms. Found 0 repository interfaces.
+[INFO ] 2020-05-17 19:35:02 [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ff9b185a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2020-05-17 19:35:02 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-05-17 19:35:02 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-05-17 19:35:02 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-05-17 19:35:02 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-05-17 19:35:02 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-05-17 19:35:02 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3059 ms
+[INFO ] 2020-05-17 19:35:02 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-05-17 19:35:02 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-05-17 19:35:02 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-05-17 19:35:02 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-05-17 19:35:02 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-05-17 19:35:02 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 6.867 seconds (JVM running for 9.238)
+[INFO ] 2020-05-17 19:35:02 [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-05-17 19:35:02 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-05-17 19:35:02 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 16 ms
+[INFO ] 2020-05-17 19:38:10 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 1220 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-05-17 19:38:10 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-05-17 19:38:10 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-05-17 19:38:10 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-05-17 19:38:10 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[INFO ] 2020-05-17 19:38:10 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+[INFO ] 2020-05-17 19:38:10 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35ms. Found 0 repository interfaces.
+[INFO ] 2020-05-17 19:38:10 [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$63b3a3b5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2020-05-17 19:38:10 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-05-17 19:38:10 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-05-17 19:38:10 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-05-17 19:38:10 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-05-17 19:38:10 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-05-17 19:38:10 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2684 ms
+[INFO ] 2020-05-17 19:38:10 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-05-17 19:38:10 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-05-17 19:38:10 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-05-17 19:38:10 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-05-17 19:38:10 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-05-17 19:38:10 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 6.283 seconds (JVM running for 8.981)
+[INFO ] 2020-05-17 19:38:10 [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-05-17 19:38:10 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-05-17 19:38:10 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 18 ms
+[INFO ] 2020-05-17 19:45:34 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 14620 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-05-17 19:45:34 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-05-17 19:45:34 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-05-17 19:45:34 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-05-17 19:45:34 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[INFO ] 2020-05-17 19:45:34 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+[INFO ] 2020-05-17 19:45:34 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31ms. Found 0 repository interfaces.
+[INFO ] 2020-05-17 19:45:34 [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c4b9df31] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2020-05-17 19:45:34 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-05-17 19:45:34 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-05-17 19:45:34 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-05-17 19:45:34 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-05-17 19:45:34 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-05-17 19:45:34 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3020 ms
+[INFO ] 2020-05-17 19:45:34 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-05-17 19:45:34 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-05-17 19:45:34 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-05-17 19:45:34 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-05-17 19:45:34 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-05-17 19:45:34 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 7.417 seconds (JVM running for 9.829)
+[INFO ] 2020-05-17 19:45:34 [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-05-17 19:45:34 [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-05-17 19:45:34 [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet - Completed initialization in 32 ms

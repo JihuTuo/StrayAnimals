@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <title>Bootstrap 模板</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- 引入 Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- 引入导航栏样式 -->
+    <link rel="stylesheet" href="css/navigation.css">
+
+    <!-- 包括所有已编译的插件 -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- 模态窗口的打开需要依赖此文件 -->
+    <script src="js/modal.js"></script>
+    <!-- 引入自己写的js文件 -->
+    <script src="js/my_js/index.js"></script>
+
+
+    <!--引入搜索框样式-->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/search_adopt/zfont-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/search_adopt/demo.css">
+    <link rel="stylesheet" href="css/search_adopt/style.css">
+
+    <!-- 引入搜索样式 -->
+    <link rel="stylesheet" type="text/css" href="css/search_css/normalize.css" />
+    <link rel="stylesheet" href="css/search_css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/search_css/demo.css">
+    <link rel="stylesheet" href="css/search_css/style.css">
+
+
+    <!--element 上传组件-->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.4.0/css/bootstrap.min.css" />
+    <!--<link rel="stylesheet" href="https://cdn.staticfile.org/element-ui/2.4.11/theme-chalk/index.css" />
+    <link rel="stylesheet" href="https://cdn.staticfile.org/animate.css/3.7.0/animate.min.css" />-->
+    <!--element-->
+    <link rel="stylesheet" href="static/element-2.12.0/index.css">
+    <script src="static/element-2.12.0/index.js"></script>
+
+    <style type="text/css">
+        input.el-upload__input {
+            display: none;
+        }
+    </style>
+
+
+    <!-- 引入自己写的样式 -->
+    <link rel="stylesheet" href="css/index_style.css">
+    <link rel="stylesheet" href="css/adopt_style.css">
+
+</head>
+
+<body>
+<div class="container" id="upload_images">
+        <div class="col-sm-12 col-md-12 main">
+            <el-upload
+                    class="upload-demo"
+                    action=""
+                    multiple
+                    :limit="3"
+                    :on-success="handle_success"
+                    list-type="picture-card"
+                    :file-list="images">
+                <el-button size="small" type="primary">点击上传</el-button>
+            </el-upload>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="https://cdn.staticfile.org/vue/2.5.22/vue.min.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/Sortable/1.8.1/Sortable.min.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/Vue.Draggable/2.17.0/vuedraggable.min.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/element-ui/2.4.11/index.js"></script>
+<script type="text/javascript" src="{{ asset('js/upload_images_and_sort.js') }}?t=201901212007"></script>
+
+<!-- 引入公用的js-->
+<script src="./js/axios.min.js"></script>
+<script src="./js/common.js"></script>
+
+<script type="application/javascript">
+    new Vue({
+        el: "#upload_images",
+
+        data: {
+            images: [
+               /* {
+                    name: 'img1',
+                    to_del: false,      // 纯粹为了删除特效，可不加
+                    url: 'http://temp.im/401x401/4CD964/fff'
+                },
+                {
+                    name: 'img2',
+                    to_del: false,
+                    url: 'http://temp.im/402x402/4CD964/fff'
+                },
+                {
+                    name: 'img3',
+                    to_del: false,
+                    url: 'http://temp.im/403x403/4CD964/fff'
+                },
+                {
+                    name: 'img4',
+                    to_del: false,
+                    url: 'http://temp.im/404x404/4CD964/fff'
+                }*/
+            ]
+        },
+
+
+        methods: {
+            handle_success: function() {
+
+            },
+
+            remove: function(index) {
+                var that = this;
+                this.$confirm('确认删除?', '提示', {
+                    confirmButtonText: '确定',
+                    cancelButtonText: '取消',
+                    type: 'warning'
+                }).then(function () {
+                    that.$message({
+                        type: 'success',
+                        message: '删除成功!'
+                    });
+                    that.images[index].to_del = true;
+                    setTimeout(function() {
+                        that.images.splice(index, 1);
+                    }, 1000);
+                })
+            }
+        }
+    })
+</script>
+</body>
+
+</html>

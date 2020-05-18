@@ -1,0 +1,46 @@
+# 单机模式
+redisson:
+  address: redis://127.0.0.1:6379
+  password:
+spring:
+  profiles: test
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/beam?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=GMT%2B8
+    hikari:
+      jdbc-url: jdbc:mysql://127.0.0.1:3306/beam?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=GMT%2B8
+      username: root
+      password: 123456
+      filters: log4j,wall,mergeStat
+      readOnly: false
+      connectionTimeout: 60000 #连接超时 1分钟
+      idleTimeout: 58000 # 一个连接空闲状态的最大时长 一分钟
+      validationTimeout: 6000
+      maxLifetime: 60000 # 1分钟
+      loginTimeout: 5
+      maximumPoolSize: 30 # 连接池最大连接数
+      minimumIdle: 10 #最小空闲连接
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+    password:      # 密码（默认为空）
+    timeout: 6000ms  # 连接超时时长（毫秒）
+# redis集群配置
+#  redis:
+#    database: 0
+#    timeout: 6000ms  # 连接超时时长（毫秒）
+#    cluster:
+#      nodes: 10.186.25.64:7000,10.186.25.64:7001,10.186.25.64:7002,10.186.25.64:7003,10.186.25.64:7004,10.186.25.64:7005
+#      connTimeOut: 1000 #连接server超时时间
+#      soTimeOut: 1000 #等待response超时时间
+#      maxAttempts: 2 #连接失败重试次数
+#    password: testpwd    # 密码（默认为空）
+
+#多数据源的配置
+beam:
+  dynamic:
+    datasource:
+      test:
+        jdbc-url: jdbc:mysql://127.0.0.1:3306/test?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=GMT%2B8
+        username: root
+        password: 123456

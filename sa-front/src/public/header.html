@@ -1,0 +1,57 @@
+<div>
+    <div class="header">   <!--line-height: 30px 将文字宽度与div一致 让文字居中 -->
+        <div style="margin:0 auto;width:900px;height: 30px;line-height: 30px;font-size:15px">
+            <span class="glyphicon glyphicon-home">&nbsp;</span>请选择您所在的地区：<span style="color: red"><span id="city">北京</span></span>
+            <!-- 按钮触发模态框 -->
+            <span data-toggle="modal" data-target="#area-modal"><a href="javascript:void(0);">[切换]</a></span>
+            <span  :style="loginTo">
+                <span style="float:right">
+                    <a href="regist.html">注册</a>
+                </span>
+                <span style="float:right">&nbsp; | &nbsp;</span>
+                <span style="float:right">
+                     <a href="login.html">登录</a>
+                </span>
+            </span>
+            <span :style="loginShow">
+                <span  style="float:right;">
+                欢迎登录：<a href="javascript">{{user.username}}</a>
+                 </span>
+            </span>
+        </div>
+    </div>
+    <!-- 地区选择 模态框（Modal） -->
+    <div class="modal fade" id="area-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel"><span class="glyphicon glyphicon-home">&nbsp;</span>请选择您所在的城市</h4>
+                </div>
+                <!--在这里添加一些文本-->
+                <div class="modal-body" style="padding-left: 100px">
+
+                    <div style="width: 70%">
+                        &emsp;&emsp;&emsp;&emsp;
+                        <!--省份-->
+                        <select style="width: 160px" class="input-message" v-model="provinceId" @change="getCities">
+                            <option value="-1">请选择</option>
+                            <option v-for="p in provinces" :value="p.id">{{p.name}}</option>
+                        </select>
+                        &emsp; &emsp;&emsp;&emsp;&emsp;
+                        <!--城市-->
+                        <select style="width: 160px" class="input-message" v-model="cityId" @change="showPlace">
+                            <option v-for="c in cities" :value="c.id">{{c.name}}</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+                </div>
+            </div><
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html xmlns:javascript="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Bootstrap 模板</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- 引入 Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- 引入导航栏样式 -->
+    <link rel="stylesheet" href="css/navigation.css">
+
+    <!-- 包括所有已编译的插件 -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- 模态窗口的打开需要依赖此文件 -->
+    <script src="js/modal.js"></script>
+    <!-- 引入自己写的js文件 -->
+    <script src="js/my_js/index.js"></script>
+
+
+    <!--引入搜索框样式-->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/search_adopt/zfont-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/search_adopt/demo.css">
+    <link rel="stylesheet" href="css/search_adopt/style.css">
+
+    <!-- 引入公用的js-->
+    <script src="./js/vue/vue.js"></script>
+    <script src="./js/axios.min.js"></script>
+    <script src="./js/common.js"></script>
+
+    <!-- 引入搜索样式 -->
+    <link rel="stylesheet" type="text/css" href="css/search_css/normalize.css"/>
+    <link rel="stylesheet" href="css/search_css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/search_css/demo.css">
+    <link rel="stylesheet" href="css/search_css/style.css">
+
+    <!--element-->
+    <!-- 引入样式 -->
+    <!--<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    &lt;!&ndash; 引入组件库 &ndash;&gt;
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>-->
+    <!--element-->
+    <link rel="stylesheet" href="static/element-2.12.0/index.css">
+    <script src="static/element-2.12.0/index.js"></script>
+
+    <!-- 引入自己写的样式 -->
+    <link rel="stylesheet" href="css/index_style.css">
+    <link rel="stylesheet" href="css/adopt_style.css">
+
+
+</head>
+<body>
+<div id="Vue-app">
+    <div class="header" id="header-top">   <!--line-height: 30px 将文字宽度与div一致 让文字居中 -->
+        <shotcut @deliver="getChildData(arguments)"></shotcut>   <!--组件化头部-->
+    </div>
+    <div class="container">
+        <!--logo图片-->
+        <div>
+            <img src="img/sa_logo.png">
+        </div>
+
+        <!--导航条-->
+        <div id="nav-1">
+            <ul class="nav">
+                <li class="slide1"></li>
+                <li class="slide2"></li>
+                <li><a  class="active" href="index.html">首页</a></li>
+                <li><a href="news.html">资讯</a></li>
+                <li><a href="rescue.html">救助</a></li>
+                <li><a href="adopt.html">领养</a></li>
+                <li><a href="search.html">寻宠</a></li>
+                <li><a href="help.html">帮助</a></li>
+                <li><a href="about-us.html">关于我们</a></li>
+                <!-- 搜索框 -->
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;
+                </p>
+                <li>
+                    <div class="search d7">
+                        <form>
+                            <input type="text" placeholder="搜索从这里开始...">
+                            <button type="submit"></button>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <br><br>
+
+        <!----=========================内容开始==============================-->
+
+        <!-- 面包屑导航 -->
+        <div>
+            <ul class="breadcrumb">
+                <li><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+                <li><a href="adopt.html">领养</a></li>
+            </ul>
+        </div>
+
+        <!-- 地区选择器、分类等 显示div -->                                  <!--border 边框族系， solod 颜色-->
+        <div class="adopt-city">
+            <!-- 城市区域 -->
+            <div class="select-city">
+                <div class="show-city">
+                    <!--这里动态展示城市列表-->
+                    &emsp;地区：
+                    <!--<span v-for="c in counties"> </span>-->
+                    <a href="javascript:void(0);" @click="changeAllCounty()"><span style="padding-right: 15px">全城</span></a>
+                    <a v-for="(c,index) in counties" href="javascript:void(0);"  :class = "isCountyActive == index ? 'addclass' : '' " @click="changeCounty(c.id, index)" ><span style="padding-right: 15px">{{c.name}}</span></a>
+                </div>
+                <!--  中划线隔开-->
+                <hr style="height:1px;border:none;border-top:1px dashed #0066CC;"/>
+                <!-- 宠物分类 -->
+                <div class="select-pet">
+                    &emsp;类型：
+                    <a v-for=" (ca,index) in categories" :class = "isactive == index ? 'addclass' : '' " href="javascript:void(0);" @click="changeCategory(ca.id,index)"><span id="category" style="padding-right: 15px">{{ca.type}}</span></a>
+                </div>
+            </div>
+        </div>
+        <br><br>  <!-- 流出空隙 -->
+        <!--信息部分-左侧-->
+        <div class="adopt-message">
+            <!-- 过滤不同状态的消息 -->
+            <div class="adopt-message-status">
+                <a href="javascript:void(0)">
+                    <div class="adopt-message-status-font">最新消息</div>
+                </a>
+                <!--中间的空格-->
+                <div class="adopt-message-status-font-black"></div>
+
+                <a href="javascript:void(0)">
+                    <div class="adopt-message-status-font-active">搞定了</div>
+                </a>
+            </div>
+            <br>  <!--换行-->
+            <!--开始显示总条数-->
+            <div class="total-amount">
+                &emsp;    <!--这里需要渲染数据-->
+                共有<a href="javascript:void(0);"> <span style="font-size: large;color: #FF0000">{{pagination.count}}</span></a> 条数据
+            </div>
+            <br>
+            <!--开始进行信息循环展示-->
+            <div class="show-adopt-message">
+                <ul style="">
+                    <!--   渲染-->
+                    <li style="height: 110px" v-for="a in animalAdopts">
+                        <!--这里用来放图片 大小固定好的-->
+                        <a href="javascript:void (0);" @click="toDetails(a.animalAdopt.id)">
+                            <img width="140px" height="100px" src="img/cat/cat01.jpg">
+                        </a>
+                        <!--这里用来描述详细信息-->
+                        <!--首先是标题-->
+                        <div style="height: 100px;width: 740px;float: right">
+                            <a href="javascript:void (0);" @click="toDetails(a.animalAdopt.id)"><span style="padding-left: 10px;font-size: large">
+                            <font color="green">[领养] </font>{{a.animalAdopt.title}}</span>
+                            </a>
+                            <!--然后要显示时间-->
+                            <div style="float: right;width: 135px;height: 20px">
+                                <span style="float: right">{{a.animalAdopt.createTime}}</span>
+                            </div>
+                            <!--其次是宠物分类-->
+                            <div style="height: 20px;padding-left: 10px">宠类：
+                                <!--数据库中读取-->
+                                <span>{{a.category.type}}/{{a.category.name}}</span>
+                                <!--区县-->
+                                <span>&emsp;&emsp;区县：{{a.location.county}}</span>
+                                <span class="label label-info" style="float: right">待领养</span>
+                            </div>
+
+                            <!--总的描述信息-->
+                            <div style="height: 20px;overflow:hidden;text-overflow:ellipsis;">
+                                <!--数据读取显示-->
+                                <span style="padding-left: 10px;">{{a.animalAdopt.message}}</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <el-pagination
+                        style="margin-top:15px;"
+                        background
+                        layout="prev, pager, next"
+                        :current-page.sync="pagination.page"
+                        :page-size.sync="pagination.size"
+                        :total="pagination.count"
+                        @current-change="handleCurrentChange">
+                </el-pagination>
+            </div>
+        </div>
+
+        <!--发布信息部分-右侧-->
+        <div class="adopt-publish-message">
+            <!--首先是一个搜索框-->
+            <div style="height: 35px;">
+                <form action="">
+                    <input class="input" type="text" placeholder="请输入领养内容">
+                    <button class="search-btn" type="button"><span class="	glyphicon glyphicon-search"></span>
+                    </button>
+                </form>
+            </div>
+            <br>
+            <!--发布信息和信息管理-->
+            <div style="height: 40px;">
+                <div style="background-color: crimson;width: 49%;float: left;text-align: center">
+                    <a style="height: 40px" href="javascript:void (0)" @click="toPublish">
+                        <span class="glyphicon glyphicon-edit" style="line-height: 40px;color: white;"> 发布信息</span>
+                    </a>
+                </div>
+                <div style="background-color: crimson;width: 49%;float: right;text-align: center">
+                    <a style="height: 40px" href="javascript:void (0)" @click="toManage">
+                        <span class="glyphicon glyphicon-check" style="line-height: 40px;color: white;"> 信息管理</span>
+                    </a>
+                </div>
+            </div>
+            <br>
+            <!--发布领养信息必读公告-->
+            <div style="height: 30px;background-color: #F9F0DA">
+                <a href="javascript:void (0)">
+                    <span style="color: #FF0000;padding-left: 10px;line-height: 30px">[必读]</span><span
+                        style="padding-left: 10px;line-height: 30px">领养信息发布规则</span>
+                </a>
+                <img width="100%" height="220px" src="img/dog/adopt.jpg">
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- 设置底部布局 -->
+<hr/>
+<div class="footer">
+    <script type="text/javascript">$(".footer").load("/src/public/footer.html");</script>
+</div>
+<!-- 引入导航栏js,注意和引入顺序有关 必须放在后面 -->
+<script src='js/jquery.min.js'></script>
+<script src="js/my_js/script.js"></script>
+
+<script type="application/javascript">
+    new Vue({
+        el: "#Vue-app",
+        components: {
+            shotcut: () => import('./js/pages/shotcut.js'),
+        },
+        data: {
+            redStyle: "",
+            counties: "",
+            // 来自子组件
+            cityId: !ly.store.getJson("city").id  ? ly.store.getJson("city").id  : 1,
+            // created 获取的
+            categories: [],
+            // 宠类过滤器
+            categoryId: 1,
+            // 县区过滤器
+            countyId: 1,
+            animalAdopts: [],
+            // 分页组件参数
+            pagination: {
+                page: 1,
+                size: 8,
+                count: 0,
+            },
+            isCountyActive : -1,
+            isactive : -1,
+        },
+        created () {
+          // 获取所有宠物类型
+            this.getAllAnimalCategory();
+            this.getAllAnimalAdoptInPage();
+            this.defaultCounties();
+        },
+        // 监听地区的变化的值，
+        watch: {
+            counties (newCity, oldCity) {
+                // 如果地区改变触发事件,首先清楚countyId的字
+                this.countyId = "";
+                console.log(JSON.stringify(newCity) + oldCity + "new ----  old+");
+                //JSON.stringify(newCity).
+                this.getAllAnimalAdoptInPage();
+            }
+        },
+        methods: {
+            defaultCounties() {
+                let _this = this;
+                ly.http.get("/provinceAndCity/getCountyByCityId?cityId=1")
+                    .then(resp => {
+                        if (resp.status === 200) {
+                            _this.counties = resp.data;
+                        } else {
+                            _this.counties = "{id: 1, name: \"黄浦区\", cityId: 1}, {id: 2, name: \"静安区\", cityId: 1}, {id: 3, name: \"普陀区\", cityId: 1}";
+                        }
+                    }).catch(resp => {
+                    _this.counties = "{id: 1, name: \"黄浦区\", cityId: 1}, {id: 2, name: \"静安区\", cityId: 1}, {id: 3, name: \"普陀区\", cityId: 1}";
+                })
+            },
+            toPublish () {
+                if (!ly.store.get("token")) {
+                    window.location = "/login.html";
+                } else {
+                    window.location = "/adopt-publish-message.html";
+                }
+            },
+            toManage () {
+                if (!ly.store.get("token")) {
+                    window.location = "/login.html";
+                } else {
+                    window.location = "/adopt-manage-message.html";
+                }
+            },
+
+            /*获取子组件中的方法*/
+            getChildData: function (msg) {
+                this.counties = msg[1];
+                this.cityId = msg[2]
+            },
+            getAllAnimalCategory() {
+                let _this = this;
+                ly.http.get("/animalCategory/queryAll")
+                    .then( resp => {
+                        if (resp.status === 200) {
+                            _this.categories = resp.data;
+                        }
+                    }
+                )
+            },
+
+            // 获得全部adopt
+            getAllAnimalAdopt() {
+              let _this = this;
+              ly.http.get("/adopt/queryAllAnimalAdopt")
+                  .then(resp => {
+                        if (resp.status === 200) {
+                            _this.animalAdopts = resp.data;
+                            console.log(ly.parse(_this.animalAdopts));
+                        }
+                  })
+            },
+            /*// 获取总条数
+            getTotal() {
+                let _this = this;
+                ly.http.get("/adopt/getTotal")
+                    .then(resp => {
+                        if (resp.status === 200) {
+                            _this.pagination.count = resp.data;
+                        }
+                    })
+            },*/
+
+            // 获得全部adopt使用分页
+            getAllAnimalAdoptInPage() {
+                let _this = this;
+                ly.http.post("/adopt/queryAllAnimalAdoptInPage", ly.stringify({
+                    size: this.pagination.size,
+                    page: this.pagination.page,
+                    cityId: ly.store.getJson("city").id != null  ? ly.store.getJson("city").id  : 1,
+                    categoryId: this.categoryId,
+                    countyId: this.countyId
+                }))
+                    .then(resp => {
+                        // .list 拿到集合数据
+                        _this.animalAdopts = resp.data.list;
+                        // .total 拿到总个数
+                        _this.pagination.count = resp.data.total;
+                        console.log(_this.pagination.count);
+                        console.log(ly.parse(_this.animalAdopts));
+                    })
+            },
+            //分页条件改变，重新发送分页请求
+            handleCurrentChange(page) {
+                this.pagination.page = page;
+                this.getAllAnimalAdoptInPage();
+            },
+            // 监视城市的值 如果变化 触发分页查询
+
+            // 宠类过滤
+            changeCategory(id, index) {
+                this.isactive = index;
+                this.categoryId = id;
+                console.log("categoryId" + id);
+                // 每当产生变化的时候就调用函数获取分页
+                this.getAllAnimalAdoptInPage();
+                /*console.log( "===============-----------------==========");
+
+                let arr = this.animalAdopts;
+
+                let newArr = [];
+                    arr.filter( e => {
+                        console.log(e.category.type + "===============-----------------==========");
+                        if (e.category.type === "猫咪") {
+                            newArr.push(e);
+                        }
+                });
+                // JSON.stringify 将js对象转化为json字符串
+                console.log(newArr);
+                console.log(JSON.stringify(newArr) +  "===============-----------------==========");*/
+            },
+            // 区县过滤
+            changeCounty(id, index) {
+                this.isCountyActive = index;
+                this.countyId = id;
+                console.log("countyId" + id);
+                // 每当产生变化的时候就调用函数获取分页
+                this.getAllAnimalAdoptInPage();
+            },
+            // 即选择全城
+            changeAllCounty() {
+                this.isCountyActive = -1;
+                this.countyId = "";
+                this.getAllAnimalAdoptInPage();
+            },
+            // 跳到详情页
+            toDetails (id) {
+                console.log("id" + id);
+                window.location.href="adopt-details.html" + "?id=" + id;
+            }
+        }
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /stary-animals   # 添加项目运行后的名称 localhost:8080/stary-animals
+spring:   # 表示该配置直接由Spring容器进行负责处理
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource    # 配置当前要使用的数据源的操作类型
+    driver-class-name: org.gjt.mm.mysql.Driver      # 配置MySQL驱动程序
+    url: jdbc:mysql://localhost:3306/sa?useUnicode=true&amp;characterEncoding=utf-8   # 连接地址
+    username: root     # 配置数据库用户名
+    password: mysqladmin    # 数据库连接密码
+    dbcp2:
+      min-idle: 5       # 数据库连接池的最小维持连接数
+      initial-size: 5   # 初始化提供的连接数
+      max-total: 5      # 最大连接数
+      max-wait-millis: 200   # 等待连接获取的最大超时时间
+      # 邮件服务
+  mail:
+    host: smtp.qq.com   # 腾讯服务器
+    username: tuojihu@qq.com    # 邮箱名称
+    password: umgbguaujfsqhbfc    # 开启POP3服务后生产的密码
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.starttls.ebable: true
+      mail.smtp.starttls.required: true
+
+  redis:
+    host: localhost
+
+mybatis-plus:
+  # config-location: classpath:mybatis/mybatis.cfg.xml    # 配置mybatis配置文件文职  要么在文件中配置，要么在这里配置
+  type-aliases-package: com.shiep.entity   # 配置别名
+  mapper-locations:
+    - classpath:mybatis/mapper/**/*.xml    # 配置映射文件
+  configuration:
+    # 这个配置会将执行的sql打印出来，在开发或测试的时候可以用
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    # 驼峰下划线转换
+    map-underscore-to-camel-case: true
+    # 配置的缓存的全局开关
+    cache-enabled: true
+    # 延时加载的开关
+    lazy-loading-enabled: true
+    # 开启的话，延时加载一个属性时会加载该对象全部属性，否则按需加载属性
+    multiple-result-sets-enabled: true
+    use-generated-keys: true
+    default-statement-timeout: 60
+    default-fetch-size: 100
+# 配置jwt,会在配置类中进行读取
+shiep:
+  jwt:
+    # 加密密钥
+    secret: abcdefg1234567
+    # token有效时长 单位是秒
+    expire: 3600
+    # header 名称
+    header: token
+    cookieName: SHIEP_TOKEN
+# 配置分页助手
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+  params: count=countSq

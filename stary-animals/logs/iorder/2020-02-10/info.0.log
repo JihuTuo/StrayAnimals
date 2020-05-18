@@ -1,0 +1,937 @@
+[INFO ] 2020-02-10 09:33:22 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 34616 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-10 09:33:22 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-10 09:33:22 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-02-10 09:33:22 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-02-10 09:33:22 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-02-10 09:33:22 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 09:33:22 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-02-10 09:33:22 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-02-10 09:33:22 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-02-10 09:33:22 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3904 ms
+[INFO ] 2020-02-10 09:33:22 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-02-10 09:33:22 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-02-10 09:33:22 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-02-10 09:33:22 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 09:33:22 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-02-10 09:33:22 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 8.032 seconds (JVM running for 13.451)
+[INFO ] 2020-02-10 09:33:22 [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-02-10 09:33:22 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-02-10 09:33:22 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+[INFO ] 2020-02-10 09:48:52 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 36948 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-10 09:48:52 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-10 09:48:52 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-02-10 09:48:52 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-02-10 09:48:52 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-02-10 09:48:52 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 09:48:52 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-02-10 09:48:52 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-02-10 09:48:52 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-02-10 09:48:52 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2590 ms
+[INFO ] 2020-02-10 09:48:52 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-02-10 09:48:52 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-02-10 09:48:52 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-02-10 09:48:52 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 09:48:52 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-02-10 09:48:52 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 5.28 seconds (JVM running for 7.697)
+[INFO ] 2020-02-10 09:48:52 [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-02-10 09:48:52 [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-02-10 09:48:52 [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 25 ms
+[INFO ] 2020-02-10 09:52:17 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 37640 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-10 09:52:17 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-10 09:52:17 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-02-10 09:52:17 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-02-10 09:52:17 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-02-10 09:52:17 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 09:52:17 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-02-10 09:52:17 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-02-10 09:52:17 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-02-10 09:52:17 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2359 ms
+[INFO ] 2020-02-10 09:52:17 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-02-10 09:52:17 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-02-10 09:52:17 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-02-10 09:52:17 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 09:52:17 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-02-10 09:52:17 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 5.28 seconds (JVM running for 8.045)
+[INFO ] 2020-02-10 09:52:17 [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-02-10 09:52:17 [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-02-10 09:52:17 [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 16 ms
+[INFO ] 2020-02-10 09:53:36 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 36784 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-10 09:53:36 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-10 09:53:36 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-02-10 09:53:36 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-02-10 09:53:36 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-02-10 09:53:36 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 09:53:36 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-02-10 09:53:36 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-02-10 09:53:36 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-02-10 09:53:36 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3151 ms
+[INFO ] 2020-02-10 09:53:36 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-02-10 09:53:36 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-02-10 09:53:36 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-02-10 09:53:36 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 09:53:36 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-02-10 09:53:36 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 7.849 seconds (JVM running for 11.724)
+[INFO ] 2020-02-10 09:53:36 [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-02-10 09:53:36 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-02-10 09:53:36 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 31 ms
+[INFO ] 2020-02-10 10:01:19 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 34600 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-10 10:01:19 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-10 10:01:19 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-02-10 10:01:19 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-02-10 10:01:19 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-02-10 10:01:19 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 10:01:19 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-02-10 10:01:19 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-02-10 10:01:19 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-02-10 10:01:19 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2717 ms
+[INFO ] 2020-02-10 10:01:19 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-02-10 10:01:19 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-02-10 10:01:19 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-02-10 10:01:19 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 10:01:19 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-02-10 10:01:19 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 7.427 seconds (JVM running for 10.974)
+[INFO ] 2020-02-10 10:01:19 [http-nio-8080-exec-5] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-02-10 10:01:19 [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-02-10 10:01:19 [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet - Completed initialization in 14 ms
+[INFO ] 2020-02-10 10:01:19 [Thread-26] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-02-10 10:01:19 [Thread-26] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+[INFO ] 2020-02-10 10:01:19 [Thread-26] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+[INFO ] 2020-02-10 10:13:52 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 39844 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-10 10:13:52 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-10 10:13:52 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-02-10 10:13:52 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-02-10 10:13:52 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-02-10 10:13:52 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 10:13:52 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-02-10 10:13:52 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-02-10 10:13:52 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-02-10 10:13:52 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2290 ms
+[INFO ] 2020-02-10 10:13:52 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-02-10 10:13:52 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-02-10 10:13:52 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-02-10 10:13:52 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 10:13:52 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-02-10 10:13:52 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 5.583 seconds (JVM running for 8.038)
+[INFO ] 2020-02-10 10:13:52 [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-02-10 10:13:52 [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-02-10 10:13:52 [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 13 ms
+[INFO ] 2020-02-10 10:15:10 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 33632 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-10 10:15:10 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-10 10:15:10 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-02-10 10:15:10 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-02-10 10:15:10 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-02-10 10:15:10 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 10:15:10 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-02-10 10:15:10 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-02-10 10:15:10 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-02-10 10:15:10 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2193 ms
+[INFO ] 2020-02-10 10:15:10 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-02-10 10:15:10 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-02-10 10:15:10 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-02-10 10:15:10 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 10:15:10 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-02-10 10:15:10 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 5.207 seconds (JVM running for 8.815)
+[INFO ] 2020-02-10 10:15:10 [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-02-10 10:15:10 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-02-10 10:15:10 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+[INFO ] 2020-02-10 10:19:21 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 23804 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-10 10:19:21 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-10 10:19:21 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-02-10 10:19:21 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-02-10 10:19:21 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-02-10 10:19:21 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 10:19:21 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-02-10 10:19:21 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-02-10 10:19:21 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-02-10 10:19:21 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2767 ms
+[INFO ] 2020-02-10 10:19:21 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-02-10 10:19:21 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-02-10 10:19:21 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-02-10 10:19:21 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 10:19:21 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-02-10 10:19:21 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 5.437 seconds (JVM running for 7.752)
+[INFO ] 2020-02-10 10:19:21 [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-02-10 10:19:21 [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-02-10 10:19:21 [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 18 ms
+[INFO ] 2020-02-10 10:31:18 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 30744 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-10 10:31:18 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-10 10:31:18 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-02-10 10:31:18 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-02-10 10:31:18 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-02-10 10:31:18 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 10:31:18 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-02-10 10:31:18 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-02-10 10:31:18 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-02-10 10:31:18 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2577 ms
+[INFO ] 2020-02-10 10:31:18 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-02-10 10:31:18 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-02-10 10:31:18 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-02-10 10:31:18 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 10:31:18 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-02-10 10:31:18 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 5.5 seconds (JVM running for 8.081)
+[INFO ] 2020-02-10 10:31:18 [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-02-10 10:31:18 [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-02-10 10:31:18 [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet - Completed initialization in 15 ms
+[INFO ] 2020-02-10 10:42:58 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 35832 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-10 10:42:58 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-10 10:42:58 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-02-10 10:42:58 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-02-10 10:42:58 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-02-10 10:42:58 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 10:42:58 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-02-10 10:42:58 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-02-10 10:42:58 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-02-10 10:42:58 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2667 ms
+[INFO ] 2020-02-10 10:42:58 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-02-10 10:42:58 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-02-10 10:42:58 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-02-10 10:42:58 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 10:42:58 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-02-10 10:42:58 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 5.355 seconds (JVM running for 7.911)
+[INFO ] 2020-02-10 10:42:58 [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-02-10 10:42:58 [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-02-10 10:42:58 [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 20 ms
+[INFO ] 2020-02-10 10:46:37 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 30872 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-10 10:46:37 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-10 10:46:37 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-02-10 10:46:37 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-02-10 10:46:37 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-02-10 10:46:37 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 10:46:37 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-02-10 10:46:37 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-02-10 10:46:37 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-02-10 10:46:37 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2897 ms
+[INFO ] 2020-02-10 10:46:37 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-02-10 10:46:37 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-02-10 10:46:37 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-02-10 10:46:37 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 10:46:37 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-02-10 10:46:37 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 6.683 seconds (JVM running for 9.898)
+[INFO ] 2020-02-10 10:46:37 [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-02-10 10:46:37 [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-02-10 10:46:37 [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+[INFO ] 2020-02-10 10:49:34 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 11868 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-10 10:49:34 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-10 10:49:34 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-02-10 10:49:34 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-02-10 10:49:34 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-02-10 10:49:34 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 10:49:34 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-02-10 10:49:34 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-02-10 10:49:34 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-02-10 10:49:34 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2759 ms
+[INFO ] 2020-02-10 10:49:34 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-02-10 10:49:34 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-02-10 10:49:34 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-02-10 10:49:34 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 10:49:34 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-02-10 10:49:34 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 5.413 seconds (JVM running for 7.787)
+[INFO ] 2020-02-10 10:49:34 [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-02-10 10:49:34 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-02-10 10:49:34 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 14 ms
+[INFO ] 2020-02-10 11:06:20 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 35128 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-10 11:06:20 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-10 11:06:20 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-02-10 11:06:20 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-02-10 11:06:20 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-02-10 11:06:20 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 11:06:20 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-02-10 11:06:20 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-02-10 11:06:20 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-02-10 11:06:20 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2445 ms
+[INFO ] 2020-02-10 11:06:20 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-02-10 11:06:20 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-02-10 11:06:20 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-02-10 11:06:20 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 11:06:20 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-02-10 11:06:20 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 5.096 seconds (JVM running for 7.592)
+[INFO ] 2020-02-10 11:06:20 [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-02-10 11:06:20 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-02-10 11:06:20 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 20 ms
+[INFO ] 2020-02-10 11:08:04 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 28540 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-10 11:08:04 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-10 11:08:04 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-02-10 11:08:04 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-02-10 11:08:04 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-02-10 11:08:04 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 11:08:04 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-02-10 11:08:04 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-02-10 11:08:04 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-02-10 11:08:04 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2507 ms
+[INFO ] 2020-02-10 11:08:04 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-02-10 11:08:04 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-02-10 11:08:04 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-02-10 11:08:04 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 11:08:04 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-02-10 11:08:04 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 5.632 seconds (JVM running for 8.313)
+[INFO ] 2020-02-10 11:08:04 [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-02-10 11:08:04 [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-02-10 11:08:04 [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet - Completed initialization in 27 ms
+[INFO ] 2020-02-10 11:09:48 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 32660 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-10 11:09:48 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-10 11:09:48 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-02-10 11:09:48 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-02-10 11:09:48 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-02-10 11:09:48 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 11:09:48 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-02-10 11:09:48 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-02-10 11:09:48 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-02-10 11:09:48 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2337 ms
+[INFO ] 2020-02-10 11:09:48 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-02-10 11:09:48 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-02-10 11:09:48 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-02-10 11:09:48 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 11:09:48 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-02-10 11:09:48 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 5.043 seconds (JVM running for 7.614)
+[INFO ] 2020-02-10 11:09:48 [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-02-10 11:09:48 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-02-10 11:09:48 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+[INFO ] 2020-02-10 11:11:16 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 18804 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-10 11:11:16 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-10 11:11:16 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-02-10 11:11:16 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-02-10 11:11:16 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-02-10 11:11:16 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 11:11:16 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-02-10 11:11:16 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-02-10 11:11:16 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-02-10 11:11:16 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2188 ms
+[INFO ] 2020-02-10 11:11:16 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-02-10 11:11:16 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-02-10 11:11:16 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-02-10 11:11:16 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 11:11:16 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-02-10 11:11:16 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 5.342 seconds (JVM running for 7.98)
+[INFO ] 2020-02-10 11:11:16 [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-02-10 11:11:16 [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-02-10 11:11:16 [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+[INFO ] 2020-02-10 11:14:38 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 33500 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-10 11:14:38 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-10 11:14:38 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-02-10 11:14:38 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-02-10 11:14:38 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-02-10 11:14:38 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 11:14:38 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-02-10 11:14:38 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-02-10 11:14:38 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-02-10 11:14:38 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2349 ms
+[INFO ] 2020-02-10 11:14:38 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-02-10 11:14:38 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-02-10 11:14:38 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-02-10 11:14:38 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 11:14:38 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-02-10 11:14:38 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 5.023 seconds (JVM running for 7.485)
+[INFO ] 2020-02-10 11:14:38 [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-02-10 11:14:38 [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-02-10 11:14:38 [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 14 ms
+[INFO ] 2020-02-10 11:24:15 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 23308 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-10 11:24:15 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-10 11:24:15 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-02-10 11:24:15 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-02-10 11:24:15 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-02-10 11:24:15 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 11:24:15 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-02-10 11:24:15 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-02-10 11:24:15 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-02-10 11:24:15 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2615 ms
+[INFO ] 2020-02-10 11:24:15 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-02-10 11:24:15 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-02-10 11:24:15 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-02-10 11:24:15 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 11:24:15 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-02-10 11:24:15 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 5.353 seconds (JVM running for 7.909)
+[INFO ] 2020-02-10 11:24:15 [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-02-10 11:24:15 [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-02-10 11:24:15 [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet - Completed initialization in 15 ms
+[INFO ] 2020-02-10 11:26:36 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 9132 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-10 11:26:36 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-10 11:26:36 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-02-10 11:26:36 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-02-10 11:26:36 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-02-10 11:26:36 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 11:26:36 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-02-10 11:26:36 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-02-10 11:26:36 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-02-10 11:26:36 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2231 ms
+[INFO ] 2020-02-10 11:26:36 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-02-10 11:26:36 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-02-10 11:26:36 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-02-10 11:26:36 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 11:26:36 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-02-10 11:26:36 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 4.695 seconds (JVM running for 7.359)
+[INFO ] 2020-02-10 11:26:36 [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-02-10 11:26:36 [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-02-10 11:26:36 [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet - Completed initialization in 14 ms
+[INFO ] 2020-02-10 11:30:47 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 29392 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-10 11:30:47 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-10 11:30:47 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-02-10 11:30:47 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-02-10 11:30:47 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-02-10 11:30:47 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 11:30:47 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-02-10 11:30:47 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-02-10 11:30:47 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-02-10 11:30:47 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2194 ms
+[INFO ] 2020-02-10 11:30:47 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-02-10 11:30:47 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-02-10 11:30:47 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-02-10 11:30:47 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 11:30:47 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-02-10 11:30:47 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 4.816 seconds (JVM running for 7.172)
+[INFO ] 2020-02-10 11:30:47 [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-02-10 11:30:47 [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-02-10 11:30:47 [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 14 ms
+[INFO ] 2020-02-10 11:35:55 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 3200 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-10 11:35:55 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-10 11:35:55 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-02-10 11:35:55 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-02-10 11:35:55 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-02-10 11:35:55 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 11:35:55 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-02-10 11:35:55 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-02-10 11:35:55 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-02-10 11:35:55 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2498 ms
+[INFO ] 2020-02-10 11:35:55 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-02-10 11:35:55 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-02-10 11:35:55 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-02-10 11:35:55 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 11:35:55 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-02-10 11:35:55 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 6.47 seconds (JVM running for 8.835)
+[INFO ] 2020-02-10 11:35:55 [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-02-10 11:35:55 [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-02-10 11:35:55 [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet - Completed initialization in 14 ms
+[INFO ] 2020-02-10 11:36:59 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 36220 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-10 11:36:59 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-10 11:36:59 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-02-10 11:36:59 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-02-10 11:36:59 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-02-10 11:36:59 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 11:36:59 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-02-10 11:36:59 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-02-10 11:36:59 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-02-10 11:36:59 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2241 ms
+[INFO ] 2020-02-10 11:36:59 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-02-10 11:36:59 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-02-10 11:36:59 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-02-10 11:36:59 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 11:36:59 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-02-10 11:36:59 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 5.008 seconds (JVM running for 7.649)
+[INFO ] 2020-02-10 11:36:59 [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-02-10 11:36:59 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-02-10 11:36:59 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 15 ms
+[INFO ] 2020-02-10 11:39:05 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 29656 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-10 11:39:05 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-10 11:39:05 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-02-10 11:39:05 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-02-10 11:39:05 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-02-10 11:39:05 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 11:39:05 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-02-10 11:39:05 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-02-10 11:39:05 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-02-10 11:39:05 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2488 ms
+[INFO ] 2020-02-10 11:39:05 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-02-10 11:39:05 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-02-10 11:39:05 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-02-10 11:39:05 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 11:39:05 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-02-10 11:39:05 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 4.956 seconds (JVM running for 7.55)
+[INFO ] 2020-02-10 11:39:05 [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-02-10 11:39:05 [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-02-10 11:39:05 [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet - Completed initialization in 15 ms
+[INFO ] 2020-02-10 13:12:00 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 35728 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-10 13:12:00 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-10 13:12:00 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-02-10 13:12:00 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-02-10 13:12:00 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-02-10 13:12:00 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 13:12:00 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-02-10 13:12:00 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-02-10 13:12:00 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-02-10 13:12:00 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5002 ms
+[INFO ] 2020-02-10 13:12:00 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-02-10 13:12:00 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-02-10 13:12:00 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-02-10 13:12:00 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 13:12:00 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-02-10 13:12:00 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 9.674 seconds (JVM running for 13.204)
+[INFO ] 2020-02-10 13:12:00 [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-02-10 13:12:00 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-02-10 13:12:00 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+[INFO ] 2020-02-10 13:25:27 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 32580 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-10 13:25:27 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-10 13:25:27 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-02-10 13:25:27 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-02-10 13:25:27 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-02-10 13:25:27 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 13:25:27 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-02-10 13:25:27 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-02-10 13:25:27 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-02-10 13:25:27 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3025 ms
+[INFO ] 2020-02-10 13:25:27 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-02-10 13:25:27 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-02-10 13:25:27 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-02-10 13:25:27 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 13:25:27 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-02-10 13:25:27 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 6.12 seconds (JVM running for 9.484)
+[INFO ] 2020-02-10 13:25:27 [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-02-10 13:25:27 [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-02-10 13:25:27 [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet - Completed initialization in 18 ms
+[INFO ] 2020-02-10 14:35:03 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 36248 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-10 14:35:03 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-10 14:35:03 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-02-10 14:35:03 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-02-10 14:35:03 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-02-10 14:35:03 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 14:35:03 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-02-10 14:35:03 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-02-10 14:35:03 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-02-10 14:35:03 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2904 ms
+[INFO ] 2020-02-10 14:35:03 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-02-10 14:35:03 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-02-10 14:35:03 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-02-10 14:35:03 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 14:35:03 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-02-10 14:35:03 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 5.65 seconds (JVM running for 8.382)
+[INFO ] 2020-02-10 14:35:03 [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-02-10 14:35:03 [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-02-10 14:35:03 [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+[INFO ] 2020-02-10 16:06:19 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 35624 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-10 16:06:19 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-10 16:06:19 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-02-10 16:06:19 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-02-10 16:06:19 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-02-10 16:06:19 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 16:06:19 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-02-10 16:06:19 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-02-10 16:06:19 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-02-10 16:06:19 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2426 ms
+[INFO ] 2020-02-10 16:06:19 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-02-10 16:06:19 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-02-10 16:06:19 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-02-10 16:06:19 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 16:06:19 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-02-10 16:06:19 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 5.246 seconds (JVM running for 7.7)
+[INFO ] 2020-02-10 16:06:19 [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-02-10 16:06:19 [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-02-10 16:06:19 [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet - Completed initialization in 20 ms
+[INFO ] 2020-02-10 16:12:12 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 2392 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-10 16:12:12 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-10 16:12:12 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-02-10 16:12:12 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-02-10 16:12:12 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-02-10 16:12:12 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 16:12:12 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-02-10 16:12:12 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-02-10 16:12:12 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-02-10 16:12:12 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2841 ms
+[INFO ] 2020-02-10 16:12:12 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-02-10 16:12:12 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-02-10 16:12:12 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-02-10 16:12:12 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 16:12:12 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-02-10 16:12:12 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 5.183 seconds (JVM running for 7.328)
+[INFO ] 2020-02-10 16:12:12 [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-02-10 16:12:12 [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-02-10 16:12:12 [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 24 ms
+[INFO ] 2020-02-10 16:18:56 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 2804 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-10 16:18:56 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-10 16:18:56 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-02-10 16:18:56 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-02-10 16:18:56 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-02-10 16:18:56 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 16:18:56 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-02-10 16:18:56 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-02-10 16:18:56 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-02-10 16:18:56 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2398 ms
+[INFO ] 2020-02-10 16:18:56 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-02-10 16:18:56 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-02-10 16:18:56 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-02-10 16:18:56 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 16:18:56 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-02-10 16:18:56 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 5.002 seconds (JVM running for 7.507)
+[INFO ] 2020-02-10 16:18:56 [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-02-10 16:18:56 [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-02-10 16:18:56 [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet - Completed initialization in 14 ms
+[INFO ] 2020-02-10 18:22:14 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 33296 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-10 18:22:14 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-10 18:22:14 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-02-10 18:22:14 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-02-10 18:22:14 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-02-10 18:22:14 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 18:22:14 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-02-10 18:22:14 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-02-10 18:22:14 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-02-10 18:22:14 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2777 ms
+[INFO ] 2020-02-10 18:22:14 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-02-10 18:22:14 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-02-10 18:22:14 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-02-10 18:22:14 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 18:22:14 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-02-10 18:22:14 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 6.388 seconds (JVM running for 9.995)
+[INFO ] 2020-02-10 18:22:14 [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-02-10 18:22:14 [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-02-10 18:22:14 [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet - Completed initialization in 13 ms
+[INFO ] 2020-02-10 18:26:29 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 36868 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-10 18:26:29 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-10 18:26:29 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-02-10 18:26:29 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-02-10 18:26:29 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-02-10 18:26:29 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 18:26:29 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-02-10 18:26:29 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-02-10 18:26:29 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-02-10 18:26:29 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5011 ms
+[INFO ] 2020-02-10 18:26:29 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-02-10 18:26:29 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-02-10 18:26:29 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-02-10 18:26:29 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 18:26:29 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-02-10 18:26:29 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 9.546 seconds (JVM running for 12.732)
+[INFO ] 2020-02-10 18:26:29 [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-02-10 18:26:29 [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-02-10 18:26:29 [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+[INFO ] 2020-02-10 18:28:17 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 24844 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-10 18:28:17 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-10 18:28:17 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-02-10 18:28:17 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-02-10 18:28:17 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-02-10 18:28:17 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 18:28:17 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-02-10 18:28:17 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-02-10 18:28:17 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-02-10 18:28:17 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2686 ms
+[INFO ] 2020-02-10 18:28:17 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-02-10 18:28:17 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-02-10 18:28:17 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-02-10 18:28:17 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 18:28:17 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-02-10 18:28:17 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 5.531 seconds (JVM running for 8.44)
+[INFO ] 2020-02-10 18:28:17 [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-02-10 18:28:17 [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-02-10 18:28:17 [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+[INFO ] 2020-02-10 18:29:37 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 15504 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-10 18:29:37 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-10 18:29:37 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-02-10 18:29:37 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-02-10 18:29:37 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-02-10 18:29:37 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 18:29:37 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-02-10 18:29:37 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-02-10 18:29:37 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-02-10 18:29:37 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2457 ms
+[INFO ] 2020-02-10 18:29:37 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-02-10 18:29:37 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-02-10 18:29:37 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-02-10 18:29:37 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 18:29:37 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-02-10 18:29:37 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 5.404 seconds (JVM running for 8.552)
+[INFO ] 2020-02-10 18:29:37 [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-02-10 18:29:37 [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-02-10 18:29:37 [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet - Completed initialization in 15 ms
+[INFO ] 2020-02-10 18:31:58 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 20360 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-10 18:31:58 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-10 18:31:58 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-02-10 18:31:58 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-02-10 18:31:58 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-02-10 18:31:58 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 18:31:58 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-02-10 18:31:58 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-02-10 18:31:58 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-02-10 18:31:58 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3040 ms
+[INFO ] 2020-02-10 18:31:58 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-02-10 18:31:58 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-02-10 18:31:58 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-02-10 18:31:58 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 18:31:58 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-02-10 18:31:58 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 6.16 seconds (JVM running for 8.969)
+[INFO ] 2020-02-10 18:31:58 [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-02-10 18:31:58 [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-02-10 18:31:58 [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet - Completed initialization in 16 ms
+[INFO ] 2020-02-10 18:43:05 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 33508 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-10 18:43:05 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-10 18:43:05 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-02-10 18:43:05 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-02-10 18:43:05 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-02-10 18:43:05 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 18:43:05 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-02-10 18:43:05 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-02-10 18:43:05 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-02-10 18:43:05 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2438 ms
+[INFO ] 2020-02-10 18:43:05 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-02-10 18:43:05 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-02-10 18:43:05 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-02-10 18:43:05 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 18:43:05 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-02-10 18:43:05 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 5.635 seconds (JVM running for 8.168)
+[INFO ] 2020-02-10 18:43:05 [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-02-10 18:43:05 [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-02-10 18:43:05 [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 14 ms
+[INFO ] 2020-02-10 18:44:16 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 34488 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-10 18:44:16 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-10 18:44:16 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-02-10 18:44:16 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-02-10 18:44:16 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-02-10 18:44:16 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 18:44:16 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-02-10 18:44:16 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-02-10 18:44:16 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-02-10 18:44:16 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3905 ms
+[INFO ] 2020-02-10 18:44:16 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-02-10 18:44:16 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-02-10 18:44:16 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-02-10 18:44:16 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 18:44:16 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-02-10 18:44:16 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 7.962 seconds (JVM running for 10.684)
+[INFO ] 2020-02-10 18:44:16 [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-02-10 18:44:16 [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-02-10 18:44:16 [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet - Completed initialization in 13 ms
+[INFO ] 2020-02-10 18:46:52 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 37772 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-10 18:46:52 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-10 18:46:52 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-02-10 18:46:52 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-02-10 18:46:52 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-02-10 18:46:52 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 18:46:52 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-02-10 18:46:52 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-02-10 18:46:52 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-02-10 18:46:52 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2597 ms
+[INFO ] 2020-02-10 18:46:52 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-02-10 18:46:52 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-02-10 18:46:52 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-02-10 18:46:52 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 18:46:52 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-02-10 18:46:52 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 8.79 seconds (JVM running for 13.167)
+[INFO ] 2020-02-10 18:46:52 [http-nio-8080-exec-5] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-02-10 18:46:52 [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-02-10 18:46:52 [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet - Completed initialization in 16 ms
+[INFO ] 2020-02-10 18:46:52 [Thread-28] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-02-10 18:46:52 [Thread-28] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+[INFO ] 2020-02-10 18:46:52 [Thread-28] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+[INFO ] 2020-02-10 19:12:45 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 27064 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-10 19:12:45 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-10 19:12:45 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-02-10 19:12:45 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-02-10 19:12:45 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-02-10 19:12:45 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 19:12:45 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-02-10 19:12:45 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-02-10 19:12:45 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-02-10 19:12:45 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2900 ms
+[INFO ] 2020-02-10 19:12:45 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-02-10 19:12:45 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-02-10 19:12:45 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-02-10 19:12:45 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 19:12:45 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-02-10 19:12:45 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 5.887 seconds (JVM running for 8.947)
+[INFO ] 2020-02-10 19:12:45 [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-02-10 19:12:45 [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-02-10 19:12:45 [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 16 ms
+[INFO ] 2020-02-10 19:16:52 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 27244 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-10 19:16:52 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-10 19:16:52 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-02-10 19:16:52 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-02-10 19:16:52 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-02-10 19:16:52 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 19:16:52 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-02-10 19:16:52 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-02-10 19:16:52 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-02-10 19:16:52 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2778 ms
+[INFO ] 2020-02-10 19:16:52 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-02-10 19:16:52 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-02-10 19:16:52 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-02-10 19:16:52 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 19:16:52 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-02-10 19:16:52 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 6.592 seconds (JVM running for 9.847)
+[INFO ] 2020-02-10 19:16:52 [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-02-10 19:16:52 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-02-10 19:16:52 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 18 ms
+[INFO ] 2020-02-10 19:16:52 [Thread-23] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-02-10 19:16:52 [Thread-23] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+[INFO ] 2020-02-10 19:16:52 [Thread-23] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+[INFO ] 2020-02-10 19:20:36 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 38828 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-10 19:20:36 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-10 19:20:36 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-02-10 19:20:36 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-02-10 19:20:36 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-02-10 19:20:36 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 19:20:36 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-02-10 19:20:36 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-02-10 19:20:36 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-02-10 19:20:36 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2683 ms
+[INFO ] 2020-02-10 19:20:36 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-02-10 19:20:36 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-02-10 19:20:36 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-02-10 19:20:36 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 19:20:36 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-02-10 19:20:36 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 6.314 seconds (JVM running for 9.3)
+[INFO ] 2020-02-10 19:20:36 [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-02-10 19:20:36 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-02-10 19:20:36 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 14 ms
+[INFO ] 2020-02-10 21:14:28 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 1964 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-10 21:14:28 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-10 21:14:28 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-02-10 21:14:28 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-02-10 21:14:28 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-02-10 21:14:28 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 21:14:28 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-02-10 21:14:28 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-02-10 21:14:28 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-02-10 21:14:28 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3895 ms
+[INFO ] 2020-02-10 21:14:28 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-02-10 21:14:28 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-02-10 21:14:28 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-02-10 21:14:28 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 21:14:28 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-02-10 21:14:28 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 7.766 seconds (JVM running for 11.753)
+[INFO ] 2020-02-10 21:14:28 [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-02-10 21:14:28 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-02-10 21:14:28 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 14 ms
+[INFO ] 2020-02-10 21:24:47 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 23212 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-10 21:24:47 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-10 21:24:47 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-02-10 21:24:47 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-02-10 21:24:47 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-02-10 21:24:47 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 21:24:47 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-02-10 21:24:47 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-02-10 21:24:47 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-02-10 21:24:47 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2430 ms
+[INFO ] 2020-02-10 21:24:47 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-02-10 21:24:47 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-02-10 21:24:47 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-02-10 21:24:47 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 21:24:47 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-02-10 21:24:47 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 5.331 seconds (JVM running for 8.557)
+[INFO ] 2020-02-10 21:24:47 [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-02-10 21:24:47 [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-02-10 21:24:47 [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet - Completed initialization in 14 ms
+[INFO ] 2020-02-10 21:32:08 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 39636 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-10 21:32:08 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-10 21:32:08 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-02-10 21:32:08 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-02-10 21:32:08 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-02-10 21:32:08 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 21:32:08 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-02-10 21:32:08 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-02-10 21:32:08 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-02-10 21:32:08 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2083 ms
+[INFO ] 2020-02-10 21:32:08 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-02-10 21:32:08 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-02-10 21:32:08 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-02-10 21:32:08 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 21:32:08 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-02-10 21:32:08 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 4.636 seconds (JVM running for 7.1)
+[INFO ] 2020-02-10 21:32:08 [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-02-10 21:32:08 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-02-10 21:32:08 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 17 ms
+[INFO ] 2020-02-10 21:42:47 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 26548 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-10 21:42:47 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-10 21:42:47 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-02-10 21:42:47 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-02-10 21:42:47 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-02-10 21:42:47 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 21:42:47 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-02-10 21:42:47 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-02-10 21:42:47 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-02-10 21:42:47 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2200 ms
+[INFO ] 2020-02-10 21:42:47 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-02-10 21:42:47 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-02-10 21:42:47 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-02-10 21:42:47 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 21:42:47 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-02-10 21:42:47 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 4.953 seconds (JVM running for 7.453)
+[INFO ] 2020-02-10 21:42:47 [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-02-10 21:42:47 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-02-10 21:42:47 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 25 ms
+[INFO ] 2020-02-10 21:44:53 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 36400 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-10 21:44:53 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-10 21:44:53 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-02-10 21:44:53 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-02-10 21:44:53 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-02-10 21:44:53 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 21:44:53 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-02-10 21:44:53 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-02-10 21:44:53 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-02-10 21:44:53 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3122 ms
+[INFO ] 2020-02-10 21:44:53 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-02-10 21:44:53 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-02-10 21:44:53 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-02-10 21:44:53 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 21:44:53 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-02-10 21:44:53 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 6.378 seconds (JVM running for 9.482)
+[INFO ] 2020-02-10 21:44:53 [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-02-10 21:44:53 [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-02-10 21:44:53 [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 24 ms
+[INFO ] 2020-02-10 21:49:35 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 33588 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-10 21:49:35 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-10 21:49:35 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-02-10 21:49:35 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-02-10 21:49:35 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-02-10 21:49:35 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 21:49:35 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-02-10 21:49:35 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-02-10 21:49:35 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-02-10 21:49:35 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2512 ms
+[INFO ] 2020-02-10 21:49:35 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-02-10 21:49:35 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-02-10 21:49:35 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-02-10 21:49:35 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 21:49:35 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-02-10 21:49:35 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 5.883 seconds (JVM running for 8.423)
+[INFO ] 2020-02-10 21:54:34 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 8568 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-10 21:54:34 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-10 21:54:34 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-02-10 21:54:34 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-02-10 21:54:34 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-02-10 21:54:34 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 21:54:34 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-02-10 21:54:34 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-02-10 21:54:34 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-02-10 21:54:34 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4085 ms
+[INFO ] 2020-02-10 21:54:34 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-02-10 21:54:34 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-02-10 21:54:34 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-02-10 21:54:34 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 21:54:34 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-02-10 21:54:34 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 8.646 seconds (JVM running for 11.949)
+[INFO ] 2020-02-10 21:54:34 [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-02-10 21:54:34 [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-02-10 21:54:34 [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 13 ms
+[INFO ] 2020-02-10 23:05:58 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 10144 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-10 23:05:58 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-10 23:05:58 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-02-10 23:05:58 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-02-10 23:05:58 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-02-10 23:05:58 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 23:05:58 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-02-10 23:05:58 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-02-10 23:05:58 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-02-10 23:05:58 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2805 ms
+[INFO ] 2020-02-10 23:05:58 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-02-10 23:05:58 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-02-10 23:05:58 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-02-10 23:05:58 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 23:05:58 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-02-10 23:05:58 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 5.692 seconds (JVM running for 8.369)
+[INFO ] 2020-02-10 23:05:58 [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-02-10 23:05:58 [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-02-10 23:05:58 [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+[INFO ] 2020-02-10 23:07:15 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 40832 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-10 23:07:15 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-10 23:07:15 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2020-02-10 23:07:15 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2020-02-10 23:07:15 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2020-02-10 23:07:15 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 23:07:15 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-02-10 23:07:15 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+[INFO ] 2020-02-10 23:07:15 [restartedMain] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-02-10 23:07:15 [restartedMain] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2545 ms
+[INFO ] 2020-02-10 23:07:15 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2020-02-10 23:07:15 [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-02-10 23:07:15 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-02-10 23:07:15 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2020-02-10 23:07:15 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
+[INFO ] 2020-02-10 23:07:15 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 6.033 seconds (JVM running for 9.131)
+[INFO ] 2020-02-10 23:07:15 [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-02-10 23:07:15 [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-02-10 23:07:15 [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet - Completed initialization in 31 ms

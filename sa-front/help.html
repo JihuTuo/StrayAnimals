@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html xmlns:javascript="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Bootstrap 模板</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- 引入 Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- 引入导航栏样式 -->
+    <link rel="stylesheet" href="css/navigation.css">
+
+    <!-- 包括所有已编译的插件 -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- 模态窗口的打开需要依赖此文件 -->
+    <script src="js/modal.js"></script>
+    <!-- 引入自己写的js文件 -->
+    <script src="js/my_js/index.js"></script>
+
+
+    <!--引入搜索框样式-->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/search_adopt/zfont-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/search_adopt/demo.css">
+    <link rel="stylesheet" href="css/search_adopt/style.css">
+
+    <!-- 引入公用的js-->
+    <script src="./js/vue/vue.js"></script>
+    <script src="./js/axios.min.js"></script>
+    <script src="./js/common.js"></script>
+
+    <!-- 引入搜索样式 -->
+    <link rel="stylesheet" type="text/css" href="css/search_css/normalize.css"/>
+    <link rel="stylesheet" href="css/search_css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/search_css/demo.css">
+    <link rel="stylesheet" href="css/search_css/style.css">
+
+    <!--element-->
+    <!-- 引入样式 -->
+   <!-- <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    &lt;!&ndash; 引入组件库 &ndash;&gt;
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>-->
+    <!--element-->
+    <link rel="stylesheet" href="static/element-2.12.0/index.css">
+    <script src="static/element-2.12.0/index.js"></script>
+
+    <!-- 引入自己写的样式 -->
+    <link rel="stylesheet" href="css/index_style.css">
+    <link rel="stylesheet" href="css/adopt_style.css">
+    <link rel="stylesheet" href="css/adopt_manage_style.css">
+    <link rel="stylesheet" href="css/help_style.css">
+
+
+</head>
+<body>
+<div id="Vue-app">
+    <div class="header" id="header-top">   <!--line-height: 30px 将文字宽度与div一致 让文字居中 -->
+        <shotcut @deliver="getChildData(arguments)"></shotcut>   <!--组件化头部-->
+    </div>
+    <div class="container">
+        <!--logo图片-->
+        <div>
+            <img src="img/sa_logo.png">
+        </div>
+
+        <!--导航条-->
+        <div id="nav-1">
+            <ul class="nav">
+                <li class="slide1"></li>
+                <li class="slide2"></li>
+                <li><a  class="active" href="index.html">首页</a></li>
+                <li><a href="#/">资讯</a></li>
+                <li><a href="rescue.html">救助</a></li>
+                <li><a href="adopt.html">领养</a></li>
+                <li><a href="search.html">寻宠</a></li>
+                <li><a href="help.html">帮助</a></li>
+                <li><a href="about-us.html">关于我们</a></li>
+                <!-- 搜索框 -->
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;
+                </p>
+                <li>
+                    <div class="search d7">
+                        <form>
+                            <input type="text" placeholder="搜索从这里开始...">
+                            <button type="submit"></button>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <br><br>
+
+        <!----=========================内容开始==============================-->
+
+        <!-- 面包屑导航 -->
+        <div>
+            <ul class="breadcrumb">
+                <li><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+                <li>帮助中心</li>
+            </ul>
+        </div>
+
+        <!--主面板-->
+        <div class="mainTable" style="height: 500px; width: 100%; background-color: #eeeeee">
+            <!--左侧部分-->
+            <div class="left">
+                <ul>
+                    <li style="font-size: 18px; height: 40px">
+                        <span style="padding-left: 15px; line-height: 40px"><strong>帮助中心</strong></span>
+                    </li>
+                    <li style="background-color:wheat;" class="left-li">
+                        <a href="javascript:void (0);"><span class="left-span">注册登录</span></a>
+                    </li>
+                    <li class="left-li">
+                        <a href="javascript:void (0);"><span class="left-span">领养帮助</span></a>
+                    </li>
+                    <li style="background-color:wheat;" class="left-li">
+                        <a href="javascript:void (0);"><span class="left-span">寻宠帮助</span></a>
+                    </li>
+                </ul>
+            </div>
+            <!--设置总的右侧-->
+            <div class="right">
+                <!--右侧表格显示-->
+                <div class="right-main">
+                    <!--一个搜座框和发布领养按钮的总div-->
+                    <div class="right-main-input">
+                        <!--左侧搜索框-->
+                        <div style="height: 30px;width: 800px;float: left;padding-left: 20px">
+                            <input class="leftInput" type="text" placeholder="请输入搜索标题">&nbsp;
+                            <button class="right-main-btn" type="button">
+                                    <span style="color: white"><strong>&nbsp;搜 索&nbsp;</strong></span>
+                            </button>
+                        </div>
+                    </div>
+                    <br>
+                    <!--总的信息显示-->
+                    <div style="height: 20px"></div>
+                        <div style="background-color: #f2e7c7;height: auto;">
+                            <!--手风琴-->
+                            <el-collapse accordion>
+                                <el-collapse-item>
+                                    <template slot="title">
+                                        <span style="color: #7fb06a;font-size: medium">&emsp;&emsp;[注册登录] </span>
+                                        <span style="font-size: medium"> 如何注册、登录和登录账户？</span>
+                                    </template>
+                                    <div style="padding-left: 30px;font-size: medium">
+                                        目前支持微信、微博、QQ的一键注册和登录，免去人工输入账号、密码的烦恼。
+                                    </div>
+                                </el-collapse-item>
+                                <el-collapse-item>
+                                    <template slot="title">
+                                        <span style="color: #7fb06a;font-size: medium">&emsp;&emsp;[领养帮助] </span>
+                                        <span style="font-size: medium"> 如何发布领养/送养信息？</span>
+                                    </template>
+                                    <div style="padding-left: 30px;font-size: medium">
+                                        点击网站头部导航上的“领养”选项卡，然后点击“发布领养”即可。传送门直达--<a href="javascript:void (0);" @click="toSearch">（点此发布寻宠）</a>
+                                    </div>
+                                </el-collapse-item>
+                                <el-collapse-item>
+                                    <template slot="title">
+                                        <span style="color: #7fb06a;font-size: medium">&emsp;&emsp;[领养帮助] </span>
+                                        <span style="font-size: medium"> 如何让更多的人看到我发布的领养/送养信息？</span>
+                                    </template>
+                                    <div style="padding-left: 30px;font-size: medium">
+                                        通过以下方式可以将你发布的信息更快速的扩散出去，让身边更多的人知道。
+                                    </div>
+                                </el-collapse-item>
+                                <el-collapse-item>
+                                    <template slot="title">
+                                        <span style="color: #7fb06a;font-size: medium">&emsp;&emsp;[寻宠帮助] </span>
+                                        <span style="font-size: medium"> 如何发布寻宠/寻主信息？</span>
+                                    </template>
+                                    <div style="padding-left: 30px;font-size: medium">
+                                        点击网站头部导航上的“寻宠”选项卡，然后点击“发布寻宠”即可。传送门直达--<a href="javascript:void (0);" @click="toAdopt">（点此发布寻宠）</a>
+                                    </div>
+                                </el-collapse-item>
+                                <el-collapse-item>
+                                    <template slot="title">
+                                        <span style="color: #7fb06a;font-size: medium">&emsp;&emsp;[寻宠帮助] </span>
+                                        <span style="font-size: medium"> 寻宠/寻主信息发布规则（必读！）</span>
+                                    </template>
+                                    <div style="padding-left: 30px;font-size: medium">
+                                        <strong>一、尽量详细描写出所丢宠物的特征以及丢失地点。</strong><br>
+
+
+
+                                        <strong> 二、每天可以刷新一次您发布的信息，让您的信息始终靠前，刷新目前免费。</strong><br>
+
+
+
+                                        <strong> 三、可以选择悬赏寻宠，增加找到自家爱宠的几率。</strong><br>
+
+
+                                        <strong style="color: red"> 四、根据微信的规定，标题或者内容不可出现诱导分享的词语，例如：求分享、求转发、好心人转发等，第一次发现，警告修改，第二次发现删帖，封号，谢谢合作！</strong><br>
+                                    </div>
+                                </el-collapse-item>
+                                <el-collapse-item>
+                                    <template slot="title">
+                                        <span style="color: #7fb06a;font-size: medium">&emsp;&emsp;[通用版规] </span>
+                                        <span style="font-size: medium"> 通用版规</span>
+                                    </template>
+                                    <div style="padding-left: 30px;font-size: medium">
+                                        <strong>1.禁止发布出售宠物信息，领养代替购买！</strong><br>
+                                        <strong>2.禁止发布灌水、无意义帖子。</strong><br>
+                                        <strong>3.禁止发布有关政治或低俗等内容的帖子。</strong><br>
+                                        <strong>4.禁止发布谩骂、挑衅等其他引起宠友反感的帖子</strong>。<br>
+                                        <strong style="color: red"> 违反以上规则的账号第一次警告删帖，第二次封号，欢迎广大宠友举报投诉，共同维护绿色网络环境</strong>
+                                    </div>
+                                </el-collapse-item>
+
+                            </el-collapse>
+
+
+                        </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+
+<!-- 设置底部布局 -->
+<hr/>
+<div class="footer">
+    <script type="text/javascript">$(".footer").load("/src/public/footer.html");</script>
+</div>
+<!-- 引入导航栏js,注意和引入顺序有关 必须放在后面 -->
+<script src='js/jquery.min.js'></script>
+<script src="js/my_js/script.js"></script>
+
+<script type="application/javascript">
+    new Vue({
+        el: "#Vue-app",
+        components: {
+            shotcut: () => import('./js/pages/shotcut.js'),
+        },
+        data: {
+            userId: ly.store.getJson("user").id,
+        },
+        methods: {
+            /*获取子组件中的方法*/
+            getChildData: function (msg) {
+                this.userId = msg[0];
+                this.counties = msg[1];
+                this.cityId = msg[2]
+            },
+            toSearch () {
+                if (!ly.store.get("token")) {
+                    window.location = "/login.html";
+                } else {
+                    window.location = "/adopt-publish-message.html";
+                }
+            },
+            toAdopt () {
+                if (!ly.store.get("token")) {
+                    window.location = "/login.html";
+                } else {
+                    window.location = "/adopt-publish-message.html";
+                }
+            },
+        }
+    });
+</script>
+</body>
+</html>

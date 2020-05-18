@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html xmlns:javascript="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>快速回帖</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- 引入 Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- 引入导航栏样式 -->
+    <link rel="stylesheet" href="css/navigation.css">
+
+    <!-- 包括所有已编译的插件 -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- 模态窗口的打开需要依赖此文件 -->
+    <script src="js/modal.js"></script>
+    <!-- 引入自己写的js文件 -->
+    <script src="js/my_js/index.js"></script>
+
+
+    <!--引入搜索框样式-->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/search_adopt/zfont-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/search_adopt/demo.css">
+    <link rel="stylesheet" href="css/search_adopt/style.css">
+
+    <!-- 引入公用的js-->
+    <script src="./js/vue/vue.js"></script>
+    <script src="./js/axios.min.js"></script>
+    <script src="./js/common.js"></script>
+
+    <!-- 引入搜索样式 -->
+    <link rel="stylesheet" type="text/css" href="css/search_css/normalize.css"/>
+    <link rel="stylesheet" href="css/search_css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/search_css/demo.css">
+    <link rel="stylesheet" href="css/search_css/style.css">
+
+    <!--element-->
+    <!-- 引入样式 -->
+    <!--<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    &lt;!&ndash; 引入组件库 &ndash;&gt;
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>-->
+    <!--element-->
+    <link rel="stylesheet" href="static/element-2.12.0/index.css">
+    <script src="static/element-2.12.0/index.js"></script>
+
+    <!-- 引入自己写的样式 -->
+    <link rel="stylesheet" href="css/index_style.css">
+    <link rel="stylesheet" href="css/report_style.css">
+
+    <script src="static/UI/ueditor.config.js"></script>
+    <script src="static/UI/ueditor.all.js"></script>
+    <script src="static/UI/lang/zh-cn/zh-cn.js"></script>
+
+</head>
+<body>
+<div id="Vue-app">
+        <!--信息部分-左侧-->
+        <div class="adopt-message">
+            <div class="show-adopt-message">
+                <div>
+                    <span id="userInfo">
+                        {{reportCommentVo.user.username}} 发表于 {{reportCommentVo.reportComment.commentTime}}
+                    </span>
+                    <span id="content" v-html="reportCommentVo.reportComment.content"></span>
+                </div>
+                <!--快速发帖-->
+                <div style="width: 96%;height: auto;margin: auto">
+                    <!--引入富文本框-->
+                    <ue :defaultMsg=defaultmsg :config=config :id=ue1 ref="ue1"></ue>
+                    <div slot="footer" class="dialog-footer">
+                        <el-button style="padding-left: 20px" class="buttons" type="primary" @click="publishReportComment">写好了，去发布</el-button>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+</div>
+
+<script type="application/javascript">
+    new Vue({
+        el: "#Vue-app",
+        components: {
+            ue: () => import('./js/pages/UEdit.js')
+        },
+        data: {
+            // 路径中的id
+            id: "",
+            // 路径中获取reportId
+            reportId: "",
+            // 总的vo
+            reportCommentVo: "",
+            // 层主的信息
+            userInfo: "",
+            content: "",
+            // 总的附加信息
+            texta: "<blockquote  style='background-color:#DDE9F5'>",
+            textb: "</blockquote>",
+            // 最终的附加信息
+            text: "",
+
+            reportConment: {
+                commentUserId: "",
+                content: "",
+                commentTime: "",
+                reportId: "",
+            },
+            config: {
+                initialFrameWidth: null,
+                initialFrameHeight: 180,
+                toolbars: [
+                    ['fullscreen', 'source', '|', 'undo', 'redo', '|',
+                        'bold', 'italic', 'underline', 'fontborder', 'strikethrough', 'superscript', 'subscript', 'removeformat', 'formatmatch', 'autotypeset', 'blockquote', 'pasteplain', '|', 'forecolor', 'backcolor', 'insertorderedlist', 'insertunorderedlist', 'selectall', 'cleardoc', '|',
+                        'rowspacingtop', 'rowspacingbottom', 'lineheight', '|',
+                        'customstyle', 'paragraph', 'fontfamily', 'fontsize', '|',
+                        'directionalityltr', 'directionalityrtl', 'indent', '|',
+                        'justifyleft', 'justifycenter', 'justifyright', 'justifyjustify', '|', 'touppercase', 'tolowercase', '|',
+                        'link', 'unlink', 'anchor', '|', 'imagenone', 'imageleft', 'imageright', 'imagecenter', '|',
+                        'insertimage', 'emotion', 'scrawl', 'insertvideo', 'music', 'attachment', 'map', 'gmap', 'insertframe', 'insertcode', 'webapp', 'pagebreak', 'template', 'background', '|',
+                        'horizontal', 'date', 'time', 'spechars', 'snapscreen', 'wordimage', '|',
+                        'inserttable', 'deletetable', 'insertparagraphbeforetable', 'insertrow', 'deleterow', 'insertcol', 'deletecol', 'mergecells', 'mergeright', 'mergedown', 'splittocells', 'splittorows', 'splittocols', 'charts', '|',
+                        ]
+                ],//'simpleupload',单个图片上传，不显示
+            },
+            defaultmsg: '',
+            ue1: "ue", // 不同编辑器必须不同的id
+            //---- end----- ue 编辑器相关
+        },
+        created() {
+            this.getReportCommentByCommentId();
+
+        },
+        mounted() {
+            this.getInfo();
+        },
+        // 监听地区的变化的值，
+        methods: {
+            // 页面刷新的时候获取数据渲染
+            getReportCommentByCommentId() {
+                // 获取页面中的参数
+                this.id = ly.getUrlParam("id");
+                this.reportId = ly.getUrlParam("reportId");
+                let _this = this;
+                ly.http.get("/report/getReportCommentByCommentId?commentId=" + this.id)
+                    .then(resp => {
+                        if (resp.status === 200) {
+                            // .list 拿到集合数据
+                            _this.reportCommentVo = resp.data;
+                            console.log(JSON.stringify(_this.reportComment) + "-------------------");
+                        } else {
+                            console.log("else-------------------" + _this.reportCommentVos);
+                        }
+                    })
+            },
+
+            // 获取编辑器html内容
+            publishReportComment() {
+                // 先调用一下该方法,进行信息组装
+                this.getInfo();
+                /*首先参数复制  this.$refs.ue1.getUEContent()获取输入框中内容*/
+                console.log(this.text + "text======");
+                this.reportConment.content = this.text + this.$refs.ue1.getUEContent();
+
+                console.log(this.reportConment.content)
+                this.reportConment.commentTime =  ly.formatDate(new Date(), "yyyy-MM-dd hh:mm");
+                this.reportConment.commentUserId = ly.store.getJson("user").id;
+                this.reportConment.reportId = this.reportId;
+
+                console.log(JSON.stringify(this.reportConment) + "<---------report");
+                let _this = this;
+                ly.http.post("/report/saveReportComent", ly.stringify(this.reportConment))
+                    .then(resp => {
+                            if (resp.status === 200) {
+                                _this.showSuccessMsg("帖子回复成功！");
+                                window.setTimeout(()=> {
+                                    ly.store.set("num", "abc");
+                                    window.close();
+                                }, 500);
+                            } else {
+                                _this.showFaileMsg("帖子回复失败，请重新再试！");
+                            }
+                        }
+                    ).catch( () => {
+                        _this.showFaileMsg("帖子回复失败，请重新再试！");
+                    }
+                )
+            },
+            /*发布陈宫消息提示*/
+            showSuccessMsg(data) {
+                this.$message(
+                    {
+                        message: data,
+                        type: 'success'
+                    }
+                );
+            },
+            /*失败消息*/
+            showFaileMsg(data) {
+                this.$message.error(data);
+            },
+
+
+            getUEContent() {
+                let content = this.$refs.ue.getUEContent(); // 调用子组件方法
+                this.$notify({
+                    title: "获取成功，可在控制台查看！",
+                    message: content,
+                    type: "success"
+                });
+                console.log(content);
+            },
+            getUEContentTxt() {
+                let content = this.$refs.ue.getUEContentTxt(); // 调用子组件方法
+                this.$notify({
+                    title: "获取成功，可在控制台查看！",
+                    message: content,
+                    type: "success"
+                });
+                console.log(content);
+            },
+
+            /*获取子组件中的方法*/
+            getChildData: function (msg) {
+                this.counties = msg[1];
+                this.cityId = msg[2]
+            },
+
+            // 信息组装
+            getInfo() {
+                /*this.text = this.texta + this.reportCommentVo.user.username +
+                    " 发表于 " + this.reportCommentVo.reportComment.commentTime + "<br>"
+                    + this.reportCommentVo.reportComment.content + this.textb;*/
+                this.userInfo = $("#userInfo").text();
+                this.content = $("#content").text();
+                console.log(this.userInfo +  this.content + "内容");
+                this.text = this.texta + this.userInfo + "<br>" + this.content + this.textb + "<br>" ;
+                console.log(this.text + "text======");
+            }
+        }
+    })
+</script>
+</body>
+</html>

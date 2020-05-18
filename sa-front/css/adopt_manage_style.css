@@ -1,0 +1,54 @@
+/*主页面*/
+.mainTable {
+    height: auto;
+    width: 100%;
+    background-color: #eeeeee
+}
+
+/*左侧面板*/
+.leftBar {
+    background-color: #ececd9;
+    width: 15%;
+    height: 480px;
+    float: left
+}
+
+/*第一个li*/
+.firstLi {
+    font-size: 18px;
+    height: 40px
+}
+
+/*第二个li*/
+.secondLi {
+    background-color: wheat;
+    font-size: 15px;
+    height: 40px
+}
+
+.liSpan {
+    padding-left: 15px;
+    line-height: 40px
+}
+
+/*右側*/
+.rightTable {
+    background-color: #cccccc;
+    height: 480px;
+    width: 100%
+}
+
+/*搜索框*/
+.leftInput{
+    height: 30px;
+    width: 700px;
+    padding-left: 10px;
+    border:1.5px solid #00b7ee;  /*设置边框和颜色*/
+    float: left;
+}
+
+.left-search-btn {
+    height: 30px;
+    width: 50px;
+    float: left;
+}

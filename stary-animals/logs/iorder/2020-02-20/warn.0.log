@@ -1,0 +1,8 @@
+[WARN ] 2020-02-20 11:11:08 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+[WARN ] 2020-02-20 11:11:04 [http-nio-8080-exec-7] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [io.jsonwebtoken.SignatureException: token身份验证未通过！]
+[WARN ] 2020-02-20 11:11:04 [http-nio-8080-exec-6] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [io.jsonwebtoken.SignatureException: token身份验证未通过！]
+[WARN ] 2020-02-20 11:11:04 [http-nio-8080-exec-5] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [io.jsonwebtoken.SignatureException: token身份验证未通过！]
+[WARN ] 2020-02-20 11:11:04 [http-nio-8080-exec-4] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [io.jsonwebtoken.SignatureException: tokentoken不能为空]
+[WARN ] 2020-02-20 11:11:04 [http-nio-8080-exec-7] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [io.jsonwebtoken.SignatureException: tokentoken不能为空]
+[WARN ] 2020-02-20 11:11:04 [http-nio-8080-exec-10] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [io.jsonwebtoken.SignatureException: tokentoken不能为空]
+[WARN ] 2020-02-20 17:21:09 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server

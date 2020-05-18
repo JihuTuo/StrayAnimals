@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hsshy.beam.admin.modular.sys.dao.ScheduleJobMapper">
+	
+	<!-- 批量更新状态 -->
+	<update id="updateBatch"> 
+		update sys_schedule_job set status = #{status} where id in
+		<foreach item="jobId" collection="list"  open="(" separator="," close=")">
+			#{jobId}
+		</foreach>
+	</update>
+
+</mapper>

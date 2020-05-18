@@ -1,0 +1,38 @@
+{
+  "groups": [
+    {
+      "name": "nginx",
+      "type": "com.shiep.common.ueditor.upload.StorageManager",
+      "sourceType": "com.shiep.common.ueditor.upload.StorageManager"
+    },
+    {
+      "name": "shiep.jwt",
+      "type": "com.shiep.jwt.config.JwtConfig",
+      "sourceType": "com.shiep.jwt.config.JwtConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "shiep.jwt.cookie-name",
+      "type": "java.lang.String",
+      "sourceType": "com.shiep.jwt.config.JwtConfig"
+    },
+    {
+      "name": "shiep.jwt.expire",
+      "type": "java.lang.Long",
+      "sourceType": "com.shiep.jwt.config.JwtConfig",
+      "defaultValue": 0
+    },
+    {
+      "name": "shiep.jwt.header",
+      "type": "java.lang.String",
+      "sourceType": "com.shiep.jwt.config.JwtConfig"
+    },
+    {
+      "name": "shiep.jwt.secret",
+      "type": "java.lang.String",
+      "sourceType": "com.shiep.jwt.config.JwtConfig"
+    }
+  ],
+  "hints": []
+}

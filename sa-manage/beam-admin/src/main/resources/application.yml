@@ -1,0 +1,17 @@
+beam:
+  admin:
+    swagger-open: true  #是否开启swagger (true/false)
+    captcha-open: true
+    version: 0.0.1
+    globalSessionTimeout: 21600 #单机环境，session过期时间为6小时
+    cluster: false #需要集群 session共享时 改为true pom文件注释打开 BeamAdminApplication类上注解打开
+server:
+   port: 8080
+   tomcat:
+     uri-encoding: UTF-8
+     max-threads: 1000
+     min-spare-threads: 30
+   servlet:
+     context-path: /beam_ht
+log:
+  path: beam-admin-logs

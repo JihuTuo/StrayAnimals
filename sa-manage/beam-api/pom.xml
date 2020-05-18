@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.hsshy.beam</groupId>
+    <artifactId>beam-api</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>beam-api</name>
+    <description>api模块</description>
+    <parent>
+        <groupId>com.hsshy.beam</groupId>
+        <artifactId>beam-parent</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+
+    <dependencies>
+
+        <!-- beam通用工具模块 -->
+        <dependency>
+            <groupId>com.hsshy.beam</groupId>
+            <artifactId>beam-web</artifactId>
+        </dependency>
+
+        <!-- 自定义通用模块 -->
+        <dependency>
+            <groupId>com.hsshy.beam</groupId>
+            <artifactId>beam-common</artifactId>
+        </dependency>
+
+        <!--以上两个模块所引用的包需在此模块重新引入，因为以上包的依赖只在编译时使用-->
+
+        <!-- web -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+        </dependency>
+
+
+        <!-- fastjson -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
+
+        <!-- disruptor 高效队列-->
+        <dependency>
+            <groupId>com.lmax</groupId>
+            <artifactId>disruptor</artifactId>
+        </dependency>
+
+        <!--redisson分布式锁-->
+        <dependency>
+            <groupId>org.redisson</groupId>
+            <artifactId>redisson</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>net.logstash.logback</groupId>
+            <artifactId>logstash-logback-encoder</artifactId>
+        </dependency>
+
+        <!--dubbo依赖包 使用dubbo时把注释打开-->
+        <!--<dependency>-->
+        <!--<groupId>com.alibaba.boot</groupId>-->
+        <!--<artifactId>dubbo-spring-boot-starter</artifactId>-->
+        <!--</dependency>-->
+
+        <!-- 动态数据源模块 需要时打开-->
+        <dependency>
+            <groupId>com.hsshy.beam</groupId>
+            <artifactId>beam-dynamic-datasource</artifactId>
+        </dependency>
+
+
+    </dependencies>
+
+    <build>
+        <finalName>${project.artifactId}</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+            </plugin>
+        </plugins>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+            </resource>
+        </resources>
+    </build>
+
+
+</project>

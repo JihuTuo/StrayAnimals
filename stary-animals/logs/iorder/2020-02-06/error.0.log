@@ -1,0 +1,447 @@
+[ERROR] 2020-02-06 08:25:11 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 11:53:02 [restartedMain] o.s.boot.SpringApplication - Application run failed
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: ContextPath must start with '/' and not end with '/'
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:157)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.shiep.SpringBootApplication.main(SpringBootApplication.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: ContextPath must start with '/' and not end with '/'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:216)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:180)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:154)
+	... 13 common frames omitted
+Caused by: java.lang.IllegalArgumentException: ContextPath must start with '/' and not end with '/'
+	at org.springframework.boot.web.servlet.server.AbstractServletWebServerFactory.checkContextPath(AbstractServletWebServerFactory.java:135)
+	at org.springframework.boot.web.servlet.server.AbstractServletWebServerFactory.setContextPath(AbstractServletWebServerFactory.java:123)
+	at org.springframework.boot.context.properties.PropertyMapper$Source.to(PropertyMapper.java:316)
+	at org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryCustomizer.customize(ServletWebServerFactoryCustomizer.java:55)
+	at org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryCustomizer.customize(ServletWebServerFactoryCustomizer.java:35)
+	at org.springframework.boot.web.server.WebServerFactoryCustomizerBeanPostProcessor.lambda$postProcessBeforeInitialization$0(WebServerFactoryCustomizerBeanPostProcessor.java:78)
+	at org.springframework.boot.util.LambdaSafe$Callbacks.lambda$null$0(LambdaSafe.java:302)
+	at org.springframework.boot.util.LambdaSafe$LambdaSafeCallback.invoke(LambdaSafe.java:162)
+	at org.springframework.boot.util.LambdaSafe$Callbacks.lambda$invoke$1(LambdaSafe.java:301)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at java.util.Collections$UnmodifiableCollection.forEach(Collections.java:1080)
+	at org.springframework.boot.util.LambdaSafe$Callbacks.invoke(LambdaSafe.java:300)
+	at org.springframework.boot.web.server.WebServerFactoryCustomizerBeanPostProcessor.postProcessBeforeInitialization(WebServerFactoryCustomizerBeanPostProcessor.java:78)
+	at org.springframework.boot.web.server.WebServerFactoryCustomizerBeanPostProcessor.postProcessBeforeInitialization(WebServerFactoryCustomizerBeanPostProcessor.java:61)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	... 21 common frames omitted
+[ERROR] 2020-02-06 11:53:52 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 11:58:53 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 12:01:04 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 12:01:04 [restartedMain] o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'loginController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanNotOfRequiredTypeException: Bean named 'userMapper' is expected to be of type 'com.shiep.mapper.IUserMapper' but was actually of type 'com.shiep.mapper.impl.UserMapper'
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:324)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:843)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.shiep.SpringBootApplication.main(SpringBootApplication.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanNotOfRequiredTypeException: Bean named 'userMapper' is expected to be of type 'com.shiep.mapper.IUserMapper' but was actually of type 'com.shiep.mapper.impl.UserMapper'
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:324)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1248)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:496)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:636)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:180)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:321)
+	... 22 common frames omitted
+Caused by: org.springframework.beans.factory.BeanNotOfRequiredTypeException: Bean named 'userMapper' is expected to be of type 'com.shiep.mapper.IUserMapper' but was actually of type 'com.shiep.mapper.impl.UserMapper'
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:392)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:452)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:526)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:496)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:636)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:180)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:321)
+	... 38 common frames omitted
+[ERROR] 2020-02-06 12:05:35 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 12:57:18 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 12:59:42 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 12:59:53 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 13:00:44 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 13:10:11 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 13:10:20 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 13:40:01 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 13:40:27 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 13:40:27 [restartedMain] o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jwtConfig': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.shiep.jwt.config.JwtConfig] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@42755cfd]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:265)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1269)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1184)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:843)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.shiep.SpringBootApplication.main(SpringBootApplication.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.shiep.jwt.config.JwtConfig] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@42755cfd]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:507)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:404)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:389)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:248)
+	... 23 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: io/jsonwebtoken/Claims
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:489)
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: io.jsonwebtoken.Claims
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:148)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 30 common frames omitted
+[ERROR] 2020-02-06 14:08:34 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 14:08:48 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 14:15:59 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 14:15:59 [http-nio-8080-exec-1] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [/stary-animals] threw exception [Request processing failed; nested exception is io.jsonwebtoken.SignatureException: token不能为空] with root cause
+io.jsonwebtoken.SignatureException: token不能为空
+	at com.shiep.jwt.intercepter.TokenInterceptor.preHandle(TokenInterceptor.java:33)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:136)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1034)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1747)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] 2020-02-06 14:20:35 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 14:23:17 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 14:27:55 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 14:32:00 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 14:33:14 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 15:00:58 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 15:03:12 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 15:05:09 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 15:12:57 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 15:23:21 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 15:26:04 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 15:29:50 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 15:31:08 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 15:35:42 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 15:37:41 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 15:42:57 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 15:46:18 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 15:46:51 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 15:52:37 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 15:59:47 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 16:00:24 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 16:03:03 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 16:11:41 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 16:33:14 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 16:33:14 [restartedMain] o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'loginController' defined in file [D:\Tool_Workspace\IDEA\stary-animals\target\classes\com\shiep\controller\LoginController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.shiep.controller.LoginController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@652693e4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:570)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:843)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.shiep.SpringBootApplication.main(SpringBootApplication.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.shiep.controller.LoginController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@652693e4]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:760)
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:692)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:365)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:350)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:298)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1077)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:567)
+	... 20 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Lcom/shiep/jwt/config/JwtConfig;
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583)
+	at java.lang.Class.getDeclaredFields(Class.java:1916)
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:755)
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.shiep.jwt.config.JwtConfig
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:148)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 30 common frames omitted
+[ERROR] 2020-02-06 16:33:25 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 16:33:25 [restartedMain] o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'webConfig' defined in file [D:\Tool_Workspace\IDEA\stary-animals\target\classes\com\shiep\jwt\config\WebConfig.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.shiep.jwt.config.WebConfig] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@54617c70]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:570)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:843)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.shiep.SpringBootApplication.main(SpringBootApplication.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.shiep.jwt.config.WebConfig] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@54617c70]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:760)
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:692)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:365)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:350)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:298)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1077)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:567)
+	... 20 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Lcom/shiep/jwt/intercepter/TokenInterceptor;
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583)
+	at java.lang.Class.getDeclaredFields(Class.java:1916)
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:755)
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.shiep.jwt.intercepter.TokenInterceptor
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:148)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 30 common frames omitted
+[ERROR] 2020-02-06 16:34:35 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 16:37:30 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 16:39:25 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 16:39:37 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 16:47:18 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 16:48:04 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 16:52:17 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 16:56:04 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 16:56:38 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 16:57:36 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 16:58:51 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 17:04:02 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 17:10:21 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 17:13:21 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 17:18:27 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 17:20:56 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 17:23:05 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 17:25:13 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 17:26:13 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 17:30:47 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 17:32:59 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 17:35:11 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 17:40:22 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 17:44:38 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 17:54:15 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 17:58:55 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 18:28:16 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 18:29:18 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 18:33:58 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 18:47:12 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 18:49:52 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 18:51:42 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 18:54:14 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 18:54:14 [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.shiep.jwt.intercepter.TokenInterceptor' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.shiep.jwt.intercepter.TokenInterceptor' in your configuration.
+
+[ERROR] 2020-02-06 18:54:56 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 18:58:13 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 18:59:35 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 19:02:36 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 19:13:35 [restartedMain] o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.shiep.SpringBootApplication]; nested exception is java.io.FileNotFoundException: class path resource [com/shiep/controller/AuthController.class] cannot be opened because it does not exist
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:181)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:315)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:232)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:705)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:531)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.shiep.SpringBootApplication.main(SpringBootApplication.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.io.FileNotFoundException: class path resource [com/shiep/controller/AuthController.class] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:180)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:51)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:103)
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.createMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:88)
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.getMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:75)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:81)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:190)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:295)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:242)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:199)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:167)
+	... 18 common frames omitted
+[ERROR] 2020-02-06 19:13:40 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 19:16:02 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 19:17:25 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 19:21:38 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 19:28:39 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 20:41:26 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 21:03:58 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 21:13:19 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 21:57:49 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 22:05:53 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 22:15:42 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-06 22:15:42 [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field authService in com.shiep.controller.AuthController required a bean of type 'com.shiep.service.impl.UserServiceImpl' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.shiep.service.impl.UserServiceImpl' in your configuration.
+

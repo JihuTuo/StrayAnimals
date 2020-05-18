@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html xmlns:javascript="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Bootstrap 模板</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- 引入 Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- 引入导航栏样式 -->
+    <link rel="stylesheet" href="css/navigation.css">
+
+    <!-- 包括所有已编译的插件 -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- 模态窗口的打开需要依赖此文件 -->
+    <script src="js/modal.js"></script>
+    <!-- 引入自己写的js文件 -->
+    <script src="js/my_js/index.js"></script>
+
+
+    <!--引入搜索框样式-->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/search_adopt/zfont-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/search_adopt/demo.css">
+    <link rel="stylesheet" href="css/search_adopt/style.css">
+
+    <!-- 引入公用的js-->
+    <script src="./js/vue/vue.js"></script>
+    <script src="./js/axios.min.js"></script>
+    <script src="./js/common.js"></script>
+
+    <!-- 引入搜索样式 -->
+    <link rel="stylesheet" type="text/css" href="css/search_css/normalize.css"/>
+    <link rel="stylesheet" href="css/search_css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/search_css/demo.css">
+    <link rel="stylesheet" href="css/search_css/style.css">
+
+    <!--element-->
+    <!-- 引入样式 -->
+    <!--<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    &lt;!&ndash; 引入组件库 &ndash;&gt;
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>-->
+    <!--element-->
+    <link rel="stylesheet" href="static/element-2.12.0/index.css">
+    <script src="static/element-2.12.0/index.js"></script>
+
+    <!-- 引入自己写的样式 -->
+    <link rel="stylesheet" href="css/index_style.css">
+    <link rel="stylesheet" href="css/report_details_style.css">
+
+    <script src="static/UI/ueditor.config.js"></script>
+    <script src="static/UI/ueditor.all.js"></script>
+    <script src="static/UI/lang/zh-cn/zh-cn.js"></script>
+
+</head>
+<body>
+<div id="Vue-app">
+
+    <div class="header" id="header-top">   <!--line-height: 30px 将文字宽度与div一致 让文字居中 -->
+        <shotcut @deliver="getChildData(arguments)"></shotcut>   <!--组件化头部-->
+    </div>
+    <div class="container">
+        <!--logo图片-->
+        <div>
+            <img src="img/sa_logo.png">
+        </div>
+
+        <!--导航条-->
+        <div id="nav-1">
+            <ul class="nav">
+                <li class="slide1"></li>
+                <li class="slide2"></li>
+                <li><a  class="active" href="index.html">首页</a></li>
+                <li><a href="#/">资讯</a></li>
+                <li><a href="rescue.html">救助</a></li>
+                <li><a href="adopt.html">领养</a></li>
+                <li><a href="search.html">寻宠</a></li>
+                <li><a href="help.html">帮助</a></li>
+                <li><a href="about-us.html">关于我们</a></li>
+                <!-- 搜索框 -->
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;
+                </p>
+                <li>
+                    <div class="search d7">
+                        <form>
+                            <input type="text" placeholder="搜索从这里开始...">
+                            <button type="submit"></button>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <br><br>
+
+        <!----=========================内容开始==============================-->
+
+        <!-- 面包屑导航 -->
+        <div>
+            <ul class="breadcrumb">
+                <li><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+                <li><a href="rescue.html">本地社区</a></li>
+                <li>帖子</li>
+            </ul>
+        </div>
+
+        <!--信息部分-左侧-->
+        <div class="adopt-message">
+            <!-- 过滤不同状态的消息 -->
+            <div class="adopt-message-status">
+                <a href="./rescue.html#publishArea">
+                    <div class="adopt-message-status-font">发帖</div>
+                </a>
+                <a href="#comment">
+                    <div class="adopt-message-status-font2">回帖</div>
+                </a>
+            </div>
+            <!--帖子标题-->
+            <div class="total-amount">
+                <span style="line-height: 40px;font-size: larger;padding-left: 10px">[{{reportVo.reportType.type}}]</span>
+                <span style="line-height: 40px;font-size: larger;padding-left: 5px;color: #993300">[一人赞]</span>
+                <span style="line-height: 40px;font-size: larger;">
+                    {{reportVo.report.title}}
+                </span>
+            </div>
+            <!--楼主帖子主要内容展示-->
+            <div class="total-amount2">
+                <!--总的区域-->
+                <div style="width: 98%;margin:0 auto;height: auto;">
+                    <!--左侧作者展示区域-->
+                    <div style="width: 12%;float: left;height: auto">
+                        <!--头像-->
+                        <div style="width: 135px;height: 135px;background-color: white;border-radius:5px;">
+                            <!--<img style="width: 130px;height: 130px;padding-top: 3px" src="img/cat/cat04.jpg">-->
+                            <img style="width: 130px;height: 130px;padding-top: 3px" :src="reportVo.user.photo">
+                        </div>
+                        <span>
+                            <img src="img/online_member.gif"> {{reportVo.user.username}}
+                        </span>
+                    </div>
+                    <!--右侧-->
+                    <div style="height: auto;width: 87%;float: right;background-color: white">
+                        <!--顶部的发布时间简绍栏-->
+                        <div style="height: 35px;background-color: #F9F0DA;text-align: left">
+                            <span style="padding-left: 10px;line-height: 35px">
+                                发表于 {{reportVo.report.createTime}}
+                            </span>
+                        </div>
+                        <div style="height: 15px"></div>
+                        <!--最终修改时间-->
+                        <div style="height:40px">
+                            <span style="padding-left: 10px;line-height: 35px">
+                                本帖最后由 {{reportVo.user.username}} 于 {{reportVo.report.updateTime}} 编辑
+                            </span>
+                        </div>
+                        <div style="height: 15px"></div>
+                        <!--主要内容展示-->  <!--这里为了解析html内容，使用v-html-->
+                        <div style="padding-left: 10px" v-html="reportVo.report.content" style="height: auto;">
+                        </div>
+                        <!--写一个快速回复的按钮-->
+                        <div style="height: 30px;background-color: #f5f5f5">
+                            <span class="el-icon-document-add"
+                                  style="line-height: 30px;float: left;padding-left: 20px;font-size: larger">
+                                <a href="#comment">回复</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!--评论展示-->
+            <div v-for="r in reportCommentVos" style=" height:100%;overflow:hidden;">
+                <!--总的区域-->
+                <div style="width: 98%;margin:0 auto;height: auto;">
+                    <!--左侧作者展示区域-->
+                    <!--写一个空间-->
+                    <div style="height: 15px"></div>
+                    <div style="width: 12%;float: left;height: auto">
+                        <!--头像-->
+                        <div style="width: 135px;height: 137px;background-color: white;border-radius:5px;">
+                            <!--<img style="width: 130px;height: 130px;padding-top: 3px" src="img/cat/cat04.jpg">-->
+                            <img style="padding-left:3px;width: 130px;height: 130px;padding-top: 3px" :src="r.user.photo">
+                        </div>
+                        <span style="padding-left: 35px">
+                         <img src="img/online_member.gif"> {{r.user.username}}
+                        </span>
+                    </div>
+                    <!--右侧-->
+                    <div style="height: auto;width: 87%;float: right;background-color: #f5f5f5">
+                        <!--顶部的发布时间简绍栏-->
+                        <div style="height: 35px;background-color: #F9F0DA;text-align: left">
+                        <span style="padding-left: 10px;line-height: 35px">
+                            由 {{r.user.username}} 回复于 {{r.reportComment.commentTime}}
+                        </span>
+                        </div>
+                        <div style="height: 15px"></div>
+                        <!--最终修改时间-->
+
+                        <div style="height: 15px;"></div>
+                        <!--主要内容展示-->  <!--这里为了解析html内容，使用v-html-->
+                        <div style="padding-left: 10px;" v-html="r.reportComment.content" style="height: auto;">
+                        </div>
+                        <!--写一个快速回复的按钮-->
+                        <div style="height: 30px;background-color: #f5f5f5">
+                        <span class="el-icon-document-add"
+                              style="line-height: 30px;float: left;padding-left: 20px;font-size: larger">
+                            <!--<a href="#comment">回复</a>-->
+                           <a href="javascript:void(0)"
+                              @click="openPage(r.reportComment.id)">回复</a>
+                        </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <br><br><br>
+            <!--最底下是一个快速回帖的富文本框-->
+            <div id="comment" style="height: auto">
+                <div style="height: 400px;margin: auto;width: 100%">
+                    <!--富文本框-->
+                    <ue :defaultMsg=defaultmsg :config=config :id=ue ref="ue1"></ue>
+                    <div style="height: 20px"></div>
+                    <div  style="padding-left: 30px">
+                        <el-button style="padding-left: 20px" class="buttons" type="primary" @click="publishReport">
+                            写好了，去回复
+                        </el-button>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+        </div>
+    </div>
+</div>
+
+<!-- 设置底部布局 -->
+<hr/>
+<div class="footer">
+    <script type="text/javascript">$(".footer").load("/src/public/footer.html");</script>
+</div>
+<!-- 引入导航栏js,注意和引入顺序有关 必须放在后面 -->
+<script src='js/jquery.min.js'></script>
+<script src="js/my_js/script.js"></script>
+
+<!--固定顶部导航栏-->
+<script type="application/javascript">
+    $(window).on("scroll", function () {
+        //判断向下滑动的距离
+        if ($(window).scrollTop() >= 159) {
+            //将顶部导航栏固定
+            $("#nav-1").addClass("fixed");
+        } else {
+            $("#nav-1").removeClass("fixed");
+        }
+    });
+</script>
+
+<script type="application/javascript">
+    /*window.localStorage.setItem('num', "123");
+    window.onstorage = (e) => {
+        window.location="rescue-details.html?id=" + this.reportId;
+    }*/
+    // 用来获取localStorage中的内容，刷新页面
+    ly.store.set("num", "12345");
+    setInterval(function(){
+        let a = ly.store.get("num");
+        if (a != "12345") {
+            /*window.location="rescue-details.html?id=" + ly.getUrlParam("idd");*/
+            ly.store.set("num", "12345");
+            window.location.reload();
+            console.log("!+++++++++=");
+        }
+    },100);
+    /*window.addEventListener('num', (e)=> {
+        if (e.key == "num") {
+            window.location="rescue-details.html?id=" + this.reportId;
+        };
+    }, false);*/
+</script>
+
+<script type="application/javascript">
+    new Vue({
+        el: "#Vue-app",
+        components: {
+            shotcut: () => import('./js/pages/shotcut.js'),
+            ue: () => import('./js/pages/UEdit.js'),
+        },
+        data: {
+            // 查出来楼主的帖子对象
+            reportVo: "",
+            // 从上一个页面读取的id
+            id: "",
+            content: "",
+            // 新建一个评论对象
+            reportComment: {
+                // 帖子的id 可以再create方法查出来的时候赋值
+                reportId: "",
+                // 评论者id,可以从storge中获取
+                commentUserId: "",
+                // 内容
+                content: "",
+                // 评论时间
+                commentTime: ""
+            },
+            // 评论VO
+            reportCommentVos: [],
+
+
+            // 帖子分类
+            typeId: "",
+            // 按时间分裂
+            timeType: "",
+            // 来自子组件
+            cityId: "",
+            // 分类总
+            reportTypes: "",
+
+
+            redStyle1: "",
+            redStyle2: "",
+            redStyle3: "",
+            redStyle4: "",
+            // 县区过滤器
+            countyId: "",
+            isCountyActive: -1,
+            isactive: -1,
+            config: {
+                initialFrameWidth: null,
+                initialFrameHeight: 200,
+                toolbars: [
+                    ['fullscreen', 'source', '|', 'undo', 'redo', '|',
+                        'bold', 'italic', 'underline', 'fontborder', 'strikethrough', 'superscript', 'subscript', 'removeformat', 'formatmatch', 'autotypeset', 'blockquote', 'pasteplain', '|', 'forecolor', 'backcolor', 'insertorderedlist', 'insertunorderedlist', 'selectall', 'cleardoc', '|',
+                        'rowspacingtop', 'rowspacingbottom', 'lineheight', '|',
+                        'customstyle', 'paragraph', 'fontfamily', 'fontsize', '|',
+                        'directionalityltr', 'directionalityrtl', 'indent', '|',
+                        'justifyleft', 'justifycenter', 'justifyright', 'justifyjustify', '|', 'touppercase', 'tolowercase', '|',
+                        'link', 'unlink', 'anchor', '|', 'imagenone', 'imageleft', 'imageright', 'imagecenter', '|',
+                        'insertimage', 'emotion', 'scrawl', 'insertvideo', 'music', 'attachment', 'map', 'gmap', 'insertframe', 'insertcode', 'webapp', 'pagebreak', 'template', 'background', '|',
+                        'horizontal', 'date', 'time', 'spechars', 'snapscreen', 'wordimage', '|',
+                        'inserttable', 'deletetable', 'insertparagraphbeforetable', 'insertrow', 'deleterow', 'insertcol', 'deletecol', 'mergecells', 'mergeright', 'mergedown', 'splittocells', 'splittorows', 'splittocols', 'charts', '|',
+                        'print', 'preview', 'searchreplace', 'drafts', 'help']
+                ],//'simpleupload',单个图片上传，不显示
+            },
+            defaultmsg2: '',
+            ue: "ue1", // 不同编辑器必须不同的id
+            //---- end----- ue 编辑器相关
+            config2: {
+                initialFrameWidth: null,
+                initialFrameHeight: 200,
+                toolbars: [
+                    ['fullscreen', 'source', '|', 'undo', 'redo', '|',
+                        'bold', 'italic', 'underline', 'fontborder', 'strikethrough', 'superscript', 'subscript', 'removeformat', 'formatmatch', 'autotypeset', 'blockquote', 'pasteplain', '|', 'forecolor', 'backcolor', 'insertorderedlist', 'insertunorderedlist', 'selectall', 'cleardoc', '|',
+                        'rowspacingtop', 'rowspacingbottom', 'lineheight', '|',
+                        'customstyle', 'paragraph', 'fontfamily', 'fontsize', '|',
+                        'directionalityltr', 'directionalityrtl', 'indent', '|',
+                        'justifyleft', 'justifycenter', 'justifyright', 'justifyjustify', '|', 'touppercase', 'tolowercase', '|',
+                        'link', 'unlink', 'anchor', '|', 'imagenone', 'imageleft', 'imageright', 'imagecenter', '|',
+                        'insertimage', 'emotion', 'scrawl', 'insertvideo', 'music', 'attachment', 'map', 'gmap', 'insertframe', 'insertcode', 'webapp', 'pagebreak', 'template', 'background', '|',
+                        'horizontal', 'date', 'time', 'spechars', 'snapscreen', 'wordimage', '|',
+                        'inserttable', 'deletetable', 'insertparagraphbeforetable', 'insertrow', 'deleterow', 'insertcol', 'deletecol', 'mergecells', 'mergeright', 'mergedown', 'splittocells', 'splittorows', 'splittocols', 'charts', '|',
+                        'print', 'preview', 'searchreplace', 'drafts', 'help']
+                ],//'simpleupload',单个图片上传，不显示
+            },
+            defaultmsg2: '',
+            ue2: "ue2", // 不同编辑器必须不同的id
+        },
+        created() {
+            this.getReportById();
+            // 获取评论
+            this.getReportCommentByReportId();
+            //this.getAllReportInPage();
+        },
+        // 监听地区的变化的值，
+        watch: {
+            counties(newCity, oldCity) {
+                // 如果地区改变触发事件,首先清楚countyId的字
+                this.countyId = "";
+                // this.getAllReportInPage();
+            }
+        },
+        methods: {
+            // 页面刷新的时候获取数据渲染
+            getReportById() {
+                // 获取页面中的参数
+                this.id = ly.getUrlParam("id");
+                let _this = this;
+                ly.http.get("/report/getReportById?id=" + this.id)
+                    .then(resp => {
+                        if (resp.status === 200) {
+                            _this.reportVo = resp.data;
+                            // 为帖子id赋值
+                            _this.reportComment.reportId = _this.reportVo.report.id;
+
+                            console.log(_this.reportComment.reportId + "id");
+                        }
+                    })
+            },
+
+            // 对内容进行评论
+            publishReport() {
+                /*首先参数复制  this.$refs.ue1.getUEContent()获取输入框中内容*/
+                this.reportComment.content = this.$refs.ue1.getUEContent();
+                this.reportComment.commentTime = ly.formatDate(new Date(), "yyyy-MM-dd hh:mm");
+                this.reportComment.commentUserId = ly.store.getJson("user").id;
+                if (this.reportComment.content == "") {
+                    this.showFaileMsg("请输入内容后再回复！");
+                    return;
+                }
+                let _this = this;
+                ly.http.post("/report/saveReportComment", ly.stringify(this.reportComment))
+                    .then(resp => {
+                            if (resp.status === 200) {
+                                _this.showSuccessMsg("帖子回复成功！");
+                                window.setTimeout(() => {
+                                    window.location = "rescue-details.html" + "?id=" + this.id;
+                                }, 1000);
+
+                            } else {
+                                _this.showFaileMsg("帖子回复失败，请重新回复！");
+                            }
+                        }
+                    ).catch(() => {
+                        _this.showFaileMsg("帖子回复失败，请重新回复！");
+                    }
+                )
+            },
+            /*发布陈宫消息提示*/
+            showSuccessMsg(data) {
+                this.$message(
+                    {
+                        message: data,
+                        type: 'success'
+                    }
+                );
+            },
+            /*失败消息*/
+            showFaileMsg(data) {
+                this.$message.error(data);
+            },
+
+            // 获得全部评论
+            getReportCommentByReportId() {
+                console.log("-------------------");
+                let _this = this;
+                ly.http.get("/report/getReportCommentByReportId?reportId=" + this.id)
+                    .then(resp => {
+                        if (resp.status === 200) {
+                            // .list 拿到集合数据
+                            _this.reportCommentVos = resp.data;
+                            console.log(JSON.stringify(_this.reportCommentVos) + "-------------------");
+                        } else {
+                            console.log("else-------------------" + _this.reportCommentVos);
+                        }
+                    })
+            },
+
+            getUEContent() {
+                let content = this.$refs.ue.getUEContent(); // 调用子组件方法
+                this.$notify({
+                    title: "获取成功，可在控制台查看！",
+                    message: content,
+                    type: "success"
+                });
+                console.log(content);
+            },
+            getUEContentTxt() {
+                let content = this.$refs.ue.getUEContentTxt(); // 调用子组件方法
+                this.$notify({
+                    title: "获取成功，可在控制台查看！",
+                    message: content,
+                    type: "success"
+                });
+                console.log(content);
+            },
+
+            /*获取子组件中的方法*/
+            getChildData: function (msg) {
+            },
+            openPage(id) {
+               /* console.log("dakaile");
+                $("#light").css("display", "block");*/
+               /* document.getElementById('fade').style.display='block';*/
+                window.open ('rescue-comment-reply.html?id=' + id + "&reportId=" + this.id, 'newwindow',
+                    'height=340, width=800, top=280, left=300, toolbar=no, ' +
+                    'menubar=no, scrollbars=no, resizable=no,location=n o, ' +
+                    'status=no');
+            },
+        }
+    })
+</script>
+</body>
+</html>

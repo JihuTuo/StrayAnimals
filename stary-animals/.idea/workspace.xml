@@ -1,0 +1,1177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6e7362d5-eb98-41f2-9f76-4868887a3ef8" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/shiep-auth/target/" />
+    <ignored path="$PROJECT_DIR$/shiep-auth/shiep-auth-common/target/" />
+    <ignored path="$PROJECT_DIR$/shiep-auth/shiep-auth-service/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="stary-animals" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/shiep/controller/AnimalAdoptController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="307">
+              <caret line="71" column="68" selection-start-line="71" selection-start-column="68" selection-end-line="71" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/shiep/service/IAnimalAdoptService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/shiep/service/impl/AnimalAdoptServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="106">
+              <caret line="136" column="77" selection-start-line="136" selection-start-column="77" selection-end-line="136" selection-end-column="77" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/shiep/mapper/IAnimalAdoptMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="35" column="45" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>expireDate</find>
+      <find>animalAdoptId</find>
+      <find>animalSearchSer</find>
+      <find>filePathFormat</find>
+      <find>1</find>
+      <find>getAnimalAdoptDetailsById</find>
+      <find>queryAllAnimalAdoptInPage</find>
+      <find>In</find>
+      <find>.in</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>animalSearchId</replace>
+      <replace />
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/shiep/controller/AuthController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shiep/controller/UploadFileController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shiep/config/SACorsConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shiep/entity/AdminCategory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shiep/mapper/IAdminCategoryMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shiep/vo/AnimalStatus.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shiep/entity/AnimalStatus.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shiep/vo/AnimalAdoptVo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shiep/mapper/IAnimalStatusMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shiep/entity/PhotoAnimalAdopt.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shiep/entity/AnimalAdoptComment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shiep/vo/AnimalAdoptCommentVo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shiep/entity/AnimalSearchtComment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shiep/entity/AnimalSearchComment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shiep/vo/AnimalSearchCommentVo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shiep/mapper/IAnimalAdoptCommentMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shiep/mapper/IAnimalSearchMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shiep/service/IAnimalAdoptService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shiep/service/IUserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shiep/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shiep/entity/PhotoAnimalSearch.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shiep/mapper/IAnimalSearchCommentMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shiep/service/IAnimalSearchService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shiep/service/impl/AnimalSearchServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shiep/entity/NewsType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shiep/mapper/INewsTypeMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shiep/vo/NewsVos.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/shiep/test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shiep/entity/News.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shiep/vo/NewsVo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shiep/mapper/IUserMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shiep/mapper/INewsMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shiep/service/INewsService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shiep/service/impl/INewServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shiep/controller/NewsController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shiep/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shiep/service/impl/MailServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shiep/StaryAnimalApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shiep/SpringBootApplication.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/shiep/DBtest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/shiep/RedisTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/logback.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shiep/service/impl/ReportServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shiep/controller/UEditorController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shiep/jwt/intercepter/TokenInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shiep/controller/AnimalAdoptController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shiep/controller/ReportController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shiep/controller/AnimalSearchController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shiep/service/impl/AnimalAdoptServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shiep/mapper/IAnimalAdoptMapper.java" />
+      </list>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/Tools-install/Maven/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="D:\Tools-install\Maven\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="stary-animals" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="stary-animals" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="290" />
+    <option name="y" value="110" />
+    <option name="width" value="1300" />
+    <option name="height" value="810" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="stary-animals" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stary-animals" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stary-animals" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stary-animals" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stary-animals" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stary-animals" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stary-animals" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stary-animals" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stary-animals" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stary-animals" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="shiep" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stary-animals" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stary-animals" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="shiep" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stary-animals" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stary-animals" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="shiep" type="462c0819:PsiDirectoryNode" />
+              <item name="jwt" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stary-animals" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stary-animals" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="shiep" type="462c0819:PsiDirectoryNode" />
+              <item name="jwt" type="462c0819:PsiDirectoryNode" />
+              <item name="intercepter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stary-animals" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stary-animals" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stary-animals" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stary-animals" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1589716821529" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15965834" />
+    <property name="project.structure.side.proportion" value="0.32838154" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Tool_Workspace\IDEA\stary-animals\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.shiep.vo" />
+      <recent name="com.shiep.entity" />
+      <recent name="com.shiep.mapper" />
+      <recent name="com.shiep.jwt.util" />
+      <recent name="com.shiep.jwt.pojo" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Tool_Workspace\IDEA\stary-animals\src\main\java\com\shiep\util" />
+      <recent name="D:\Tool_Workspace\IDEA\stary-animals\src\test\java\com\shiep" />
+      <recent name="D:\Tool_Workspace\IDEA\stary-animals\src\main\resources" />
+      <recent name="D:\Tool_Workspace\IDEA\stary-animals\src\main\java\com\shiep\common\ueditor" />
+      <recent name="D:\Tool_Workspace\IDEA\stary-animals\src\main\resources\static" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.SpringBootApplication">
+    <configuration name="DBtest.printAllBeans" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="stary-animals" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shiep.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.shiep" />
+      <option name="MAIN_CLASS_NAME" value="com.shiep.DBtest" />
+      <option name="METHOD_NAME" value="printAllBeans" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DBtest.testMail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="stary-animals" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shiep.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.shiep" />
+      <option name="MAIN_CLASS_NAME" value="com.shiep.DBtest" />
+      <option name="METHOD_NAME" value="testMail" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DBtest.teststr" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="stary-animals" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shiep.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.shiep" />
+      <option name="MAIN_CLASS_NAME" value="com.shiep.DBtest" />
+      <option name="METHOD_NAME" value="teststr" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShiepAuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="shiep-auth-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.shiep.auth.ShiepAuthApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="stary-animals" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shiep.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.shiep.SpringBootApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StaryAnimalApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="stary-animals" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shiep.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.shiep.StaryAnimalApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name=" tomcat9" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.19" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://api.sa.com/stary-animals" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <file path="$PROJECT_DIR$">
+          <settings>
+            <option name="CONTEXT_PATH" value="/stary_animals" />
+          </settings>
+        </file>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_stary-animals" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="17581" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.DBtest.testMail" />
+      <item itemvalue="JUnit.DBtest.teststr" />
+      <item itemvalue="JUnit.DBtest.printAllBeans" />
+      <item itemvalue="Spring Boot.ShiepAuthApplication" />
+      <item itemvalue="Spring Boot.SpringBootApplication" />
+      <item itemvalue="Spring Boot.StaryAnimalApplication" />
+      <item itemvalue="Tomcat Server. tomcat9" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.SpringBootApplication" />
+        <item itemvalue="Spring Boot.StaryAnimalApplication" />
+        <item itemvalue="JUnit.DBtest.printAllBeans" />
+        <item itemvalue="JUnit.DBtest.teststr" />
+        <item itemvalue="JUnit.DBtest.testMail" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6e7362d5-eb98-41f2-9f76-4868887a3ef8" name="Default Changelist" comment="" />
+      <created>1579432276416</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579432276416</updated>
+      <workItem from="1579432279124" duration="8265000" />
+      <workItem from="1580000471295" duration="2736000" />
+      <workItem from="1580200621014" duration="1688000" />
+      <workItem from="1580258121484" duration="73604000" />
+      <workItem from="1580948573669" duration="9317000" />
+      <workItem from="1580959757411" duration="194000" />
+      <workItem from="1580959961948" duration="92000" />
+      <workItem from="1580960225936" duration="190530000" />
+      <workItem from="1581509415401" duration="37454000" />
+      <workItem from="1581662880763" duration="2891000" />
+      <workItem from="1581679698952" duration="44276000" />
+      <workItem from="1581816385844" duration="50222000" />
+      <workItem from="1581988717457" duration="133959000" />
+      <workItem from="1582592169046" duration="21132000" />
+      <workItem from="1583314274299" duration="761000" />
+      <workItem from="1583319163494" duration="349000" />
+      <workItem from="1589359730662" duration="2072000" />
+      <workItem from="1589372920971" duration="6501000" />
+      <workItem from="1589410276673" duration="2249000" />
+      <workItem from="1589682956945" duration="20093000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="DBtest_teststr - 2020.02.23 at 20h 38m 59s.xml">
+      <configuration name="DBtest.teststr" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DBtest_teststr - 2020.02.23 at 20h 41m 04s.xml">
+      <configuration name="DBtest.teststr" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DBtest_teststr - 2020.02.23 at 20h 49m 21s.xml">
+      <configuration name="DBtest.teststr" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DBtest_teststr - 2020.02.23 at 20h 50m 58s.xml">
+      <configuration name="DBtest.teststr" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DBtest_teststr - 2020.02.23 at 20h 52m 53s.xml">
+      <configuration name="DBtest.teststr" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DBtest_teststr - 2020.02.23 at 20h 58m 12s.xml">
+      <configuration name="DBtest.teststr" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DBtest_teststr - 2020.02.23 at 20h 58m 52s.xml">
+      <configuration name="DBtest.teststr" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DBtest_teststr - 2020.02.23 at 21h 00m 12s.xml">
+      <configuration name="DBtest.teststr" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DBtest_printAllBeans - 2020.03.04 at 18h 37m 03s.xml">
+      <configuration name="DBtest.printAllBeans" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DBtest_printAllBeans - 2020.03.04 at 18h 55m 10s.xml">
+      <configuration name="DBtest.printAllBeans" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="608385000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.3381295" weight="0.1734143" />
+      <window_info id="Structure" order="1" sideWeight="0.6618705" side_tool="true" weight="0.23684211" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.6618705" side_tool="true" weight="0.23616734" />
+      <window_info id="Web" order="7" sideWeight="0.50153375" side_tool="true" weight="0.27192983" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.55971223" />
+      <window_info anchor="bottom" id="Cvs" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="4" sideWeight="0.4979757" weight="0.83597124" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.68057555" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3294964" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.3294964" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5020243" side_tool="true" weight="0.7151079" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.37553957" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.48345324" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="Problems" order="15" weight="0.3294964" />
+      <window_info anchor="bottom" id="Application Servers" order="16" weight="0.3294964" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24966262" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.3299595" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" weight="0.3299595" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" weight="0.3299595" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.3381295" visible="true" weight="0.1734143" />
+      <window_info id="Structure" order="1" sideWeight="0.6618705" side_tool="true" weight="0.23684211" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.6618705" side_tool="true" weight="0.23616734" />
+      <window_info id="Web" order="7" sideWeight="0.50153375" side_tool="true" weight="0.27192983" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.55971223" />
+      <window_info anchor="bottom" id="Cvs" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="4" sideWeight="0.4979757" weight="0.10071942" />
+      <window_info active="true" anchor="bottom" id="Debug" order="5" visible="true" weight="0.18273382" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3294964" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.3294964" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5020243" side_tool="true" weight="0.7151079" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.37553957" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.48345324" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="Problems" order="15" weight="0.3294964" />
+      <window_info anchor="bottom" id="Application Servers" order="16" weight="0.3294964" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24966262" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.3299595" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" weight="0.3299595" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" weight="0.3299595" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/shiep/service/impl/AnimalSearchServiceImpl.java</url>
+          <line>180</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/shiep/service/impl/UserServiceImpl.java</url>
+          <line>106</line>
+          <properties />
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/shiep/service/impl/AnimalAdoptServiceImpl.java</url>
+          <line>136</line>
+          <properties />
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/shiep/service/impl/AnimalAdoptServiceImpl.java</url>
+          <line>138</line>
+          <properties />
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/shiep/service/impl/INewServiceImpl.java</url>
+          <line>161</line>
+          <properties class="com.shiep.service.impl.INewServiceImpl" method="getNewsDetailsById">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shiep/common/ueditor/Encoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shiep/common/ueditor/upload/BinaryUploader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shiep/common/ueditor/upload/StorageManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3193">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shiep/common/ueditor/upload/Uploader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shiep/common/ueditor/ConfigManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2942">
+          <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://D:/Tools-install/Maven/localRepository/org/springframework/spring-web/5.1.7.RELEASE/spring-web-5.1.7.RELEASE-sources.jar!/org/springframework/http/HttpStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="190" column="4" selection-start-line="190" selection-start-column="4" selection-end-line="190" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Tools-install/Maven/localRepository/org/springframework/spring-web/5.1.7.RELEASE/spring-web-5.1.7.RELEASE-sources.jar!/org/springframework/http/ResponseEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="296" column="37" selection-start-line="296" selection-start-column="37" selection-end-line="296" selection-end-column="37" />
+          <folding>
+            <element signature="e#8697#8698#0" expanded="true" />
+            <element signature="e#8739#8740#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shiep/mapper/INewsMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="13" column="34" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shiep/mapper/IUserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="25" selection-start-column="25" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shiep/vo/NewsVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shiep/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="78" column="9" selection-start-line="76" selection-start-column="19" selection-end-line="78" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shiep/controller/MailController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="23" column="52" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shiep/service/IMailService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shiep/service/INewsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shiep/service/impl/INewServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1302">
+          <caret line="62" column="24" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shiep/config/CrosConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/shiep/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/shiep/DBtest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2835">
+          <caret line="165" column="97" selection-start-line="165" selection-start-column="87" selection-end-line="165" selection-end-column="97" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shiep/config/SACorsConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="32" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/shiep/RedisTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="14" column="36" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/logback.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2793">
+          <caret line="133" column="37" selection-start-line="133" selection-start-column="37" selection-end-line="133" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shiep/dao/IUserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Tools-install/Maven/localRepository/com/github/pagehelper/pagehelper/5.1.2/pagehelper-5.1.2.jar!/com/github/pagehelper/PageInfo.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="39" column="11" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shiep/service/impl/MailServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="45" column="48" selection-start-line="45" selection-start-column="48" selection-end-line="45" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shiep/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2058">
+          <caret line="117" selection-start-line="117" selection-end-line="117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shiep/SpringBootApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#550#551#0" expanded="true" />
+            <element signature="e#616#617#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shiep/controller/NewsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="40" column="56" selection-start-line="40" selection-start-column="56" selection-end-line="40" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shiep/service/IReportService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shiep/service/impl/ReportServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1512">
+          <caret line="73" column="85" selection-start-line="73" selection-start-column="85" selection-end-line="73" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shiep/controller/UEditorController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2425">
+          <caret line="114" column="1" selection-start-line="114" selection-start-column="1" selection-end-line="114" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shiep/controller/UploadFileController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="46" column="37" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shiep/jwt/intercepter/TokenInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="30" column="74" selection-start-line="30" selection-start-column="74" selection-end-line="30" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shiep/controller/AuthController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="60" column="23" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shiep/vo/AnimalAdoptVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Tools-install/Maven/localRepository/com/github/pagehelper/pagehelper/5.1.2/pagehelper-5.1.2.jar!/com/github/pagehelper/page/PageMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-19">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+          <folding>
+            <element signature="e#1298#1299#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Tools-install/Maven/localRepository/org/springframework/spring-webmvc/5.1.7.RELEASE/spring-webmvc-5.1.7.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="891" selection-start-line="891" selection-end-line="891" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Tools-install/Maven/localRepository/org/springframework/spring-webmvc/5.1.7.RELEASE/spring-webmvc-5.1.7.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="106" selection-start-line="106" selection-end-line="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shiep/service/IAnimalSearchService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shiep/service/impl/AnimalSearchServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1690">
+          <caret line="156" column="41" lean-forward="true" selection-start-line="156" selection-start-column="41" selection-end-line="156" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shiep/controller/AnimalSearchController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="52" column="73" lean-forward="true" selection-start-line="52" selection-start-column="73" selection-end-line="52" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shiep/controller/ReportController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="685">
+          <caret line="61" column="45" selection-start-line="61" selection-start-column="45" selection-end-line="61" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shiep/controller/AnimalAdoptController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="71" column="68" selection-start-line="71" selection-start-column="68" selection-end-line="71" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shiep/service/IAnimalAdoptService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Tools-install/Maven/localRepository/org/springframework/spring-web/5.1.7.RELEASE/spring-web-5.1.7.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="137" selection-start-line="137" selection-end-line="137" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Tools-install/Maven/localRepository/org/springframework/spring-aop/5.1.7.RELEASE/spring-aop-5.1.7.RELEASE-sources.jar!/org/springframework/aop/support/AopUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="347" selection-start-line="347" selection-end-line="347" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Tools-install/Maven/localRepository/org/springframework/spring-aop/5.1.7.RELEASE/spring-aop-5.1.7.RELEASE-sources.jar!/org/springframework/aop/framework/JdkDynamicAopProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="239" selection-start-line="239" selection-end-line="239" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shiep/service/impl/AnimalAdoptServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="136" column="77" selection-start-line="136" selection-start-column="77" selection-end-line="136" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shiep/mapper/IAnimalAdoptMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="35" column="45" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>stary-animals:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.32838154" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.32838154" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web|stary-animals</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.32838154" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: ch.qos.logback:logback-classic:1.2.3</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.32838154" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+  <component name="mavenExecuteGoalHistory">
+    <option value="$PROJECT_DIR$" />
+    <option value="update" />
+    <option value="spring-boot:run" />
+    <option value="install" />
+  </component>
+</project>

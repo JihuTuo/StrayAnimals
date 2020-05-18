@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hsshy.beam.web.modular.blog.dao.ArticleCategoryMapper">
+
+    <!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.hsshy.beam.web.modular.blog.entity.ArticleCategory" id="BaseResultMap">
+        <result property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="frozen" column="frozen"/>
+        <result property="sort" column="sort"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateTime" column="update_time"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+		        a.`id` AS "id",
+                a.`name` AS "name", 
+                a.`frozen` AS "frozen", 
+                a.`sort` AS "sort",
+                a.`create_time` AS "createTime",
+                a.`update_time` AS "updateTime"
+        </sql>
+    <update id="changeFrozen">
+        update b_article_category
+        set frozen = #{frozen}
+        where id = #{id}
+    </update>
+
+    <select id="selectPageList" resultType="com.hsshy.beam.web.modular.blog.entity.ArticleCategory">
+        select
+        <include refid="Base_Column_List"/>
+        from b_article_category a
+        <where>
+            <if test="articleCategory.name != null and articleCategory.name != ''">
+                and a.name = #{articleCategory.name}
+            </if>
+            <if test="articleCategory.frozen != null and articleCategory.frozen != ''">
+                and a.frozen = #{articleCategory.frozen}
+            </if>
+
+        </where>
+    </select>
+    <select id="countAcRef" resultType="java.lang.Integer">
+        select count(*) from b_article_category_ref where category_id = #{categoryId}
+    </select>
+    <select id="getArticleCategoryList" resultType="com.hsshy.beam.web.modular.blog.entity.ArticleCategory">
+        select
+        <include refid="Base_Column_List"/>,
+        (select count(*) from b_article_category_ref where category_id = a.id) as "articleCount"
+        from b_article_category a
+        where
+        a.frozen = 1
+        order by a.sort desc
+    </select>
+
+</mapper>

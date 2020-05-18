@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html xmlns:javascript="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Bootstrap 模板</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- 引入 Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- 引入导航栏样式 -->
+    <link rel="stylesheet" href="css/navigation.css">
+
+    <!-- 包括所有已编译的插件 -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- 模态窗口的打开需要依赖此文件 -->
+    <script src="js/modal.js"></script>
+    <!-- 引入自己写的js文件 -->
+    <script src="js/my_js/index.js"></script>
+
+
+    <!--引入搜索框样式-->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/search_adopt/zfont-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/search_adopt/demo.css">
+    <link rel="stylesheet" href="css/search_adopt/style.css">
+
+    <!-- 引入公用的js-->
+    <script src="./js/vue/vue.js"></script>
+    <script src="./js/axios.min.js"></script>
+    <script src="./js/common.js"></script>
+
+    <!-- 引入搜索样式 -->
+    <link rel="stylesheet" type="text/css" href="css/search_css/normalize.css"/>
+    <link rel="stylesheet" href="css/search_css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/search_css/demo.css">
+    <link rel="stylesheet" href="css/search_css/style.css">
+
+    <!--element-->
+    <!-- 引入样式 -->
+    <!--<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    &lt;!&ndash; 引入组件库 &ndash;&gt;
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+-->
+    <!--element-->
+    <link rel="stylesheet" href="static/element-2.12.0/index.css">
+    <script src="static/element-2.12.0/index.js"></script>
+
+    <!-- 引入自己写的样式 -->
+    <link rel="stylesheet" href="css/index_style.css">
+    <link rel="stylesheet" href="css/adopt_style.css">
+    <link rel="stylesheet" href="css/adopt_manage_style.css">
+
+
+</head>
+<body>
+<div id="Vue-app">
+    <div class="header" id="header-top">   <!--line-height: 30px 将文字宽度与div一致 让文字居中 -->
+        <shotcut @deliver="getChildData(arguments)"></shotcut>   <!--组件化头部-->
+    </div>
+    <div class="container">
+        <!--logo图片-->
+        <div>
+            <img src="img/sa_logo.png">
+        </div>
+
+        <!--导航条-->
+        <div id="nav-1">
+            <ul class="nav">
+                <li class="slide1"></li>
+                <li class="slide2"></li>
+                <li><a  class="active" href="index.html">首页</a></li>
+                <li><a href="#/">资讯</a></li>
+                <li><a href="rescue.html">救助</a></li>
+                <li><a href="adopt.html">领养</a></li>
+                <li><a href="search.html">寻宠</a></li>
+                <li><a href="help.html">帮助</a></li>
+                <li><a href="about-us.html">关于我们</a></li>
+                <!-- 搜索框 -->
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;
+                </p>
+                <li>
+                    <div class="search d7">
+                        <form>
+                            <input type="text" placeholder="搜索从这里开始...">
+                            <button type="submit"></button>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <br><br>
+
+        <!----=========================内容开始==============================-->
+
+        <!-- 面包屑导航 -->
+        <div>
+            <ul class="breadcrumb">
+                <li><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+                <li><a href="adopt.html">领养</a></li>
+                <li>信息管理</li>
+            </ul>
+        </div>
+
+        <!--主面板-->
+        <div class="mainTable" style="height: 500px; width: 100%; background-color: #eeeeee">
+            <!--左侧部分-->
+            <div style="background-color: #ececd9;width: 15%;height: 480px;float: left">
+                <ul>
+                    <li style="font-size: 18px; height: 40px">
+                        <span style="padding-left: 15px; line-height: 40px">领养</span>
+                    </li>
+                    <li style="background-color:wheat;font-size: 15px; height: 40px">
+                        <span style="padding-left: 15px; line-height: 40px">发布的信息</span>
+                    </li>
+                </ul>
+            </div>
+            <!--设置总的右侧-->
+            <div style="width: 85%;float: left;height: 480px;float: left">
+                <!--右侧表格显示-->
+                <div style="background-color: white;height: 480px; width: 96%; margin:0 auto">
+                    <!--一个搜座框和发布领养按钮的总div-->
+                    <div style="background-color: #F9F0DA; height: 30px;width: 90%;float: left">
+                        <!--左侧搜索框-->
+                        <div style="background-color: #F9F0DA; height: 30px;width: 90%;float: left">
+                            <input class="leftInput" type="text" placeholder="请输入搜索标题">
+                            <button class="left-search-btn" type="button"><span
+                                    class="	glyphicon glyphicon-search"></span>
+                            </button>
+                        </div>
+                        <!--右侧发布信息按钮-->
+                        <!--左侧搜索框-->
+                        <div style="background-color: #F9F0DA; height: 30px;width: 82px;float: right">
+                            <!-- 表示一个成功的或积极的动作 -->
+                            <button type="button" class="btn btn-success" style="height: 30px;width: 80px"><span
+                                    style="color: white" @click="toPublish">发布领养</span></button>
+                        </div>
+                    </div>
+                    <hr>
+                    <!--总的信息显示-->
+                    <div>
+                        <div class="container" style="width: 970px">
+                            <div class="row clearfix">
+                                <div class="col-md-12 column">
+                                    <table class="table table-striped table-hover">
+                                        <thead>
+                                        <tr>
+                                            <th style="width: 50px;text-align: center">
+                                                编号
+                                            </th>
+                                            <th style="width: 200px;text-align: center">
+                                                标题
+                                            </th>
+                                            <th style="width: 200px;text-align: center">
+                                                发布时间
+                                            </th>
+                                            <th style="width: 80px;text-align: center">
+                                                状态
+                                            </th>
+                                            <th style="width: 100px;text-align: center">
+                                                操作
+                                            </th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr   v-for="(a,index) in animalAdopts">
+                                            <td style="width: 50px;text-align: center">
+                                                {{a.id}}
+                                            </td>
+                                            <td style="width: 200px;text-align: center">
+                                                {{a.title}}
+                                            </td>
+                                            <td style="width: 200px;text-align: center">
+                                                {{a.createTime}}
+                                            </td>
+                                            <td style="width: 80px;text-align: center">
+                                                {{a.verifyStatus = 0 ? "审核中" : "审核通过"}}
+                                            </td>
+                                            <td style="width: 100px;text-align: center">
+                                               <a href="javascript:void (0);" @click="remove(a.id)"><span >删除</span></a>
+                                                    |
+                                                <a href="javascript:void (0);" @click="edit(a.id)"><span>修改</span></a>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <el-pagination
+                                style="margin-top:15px;"
+                                background
+                                layout="prev, pager, next"
+                                :current-page.sync="pagination.page"
+                                :page-size.sync="pagination.size"
+                                :total="pagination.count"
+                                @current-change="handleCurrentChange">
+                        </el-pagination>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+
+<!-- 设置底部布局 -->
+<hr/>
+<div class="footer">
+    <script type="text/javascript">$(".footer").load("/src/public/footer.html");</script>
+</div>
+<!-- 引入导航栏js,注意和引入顺序有关 必须放在后面 -->
+<script src='js/jquery.min.js'></script>
+<script src="js/my_js/script.js"></script>
+
+<script type="application/javascript">
+    new Vue({
+        el: "#Vue-app",
+        components: {
+            shotcut: () => import('./js/pages/shotcut.js'),
+        },
+        data: {
+            userId: ly.store.getJson("user").id,
+            animalAdopts: [],
+            // 分页组件参数
+            pagination: {
+                page: 1,
+                size: 8,
+                count: 0,
+            },
+        },
+        created() {
+            this.getAllAnimalAdopt();
+        },
+        methods: {
+            /*获取子组件中的方法*/
+            getChildData: function (msg) {
+                this.userId = msg[0];
+                this.counties = msg[1];
+                this.cityId = msg[2]
+            },
+            getAllAnimalAdopt() {
+                console.log(this.userId + "fsefsef");
+                let _this = this;
+                ly.http.get("/adopt/queryAllAnimalAdoptByUserId", {
+                    params: {
+                        userId: this.userId,
+                        size: this.pagination.size,
+                        page: this.pagination.page,
+                    }
+                }).then(resp => {
+                        if (resp.status === 200) {
+                            _this.animalAdopts = resp.data.list;
+                            // .total 拿到总个数
+                            _this.pagination.count = resp.data.total;
+                            console.log(_this.animalAdopts);
+                        }
+                    })
+            },
+            // 删除成功提示康
+            removeSuccess(meg) {
+                this.$message({
+                    showClose: true,
+                    message: meg,
+                    type: 'success'
+                });
+            },
+            //分页条件改变，重新发送分页请求
+            handleCurrentChange(page) {
+                this.pagination.page = page;
+                this.getAllAnimalAdopt();
+            },
+            remove (id) {
+                let _this = this;
+                let flag = confirm("确认删除吗？");
+               // this.removeSuccess("删除成功！");
+                if(flag) {
+                    console.log("id" + id);
+                    ly.http.get("/adopt/deleteById?id=" + id)
+                        .then(resp => {
+                            if (resp.status === 200) {
+                                _this.removeSuccess("删除成功！");
+                                // 更新数据
+                                _this.getAllAnimalAdopt();
+                            } else {
+                                _this.removeSuccess("删除失败！");
+                            }
+                        })
+                }
+            },
+            edit (id) {
+                console.log("id" + id);
+            },
+            toPublish () {
+                if (!ly.store.get("token")) {
+                    window.location = "/login.html";
+                } else {
+                    window.location = "/adopt-publish-message.html";
+                }
+            },
+
+            /*toPublish() {
+                if (!ly.store.get("token")) {
+                    window.location = "/login.html";
+                } else {
+                    window.location = "/adopt-publish-message.html";
+                }
+            },
+            /!*获取子组件中的方法*!/
+            getChildData: function (msg) {
+                this.counties = msg[1];
+                this.cityId = msg[2]
+            },
+            getAllAnimalCategory() {
+                let _this = this;
+                ly.http.get("/animalCategory/queryAll")
+                    .then(resp => {
+                            if (resp.status === 200) {
+                                _this.categories = resp.data;
+                            }
+                        }
+                    )
+            },
+
+            // 获得全部adopt
+            getAllAnimalAdopt() {
+                let _this = this;
+                ly.http.get("/adopt/queryAllAnimalAdopt")
+                    .then(resp => {
+                        if (resp.status === 200) {
+                            _this.animalAdopts = resp.data;
+                            console.log(ly.parse(_this.animalAdopts));
+                        }
+                    })
+            },
+            /!*!// 获取总条数
+            getTotal() {
+                let _this = this;
+                ly.http.get("/adopt/getTotal")
+                    .then(resp => {
+                        if (resp.status === 200) {
+                            _this.pagination.count = resp.data;
+                        }
+                    })
+            },*!/
+
+            // 获得全部adopt使用分页
+            getAllAnimalAdoptInPage() {
+                console.log(this.cityId + "ceshi");
+                let _this = this;
+                ly.http.post("/adopt/queryAllAnimalAdoptInPage", ly.stringify({
+                    size: this.pagination.size,
+                    page: this.pagination.page,
+                    cityId: ly.store.getJson("city").id,
+                    categoryId: this.categoryId,
+                    countyId: this.countyId
+                }))
+                    .then(resp => {
+                        // .list 拿到集合数据
+                        _this.animalAdopts = resp.data.list;
+                        // .total 拿到总个数
+                        _this.pagination.count = resp.data.total;
+                        console.log(_this.pagination.count);
+                        console.log(ly.parse(_this.animalAdopts));
+                    })
+            },
+            //分页条件改变，重新发送分页请求
+            handleCurrentChange(page) {
+                this.pagination.page = page;
+                this.getAllAnimalAdoptInPage();
+            },
+            // 监视城市的值 如果变化 触发分页查询
+
+            // 宠类过滤
+            changeCategory(id, index) {
+                this.isactive = index;
+                this.categoryId = id;
+                console.log("categoryId" + id);
+                // 每当产生变化的时候就调用函数获取分页
+                this.getAllAnimalAdoptInPage();
+                /!*console.log( "===============-----------------==========");
+
+                let arr = this.animalAdopts;
+
+                let newArr = [];
+                    arr.filter( e => {
+                        console.log(e.category.type + "===============-----------------==========");
+                        if (e.category.type === "猫咪") {
+                            newArr.push(e);
+                        }
+                });
+                // JSON.stringify 将js对象转化为json字符串
+                console.log(newArr);
+                console.log(JSON.stringify(newArr) +  "===============-----------------==========");*!/
+            },
+            // 区县过滤
+            changeCounty(id, index) {
+                this.isCountyActive = index;
+                this.countyId = id;
+                console.log("countyId" + id);
+                // 每当产生变化的时候就调用函数获取分页
+                this.getAllAnimalAdoptInPage();
+            },
+            // 即选择全城
+            changeAllCounty() {
+                this.isCountyActive = -1;
+                this.countyId = "";
+                this.getAllAnimalAdoptInPage();
+            },*/
+        }
+    });
+</script>
+</body>
+</html>

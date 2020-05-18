@@ -1,0 +1,1 @@
+[ERROR] 2020-02-01 11:36:54 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html xmlns:javascript="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Bootstrap 模板</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- 引入 Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- 引入导航栏样式 -->
+    <link rel="stylesheet" href="css/navigation.css">
+
+    <!-- 包括所有已编译的插件 -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- 模态窗口的打开需要依赖此文件 -->
+    <script src="js/modal.js"></script>
+    <!-- 引入自己写的js文件 -->
+    <script src="js/my_js/index.js"></script>
+
+    <!-- 引入搜索样式 -->
+    <link rel="stylesheet" type="text/css" href="css/search_css/normalize.css"/>
+    <link rel="stylesheet" href="css/search_css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/search_css/demo.css">
+    <link rel="stylesheet" href="css/search_css/style.css">
+
+    <!-- 引入公用的js-->
+    <script src="./js/vue/vue.js"></script>
+    <script src="./js/axios.min.js"></script>
+    <script src="./js/common.js"></script>
+    <!--element-->
+    <!-- 引入样式 -->
+    <!--<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    &lt;!&ndash; 引入组件库 &ndash;&gt;
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>-->
+    <!--element-->
+    <link rel="stylesheet" href="static/element-2.12.0/index.css">
+    <script src="static/element-2.12.0/index.js"></script>
+
+
+    <!-- 引入自己写的样式 -->
+    <link rel="stylesheet" href="css/index_style.css">
+    <link rel="stylesheet" href="css/adopt_style.css">
+
+
+</head>
+<body>
+<div id="Vue-app">
+    <div class="header" id="header-top">   <!--line-height: 30px 将文字宽度与div一致 让文字居中 -->
+        <shotcut @deliver="getChildData(arguments)"></shotcut>   <!--组件化头部-->
+    </div>
+
+    <div class="container">
+        <!--logo图片-->
+        <div>
+            <img src="img/sa_logo.png">
+        </div>
+
+        <!--导航条-->
+        <div id="nav-1">
+            <ul class="nav">
+                <li class="slide1"></li>
+                <li class="slide2"></li>
+                <li><a  class="active" href="index.html">首页</a></li>
+                <li><a href="#/">资讯</a></li>
+                <li><a href="rescue.html">救助</a></li>
+                <li><a href="adopt.html">领养</a></li>
+                <li><a href="search.html">寻宠</a></li>
+                <li><a href="help.html">帮助</a></li>
+                <li><a href="about-us.html">关于我们</a></li>
+                <!-- 搜索框 -->
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;
+                </p>
+                <li>
+                    <div class="search d7">
+                        <form>
+                            <input type="text" placeholder="搜索从这里开始...">
+                            <button type="submit"></button>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <br><br>
+    </div>
+</div>
+<hr/>
+<!-- 设置底部布局 -->
+<div class="footer">
+    <script type="text/javascript">$(".footer").load("/src/public/footer.html");</script>
+</div>
+<!-- 引入导航栏js,注意和引入顺序有关 必须放在后面 -->
+<script src='js/jquery.min.js'></script>
+<script src="js/my_js/script.js"></script>
+
+<script type="application/javascript">
+    new Vue({
+        el: "#Vue-app",
+        components: {
+            shotcut: () => import('./js/pages/shotcut.js'),
+        },
+        data: {
+        },
+    })
+</script>
+</body>
+</html>

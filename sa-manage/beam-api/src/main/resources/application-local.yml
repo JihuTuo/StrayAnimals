@@ -1,0 +1,30 @@
+# 单机模式
+redisson:
+  address: redis://127.0.0.1:6379
+  password:
+spring:
+  profiles: local
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/beam?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=GMT%2B8
+    username: root
+    password: 123456
+    filters: log4j,wall,mergeStat
+    hikari:
+      jdbc-url: jdbc:mysql://127.0.0.1:3306/beam?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=GMT%2B8
+      username: root
+      password: 123456
+      filters: log4j,wall,mergeStat
+      readOnly: false
+      connectionTimeout: 60000 #连接超时 1分钟
+      idleTimeout: 58000 # 一个连接空闲状态的最大时长 一分钟
+      validationTimeout: 6000
+      maxLifetime: 60000 # 1分钟
+      loginTimeout: 5
+      maximumPoolSize: 30 # 连接池最大连接数
+      minimumIdle: 10 #最小空闲连接
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+    password:      # 密码（默认为空）
+    timeout: 6000ms  # 连接超时时长（毫秒）

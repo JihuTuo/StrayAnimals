@@ -1,0 +1,74 @@
+.left {
+    background-color: #ececd9;
+    width: 15%;
+    height: 480px;
+    float: left
+}
+
+.right {
+    width: 85%;
+    float: left;
+    height: 480px;
+    float: left
+}
+
+.right-main {
+    height: 480px;
+    width: 96%;
+    margin: 0 auto
+}
+
+.right-main-input {
+    height: 30px;
+    position: relative;
+    top: 25px;
+}
+
+.right-main-btn {
+    height: 30px;
+    width: 45px;
+    background-color: #7fb06a
+}
+
+
+.main-table-left-span {
+    padding-left: 15px;
+    line-height: 40px
+}
+
+.left-li {
+    font-size: 15px;
+    height: 40px;
+    padding-left: 50px
+}
+
+.left-span {
+    padding-left: 15px;
+    line-height: 40px;
+    color: black;
+}
+
+/*头像上传样式*/
+ .avatar-uploader .el-upload {
+     border: 1px dashed #d9d9d9;
+     border-radius: 6px;
+     cursor: pointer;
+     position: relative;
+     overflow: hidden;
+ }
+.avatar-uploader .el-upload:hover {
+    border-color: #409EFF;
+}
+.avatar-uploader-icon {
+    font-size: 28px;
+    color: #8c939d;
+    width: 178px;
+    height: 178px;
+    line-height: 178px;
+    text-align: center;
+}
+.avatar {
+    width: 178px;
+    height: 178px;
+    display: block;
+}

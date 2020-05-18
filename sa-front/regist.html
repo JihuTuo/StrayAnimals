@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html xmlns:javascript="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Bootstrap 模板</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- 引入 Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- 引入导航栏样式 -->
+    <link rel="stylesheet" href="css/navigation.css">
+
+    <!-- 包括所有已编译的插件 -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- 模态窗口的打开需要依赖此文件 -->
+    <script src="js/modal.js"></script>
+    <!-- 引入搜索样式 -->
+    <link rel="stylesheet" type="text/css" href="css/search_css/normalize.css"/>
+    <link rel="stylesheet" href="css/search_css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/search_css/demo.css">
+    <link rel="stylesheet" href="css/search_css/style.css">
+
+    <!-- 引入公用的js-->
+    <script src="./js/vue/vue.js"></script>
+    <script src="./js/axios.min.js"></script>
+    <script src="./js/common.js"></script>
+
+    <!-- 引入自己写的样式 -->
+    <link rel="stylesheet" href="css/index_style.css">
+    <link rel="stylesheet" href="css/login_style.css">
+
+    <!-- 引入自己写的js文件 -->
+    <script src="js/my_js/index.js"></script>
+    <script src="js/my_js/login.js"></script>
+
+    <!--element-->
+    <!-- 引入样式 -->
+    <!--<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    &lt;!&ndash; 引入组件库 &ndash;&gt;
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>-->
+    <!--element-->
+    <link rel="stylesheet" href="static/element-2.12.0/index.css">
+    <script src="static/element-2.12.0/index.js"></script>
+</head>
+<body>
+<div id="Vue-app">
+    <div class="header">   <!--line-height: 30px 将文字宽度与div一致 让文字居中 -->
+        <!--<shotcut @deliver="getChildData(arguments)"></shotcut>-->   <!--组件化头部-->
+        <div style="margin:0 auto;width:900px;height: 30px;line-height: 30px;font-size:15px">
+             <span :style="loginTo">
+                <span style="float:right">
+                    <a href="regist.html">注册</a>
+                </span>
+                <span style="float:right">&nbsp; | &nbsp;</span>
+                <span style="float:right">
+                     <a href="login.html">登录</a>
+                </span>
+            </span>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <!--logo图片-->
+        <div>
+            <img src="img/sa_logo.png">
+        </div>
+
+        <!--导航条-->
+        <div id="nav-1">
+            <ul class="nav">
+                <li class="slide1"></li>
+                <li class="slide2"></li>
+                <li><a class="active" href="index.html">首页</a></li>
+                <li><a href="#/">资讯</a></li>
+                <li><a href="rescue.html">救助</a></li>
+                <li><a href="adopt.html">领养</a></li>
+                <li><a href="search.html">寻宠</a></li>
+                <li><a href="help.html">帮助</a></li>
+                <li><a href="about-us.html">关于我们</a></li>
+                <!-- 搜索框 -->
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;
+                </p>
+                <li>
+                    <div class="search d7">
+                        <form>
+                            <input type="text" placeholder="搜索从这里开始...">
+                            <button type="submit"></button>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <br><br>
+
+        <!--========================开始注册页面的创建=========================-->
+        <div class="regist">
+            <div class="regist-continal">
+                <!--登录界面左侧图片-->
+                <div class="login-photo">
+                    <img src="img/login.jpg" height="420px">
+                </div>
+                <br> <!--居中-->
+                <!--注册表单-->
+                <div class="regist-form">
+                    <br>
+                    <h4 style="color: #7fb06a">&emsp;用户注册</h4>
+                    &emsp;&emsp;用户名：<input v-model="user.username" type="text" placeholder="您的用户名和登录名"><br><br>
+                    &emsp;&emsp;密&emsp;码：<input v-model="user.password" type="password" placeholder="建议至少两种字符组合"><br><br>
+                    &emsp;验证密码：<input v-model="passwordConfirm" type="password" placeholder="请再次验证密码"><br><br>
+                    &emsp;&emsp;邮&emsp;箱：<input v-model="user.email" type="text" placeholder="建议输入常用邮箱"><br><br>
+                    <button @click="generateCode" type="button" style="color: #8ab9ff">获取验证码</button>
+                    ：<input v-model="code" type="text" placeholder="请输入验证码"><br><br>
+
+                    <div class="form-group col-md-offset-2">
+                        <button @click="submit" type="button" class="btn btn-success">&emsp;注冊&emsp;</button>
+                        &emsp;<a href="login.html">已有帐号，马上去登录</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+    <hr/>
+    <!-- 设置底部布局 -->
+    <div class="footer">
+        <script type="text/javascript">$(".footer").load("/src/public/footer.html");</script>
+    </div>
+
+<!-- 引入导航栏js,注意和引入顺序有关 必须放在后面 -->
+<script src='js/jquery.min.js'></script>
+<script src="js/my_js/script.js"></script>
+
+<script type="application/javascript">
+    new Vue({
+        el: "#Vue-app",
+        /*components: {
+            shotcut: () => import('./js/pages/shotcut.js'),
+        },*/
+        data: {
+            id : "",
+            user: {
+                username: "",
+                password: "",
+                email: "",
+                createTime: "",
+            },
+            passwordConfirm: "",
+            code: "",
+            codeInCache: "461259",
+        },
+        methods: {
+            // 两次密码并不一致
+            passwordValidate() {
+                if (this.user.password !== this.passwordConfirm) {
+                    this.showFaileMsg("两次输入的密码不一致！");
+                    return false;
+                }
+                return true;
+            },
+            /*获取子组件中的方法*/
+            getChildData: function (msg) {
+                this.counties = msg[1];
+                this.cityId = msg[2]
+            },
+            validateInfo() {
+                if(!this.user.username) {
+                    this.showFaileMsg("请输入用户名！");
+                    return null;
+                };
+                if(!this.user.password) {
+                    this.showFaileMsg("请输入密码！");
+                    return null;
+                };
+                if (this.user.password !== this.passwordConfirm) {
+                    this.showFaileMsg("两次输入的密码不一致！");
+                    return null;
+                };
+            },
+            generateCode() {
+                if(!this.user.username) {
+                    this.showFaileMsg("请输入用户名！");
+                    return null;
+                };
+                if(!this.user.password) {
+                    this.showFaileMsg("请输入密码！");
+                    return null;
+                };
+                if (this.user.password !== this.passwordConfirm) {
+                    this.showFaileMsg("两次输入的密码不一致！");
+                    return null;
+                };
+                let _this = this;
+                // 先验证密码
+                if (!this.passwordValidate()) {
+                    return null;
+                }
+                if (!this.user.email) {
+                    _this.showFaileMsg("邮箱未填写!");
+                    return null;
+                }
+                ly.http.get("/email/generateCode?email=" + this.user.email)
+                    .then(resp => {
+                            if (resp.status === 200) {
+                                _this.codeInCache = resp.data;
+                            }
+                            _this.showFaileMsg("获取验证码失败，请重新获取！");
+                        }
+                    ).catch(() => {
+                    _this.showFaileMsg("获取验证码失败，请重新获取！");
+                });
+            },
+            submit() {
+                if(!this.user.username) {
+                    this.showFaileMsg("请输入用户名！");
+                    return null;
+                };
+                if(!this.user.password) {
+                    this.showFaileMsg("请输入密码！");
+                    return null;
+                };
+                if (this.user.password !== this.passwordConfirm) {
+                    this.showFaileMsg("两次输入的密码不一致！");
+                    return null;
+                };
+                if (this.code !== this.codeInCache) {
+                    this.showFaileMsg("验证码输入错误，请重新获取！");
+                    return null;
+                };
+                this.user.createTime = ly.formatDate(new Date(), "yyyy-MM-dd hh:mm");
+                let _this = this;
+                ly.http.post("/auth/register", ly.stringify(this.user)).then(resp => {
+                    if (resp.status === 200) {
+                        _this.showSuccessMsg("注册成功，即将跳转到登录页面！");
+                        window.setTimeout(() => {
+                            window.location = "login.html";
+                        }, 1000);
+                    } else {
+                        _this.showFaileMsg("注册失败！（用户名或邮箱已经被注册过了）！");
+                    }
+                }).catch(() => {
+                    _this.showFaileMsg("注册失败！（用户名或邮箱已经被注册过了）！");
+                });
+            },
+
+
+            /*发布陈宫消息提示*/
+            showSuccessMsg(data) {
+                this.$message(
+                    {
+                        message: data,
+                        type: 'success'
+                    }
+                );
+            },
+            /*失败消息*/
+            showFaileMsg(data) {
+                this.$message.error(data);
+            },
+        },
+    });
+</script>
+</body>
+</html>

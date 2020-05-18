@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hsshy.beam.admin.modular.sys.dao.DeptMapper">
+
+    <!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.hsshy.beam.admin.modular.sys.entity.Dept" id="BaseResultMap">
+        <result property="id" column="id"/>
+        <result property="parentId" column="parent_id"/>
+        <result property="name" column="name"/>
+        <result property="orderNum" column="order_num"/>
+        <result property="delFlag" column="del_flag"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+		            a.`id` AS "id", 
+                    a.`parent_id` AS "parentId", 
+                    a.`name` AS "name", 
+                    a.`order_num` AS "orderNum", 
+                    a.`del_flag` AS "delFlag",
+                    a.`create_time` AS "createTime",
+                    a.`update_time` AS "updateTime"
+            </sql>
+
+
+    <select id="selectPageList" resultType="com.hsshy.beam.admin.modular.sys.entity.Dept">
+        select
+        <include refid="Base_Column_List"/>
+        from sys_dept a
+        <where>
+            <if test="dept.parentId != null and dept.parentId != ''">
+                a.parent_id = #{dept.parentId}
+            </if>
+            <if test="dept.name != null and dept.name != ''">
+                and a.name = #{dept.name}
+            </if>
+            <if test="dept.orderNum != null and dept.orderNum != ''">
+                and a.order_num = #{dept.orderNum}
+            </if>
+            <if test="dept.delFlag != null and dept.delFlag != ''">
+                and a.del_flag = #{dept.delFlag}
+            </if>
+
+        </where>
+    </select>
+    <select id="queryListParentId" resultType="com.hsshy.beam.admin.modular.sys.entity.Dept">
+        select <include refid="Base_Column_List" />
+        from sys_dept a where a.parent_id = #{parentId} and a.del_flag = 0  order by a.order_num asc
+    </select>
+
+
+</mapper>

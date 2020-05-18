@@ -1,0 +1,105 @@
+[ERROR] 2020-02-02 11:23:32 [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.shiep.service.impl.AnimalCategoryDetailsServiceImpl' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.shiep.service.impl.AnimalCategoryDetailsServiceImpl' in your configuration.
+
+[ERROR] 2020-02-02 11:25:19 [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.shiep.service.impl.AnimalCategoryDetailsServiceImpl' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.shiep.service.impl.AnimalCategoryDetailsServiceImpl' in your configuration.
+
+[ERROR] 2020-02-02 11:26:09 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-02 14:13:13 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-02 15:39:16 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-02 18:10:58 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-02 18:25:23 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-02 18:25:57 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-02 20:05:28 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-02 20:09:21 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-02 20:13:01 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-02 20:27:22 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-02 20:28:01 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-02 20:28:12 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-02 20:28:40 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-02 20:28:51 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-02 22:07:03 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-02 22:07:03 [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field pcServiceImpl in com.shiep.controller.ProvinceAndCityController required a bean of type 'com.shiep.service.impl.ProvinceAndCityServiceImpl' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.shiep.service.impl.ProvinceAndCityServiceImpl' in your configuration.
+
+[ERROR] 2020-02-02 22:07:11 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-02 22:07:11 [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field pcServiceImpl in com.shiep.controller.ProvinceAndCityController required a bean of type 'com.shiep.service.impl.ProvinceAndCityServiceImpl' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.shiep.service.impl.ProvinceAndCityServiceImpl' in your configuration.
+
+[ERROR] 2020-02-02 22:09:16 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-02 22:09:16 [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field pcServiceImpl in com.shiep.controller.ProvinceAndCityController required a bean of type 'com.shiep.service.impl.ProvinceAndCityServiceImpl' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.shiep.service.impl.ProvinceAndCityServiceImpl' in your configuration.
+
+[ERROR] 2020-02-02 22:59:27 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-02 23:00:45 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-02 23:05:58 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+[ERROR] 2020-02-02 23:08:05 [restartedMain] c.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set

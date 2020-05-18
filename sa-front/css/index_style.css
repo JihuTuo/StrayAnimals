@@ -1,0 +1,107 @@
+/*
+.selector {
+    font-family: & amp;
+    quot;
+    Microsoft YaHei & amp;
+    quot;, 微软雅黑, & amp;
+    quot;
+    MicrosoftJhengHei & amp;
+    quot;, 华文细黑, STHeiti, MingLiu
+}
+*/
+
+body {
+    overflow-y: scroll; /*整体页面设置滚动条*/
+    background-color: #eceaea;
+}
+
+/* 设置顶部样式*/
+.header {
+    border: 1px; /*设置边框*/
+    background: #d9d9d9;
+    color: #000000; /*设置背景颜色和文字颜色*/
+    height: 45px; /*设置高度*/
+}
+
+.container {
+    width: 80%;
+    height: auto; /*让页面的gap度*/
+}
+
+.footer {
+    border: 1px; /*设置边框*/
+    background: #d9d9d9;
+    color: #000000; /*设置背景颜色和文字颜色*/
+    height: 220px; /*设置高度*/
+}
+
+.news {
+    width: 100%;
+    height: 400px;
+}
+
+/*新闻左侧*/
+.news-left {
+    background-color: white;
+    border-radius: 5px;
+    width: 73%;
+    height: 400px;
+    float: left;
+}
+
+/*新闻左上的轮播*/
+.news-left-photo {
+    height: 230px;
+    width: 42%;
+    float: left;
+}
+
+/*新闻右上的热点新闻*/
+.news-left-hot {
+    height: 230px;
+    width: 58%;
+    float: right;
+}
+
+/*新闻左下养宠必知部分*/
+.news-left-knowledge {
+    height: 160px;
+    width: 42%;
+    float: left;
+}
+
+/*新闻右下救助部分*/
+.news-left-help {
+    height: 160px;
+    width: 58%;
+    float: right;
+}
+
+
+.login-right {
+    border-radius: 5px;
+    width: 26%;
+    height: 400px;
+    float: right;
+}
+
+/*领养部分*/
+.adopt-area {
+    width: 100%;
+    height: 750px;
+    background-color: #ffffff;
+}
+
+/*领养部分分割线*/
+.hrLine {
+    vertical-align: middle;
+    display: inline-block;
+    color: #FF0000;
+}
+
+/*寻宠部分*/
+.publish-area {
+    width: 100%;
+    height: 430px;
+    background-color: #ffffff;
+}

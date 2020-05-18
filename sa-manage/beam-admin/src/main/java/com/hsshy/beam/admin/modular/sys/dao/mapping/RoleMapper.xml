@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hsshy.beam.admin.modular.sys.dao.RoleMapper">
+
+    <!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.hsshy.beam.admin.modular.sys.entity.Role" id="BaseResultMap">
+        <result property="id" column="id"/>
+        <result property="roleName" column="role_name"/>
+        <result property="remark" column="remark"/>
+        <result property="createTime" column="create_time"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+		        a.`id` AS "id",
+                a.`role_name` AS "roleName",
+                a.`remark` AS "remark",
+                a.`create_time` AS "createTime"
+        </sql>
+    <insert id="saveMenuPerms">
+        insert into sys_role_menu (role_id,menu_id)
+        values
+        <foreach collection ="role.menuIds" item="menuId" index= "index" separator =",">
+            (
+            #{role.id}, #{menuId}
+            )
+        </foreach >
+    </insert>
+    <delete id="delMenuPermByRoleId">
+        delete from sys_role_menu where role_id = #{roleId}
+    </delete>
+    <select id="selectPageList" resultType="com.hsshy.beam.admin.modular.sys.entity.Role">
+        select
+        <include refid="Base_Column_List"/>
+        from sys_role a
+        <where>
+            <if test="role.roleName != null and role.roleName != ''">
+                a.role_name LIKE concat("%",#{role.roleName},"%")
+            </if>
+
+        </where>
+    </select>
+
+    <select id="getCountByRoleId" resultType="java.lang.Integer">
+        select count(1) from sys_user_role
+        where role_id = #{roleId}
+    </select>
+    <select id="getCheckMenuIds" resultType="java.lang.Long">
+        select menu_id from sys_role_menu where role_id = #{roleId};
+    </select>
+
+</mapper>

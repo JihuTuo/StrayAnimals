@@ -1,0 +1,40 @@
+form {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.d7:after {content:""; clear:both; display:table}
+.d7 form {
+  width: auto;
+  float: right;
+  margin-right: 30px;
+}
+.d7 input {
+  width: 250px;
+  height: 42px;
+  padding-left: 15px;
+  border-radius: 42px;
+  border: 2px solid #324b4e;
+  background: #F9F0DA;
+  outline: none;
+  position: relative;
+  transition: .3s linear;
+}
+.d7 input:focus {
+  width: 300px;
+}
+.d7 button {
+  width: 42px;
+  height: 42px;
+  background: none;
+  border: none;
+  position: absolute;
+  top: -2px;
+  right: 0;
+}
+.d7 button:before{
+  content: "\f002";
+  font-family: FontAwesome;
+  color: #324b4e;
+}

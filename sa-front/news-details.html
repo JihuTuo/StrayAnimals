@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html xmlns:javascript="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Bootstrap 模板</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- 引入 Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- 引入导航栏样式 -->
+    <link rel="stylesheet" href="css/navigation.css">
+
+    <!-- 包括所有已编译的插件 -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- 模态窗口的打开需要依赖此文件 -->
+    <script src="js/modal.js"></script>
+    <!-- 引入自己写的js文件 -->
+    <script src="js/my_js/index.js"></script>
+
+
+    <!--引入搜索框样式-->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/search_adopt/zfont-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/search_adopt/demo.css">
+    <link rel="stylesheet" href="css/search_adopt/style.css">
+
+    <!-- 引入公用的js-->
+    <script src="./js/vue/vue.js"></script>
+    <script src="./js/axios.min.js"></script>
+    <script src="./js/common.js"></script>
+
+    <!-- 引入搜索样式 -->
+    <link rel="stylesheet" type="text/css" href="css/search_css/normalize.css"/>
+    <link rel="stylesheet" href="css/search_css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/search_css/demo.css">
+    <link rel="stylesheet" href="css/search_css/style.css">
+
+    <!--element-->
+    <!-- 引入样式 -->
+    <!--<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    &lt;!&ndash; 引入组件库 &ndash;&gt;
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>-->
+    <!--element-->
+    <link rel="stylesheet" href="static/element-2.12.0/index.css">
+    <script src="static/element-2.12.0/index.js"></script>
+
+    <!-- 引入自己写的样式 -->
+    <link rel="stylesheet" href="css/index_style.css">
+    <link rel="stylesheet" href="css/news_style.css">
+
+    <script src="static/UI/ueditor.config.js"></script>
+    <script src="static/UI/ueditor.all.js"></script>
+    <script src="static/UI/lang/zh-cn/zh-cn.js"></script>
+
+</head>
+<body>
+<div id="Vue-app">
+
+    <div class="header" id="header-top">   <!--line-height: 30px 将文字宽度与div一致 让文字居中 -->
+        <shotcut @deliver="getChildData(arguments)"></shotcut>   <!--组件化头部-->
+    </div>
+    <div class="container">
+        <!--logo图片-->
+        <div>
+            <img src="img/sa_logo.png">
+        </div>
+
+        <!--导航条-->
+        <div id="nav-1">
+            <ul class="nav">
+                <li class="slide1"></li>
+                <li class="slide2"></li>
+                <li><a class="active" href="index.html">首页</a></li>
+                <li><a href="news.html">资讯</a></li>
+                <li><a href="rescue.html">救助</a></li>
+                <li><a href="adopt.html">领养</a></li>
+                <li><a href="search.html">寻宠</a></li>
+                <li><a href="help.html">帮助</a></li>
+                <li><a href="about-us.html">关于我们</a></li>
+                <!-- 搜索框 -->
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;
+                </p>
+                <li>
+                    <div class="search d7">
+                        <form>
+                            <input type="text" placeholder="搜索从这里开始...">
+                            <button type="submit"></button>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <br><br>
+
+        <!----=========================内容开始==============================-->
+
+        <!-- 面包屑导航 -->
+        <div>
+            <ul class="breadcrumb">
+                <li><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+                <li><a href="news.html">资讯通知</a></li>
+                <li>查看内容</li>
+            </ul>
+        </div>
+        <div style="height: 15px"></div>
+        <!--信息部分-左侧-->
+        <!--外层div-->
+        <div style="float: left;width: 75%;height: auto;background-color: white;border-radius:5px;overflow:hidden; zoom:1">
+            <!--内容层-->
+            <div style="width: 98%;height: auto;background-color: white; padding-left: 10px;">
+                <div class="adopt-message">
+                    <!--标题栏-->
+                    <div style="height: 80px;width: 100%">
+                        <div style="height: 30px;width: 94%;margin: 0 auto;text-align: center;">
+                            <span style="font-size: 20px;line-height: 30px">
+                                {{newsVo.news.title}}
+                            </span>
+                        </div>
+                        <div style="height: 8px"></div>
+                        <div style="height: 30px;width: 94%;margin: 0 auto;text-align: center;">
+                            <span style="font-size: 15px;line-height: 30px">
+                                分类：{{newsVo.newsType.type}}  &emsp;|&emsp; 发布时间：{{newsVo.news.createTime}}  &emsp;|&emsp; 发布者: {{newsVo.user.username}}
+                            </span>
+                        </div>
+                        <!--<el-divider></el-divider>-->
+                    </div>
+                    <!--正文内容展示-->
+                    <div style="width: 100%;height: auto;margin: 0 auto">
+                        <div style="height: 5px;width: 100%"></div>
+                        <div style="width: 100%;height: auto" v-html="newsVo.news.content"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--右侧部分-->
+        <div style="width: 24%;height: 1000px;float: right">
+            <!--轮播-->
+            <div style="width: 100%;height: 200px;background-color: white;border-radius: 5px">
+                <div style="height: 10px"></div>
+                <div style="width: 94%;height: 180px;background-color: white;margin: 0 auto">
+                    <div id="myCarousel" class="carousel slide">
+                        <!-- 轮播（Carousel）指标 -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+                        <!-- 轮播（Carousel）项目 -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <a href="news-details.html?id=15">
+                                    <img src="img/movie/movie01.jpg" alt="First slide">
+                                    <div class="carousel-caption">主人养了一条狗，后来嫌弃狗老了，便抛弃了。后来狗竟然... ... ... ... ... ...</div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="news-details.html?id=14" style="color: black">
+                                    <img src="img/movie/movie02.jpg" alt="Second slide">
+                                    <div class="carousel-caption">猫咪中毒输狗血续命 原来猫狗之间也有爱!</div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="news-details.html?id=12" style="color: black">
+                                    <img src="img/movie/movie03.jpg" alt="Third slide">
+                                    <div class="carousel-caption">小区内流浪猫叼着猫皮，路人嫌弃远离，保安说出原由所有人哭了 ...</div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- 轮播（Carousel）导航 -->
+                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--下面-->
+            <div style="height: 12px"></div>
+            <div style="width: 100%;height: 420px;background-color: white;border-radius: 5px">
+                <div style="height: 10px"></div>
+                <div style="width: 94%;height: 400px;background-color: white;margin: 0 auto">
+                    <div style="height: 20px;">图文热点</div>
+                    <div style="height: 10px;"></div>
+                    <!--圖片-->
+                    <!--第一层-->
+                    <div style="width: 100%;height: 100px;">
+                        <div style="width: 48%;height: 100px;float: left;background-color: #ffcc66">
+                            <!--图片-->
+                            <div style="width: 100%;height: 80px;position:relative;">
+                                <a href="news-details.html?id=11" style="color: black">
+                                    <img src="img/news/news01.jpg" style="height: 100px;width: 100%">
+                                    <div style="position:absolute;top:80px;width: 100%;height: 20px;background-color: #cccccc;opacity:0.7;text-align: center">
+                                        <span style="color: white">杭州一妈妈自曝被</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div style="width: 48%;height: 100px;float: right;background-color: #ffcc66">
+                            <!--图片-->
+                            <div style="width: 100%;height: 80px;position:relative;">
+                                <a href="news-details.html?id=12" style="color: black">
+                                    <img src="img/news/news002.jpg" style="height: 100px;width: 100%">
+                                    <div style="position:absolute;top:80px;width: 100%;height: 20px;background-color: #cccccc;opacity:0.7;text-align: center">
+                                        <span style="color: white">小区内流浪猫叼着</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="height: 10px;width: 100%"></div>
+                    <!--第2层-->
+                    <div style="width: 100%;height: 100px">
+                        <div style="width: 48%;height: 100px;float: left;background-color: #ffcc66">
+                            <!--图片-->
+                            <div style="width: 100%;height: 80px;position:relative;">
+                                <a href="news-details.html?id=13" style="color: black">
+                                    <img src="img/news/news003.jpg" style="height: 100px;width: 100%">
+                                    <div style="position:absolute;top:80px;width: 100%;height: 20px;background-color: #cccccc;opacity:0.7;text-align: center">
+                                        <span style="color: white">有了这份全国小动物</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div style="width: 48%;height: 100px;float: right;background-color: #ffcc66">
+                            <!--图片-->
+                            <div style="width: 100%;height: 80px;position:relative;">
+                                <a href="news-details.html?id=14" style="color: black">
+                                    <img src="img/news/news004.jpg" style="height: 100px;width: 100%">
+                                    <div style="position:absolute;top:80px;width: 100%;height: 20px;background-color: #cccccc;opacity:0.7;text-align: center">
+                                        <span style="color: white">猫咪中毒输狗血救命</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="height: 10px;width: 100%"></div>
+                    <!--文字简介-->
+                    <div style="width: 100%;height: 150px;">
+                        <div style="height: 30px">
+                            <span style="line-height: 30px;">
+                                > <a href="news-details.html?id=11" style="color: black">杭州一妈妈自曝被小区内不牵狗绳男主人</a>
+                            </span>
+                        </div>
+                        <div style="height: 30px">
+                            <span style="line-height: 30px;">
+                                > <a href="news-details.html?id=12" style="color: black">小区内流浪猫叼着猫皮，路人嫌弃远离，</a>
+                            </span>
+                        </div>
+                        <div style="height: 30px">
+                            <span style="line-height: 30px;">
+                               > <a href="news-details.html?id=13" style="color: black">有了这份《全国小动物保护组织通讯</a>
+                            </span>
+                        </div>
+                        <div style="height: 30px">
+                            <span style="line-height: 30px;">
+                               > <a href="news-details.html?id=14" style="color: black">猫咪中毒输狗血续命 原来猫狗之间也有</a>
+                            </span>
+                        </div>
+                        <div style="height: 30px">
+                            <span style="line-height: 30px;">
+                               > <a style="color: black">----测试----</a>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+<!-- 设置底部布局 -->
+<hr/>
+<div class="footer">
+    <script type="text/javascript">$(".footer").load("/src/public/footer.html");</script>
+</div>
+<!-- 引入导航栏js,注意和引入顺序有关 必须放在后面 -->
+<script src='js/jquery.min.js'></script>
+<script src="js/my_js/script.js"></script>
+
+<script type="application/javascript">
+    new Vue({
+        el: "#Vue-app",
+        components: {
+            shotcut: () => import('./js/pages/shotcut.js'),
+            ue: () => import('./js/pages/UEdit.js')
+        },
+        data: {
+            // 路径中的id
+            id: "",
+            newsVo: "",
+            // 帖子分类
+            typeId: "",
+            // 按时间分裂
+            timeType: "",
+            // 来自子组件
+            cityId: "",
+            // 分类总
+            newsTypes: "",
+
+        },
+        created() {
+            // 获取所有类型
+            // 获取总的数据
+            this.getNewsDetailsById();
+        },
+        // 监听地区的变化的值，
+        watch: {
+            counties(newCity, oldCity) {
+                // 如果地区改变触发事件,首先清楚countyId的字
+                this.countyId = "";
+                this.getAllNewsInPage();
+            }
+        },
+        methods: {
+            getAllNewsType() {
+                let _this = this;
+                ly.http.get("/news/getAllNewsType")
+                    .then(resp => {
+                            if (resp.status === 200) {
+                                _this.newsTypes = resp.data;
+
+                                let photo = _this.nstr.match(/aaa(\S*)fff/)[1];
+                            }
+                        }
+                    )
+            },
+            /*发布陈宫消息提示*/
+            showSuccessMsg(data) {
+                this.$message(
+                    {
+                        message: data,
+                        type: 'success'
+                    }
+                );
+            },
+            /*失败消息*/
+            showFaileMsg(data) {
+                this.$message.error(data);
+            },
+            // 获得全部adopt使用分页
+            getAllNewsInPage() {
+                let _this = this;
+                ly.http.get("/news/getAllNewsVosInPage", {
+                    params: {
+                        size: this.pagination.size,
+                        page: this.pagination.page,
+                        typeId: this.typeId,
+                    }
+                })
+                    .then(resp => {
+                        if (resp.status === 200) {
+                            // .list 拿到集合数据
+                            _this.newsVos = resp.data.list;
+                            // .total 拿到总个数
+                            _this.pagination.count = resp.data.total;
+                            console.log(JSON.stringify(_this.newsVos));
+                        }
+                    })
+            },
+            /*获取子组件中的方法*/
+            getChildData: function (msg) {
+                this.counties = msg[1];
+                this.cityId = msg[2]
+            },
+            // 页面跳转后立马记载数据
+            getNewsDetailsById() {
+                // 获取页面中的参数
+                this.id = ly.getUrlParam("id");
+                let _this = this;
+                ly.http.get("/news/getNewsDetailsById?id=" + this.id)
+                    .then(resp => {
+                        if (resp.status === 200) {
+                            _this.newsVo = resp.data;
+                            console.log(_this.newsVo);
+                        }
+                    })
+            },
+        }
+    })
+</script>
+</body>
+</html>
