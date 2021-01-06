@@ -9,7 +9,7 @@
         "build": "node build/build.js"
     },
     "dependencies": {
-        "axios": "^0.15.3",
+        "axios": "^0.21.1",
         "babel-polyfill": "^6.23.0",
         "element-ui": "^2.11.0",
         "mavon-editor": "^2.7.5",
