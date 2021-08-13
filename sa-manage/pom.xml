@@ -54,7 +54,7 @@
 		<redisson.version>3.5.0</redisson.version>
 		<easyexcel.version>2.0.3</easyexcel.version>
 		<weixin-popular.version>2.8.28</weixin-popular.version>
-		<bcprov-jdk15on.version>1.56</bcprov-jdk15on.version>
+		<bcprov-jdk15on.version>1.67</bcprov-jdk15on.version>
 		<thumbnailator.version>0.4.8</thumbnailator.version>
 		<pinyin4j.version>2.5.1</pinyin4j.version>
 		<logstash.logback.version>6.3</logstash.logback.version>
