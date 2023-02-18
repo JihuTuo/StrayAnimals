@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap 模板</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- 引入 Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- 引入导航栏样式 -->
+    <link rel="stylesheet" href="css/navigation.css">
+
+    <!-- 包括所有已编译的插件 -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- 模态窗口的打开需要依赖此文件 -->
+    <script src="js/modal.js"></script>
+    <!-- 引入自己写的js文件 -->
+    <script src="js/my_js/index.js"></script>
+
+
+    <!--引入搜索框样式-->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/search_adopt/zfont-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/search_adopt/demo.css">
+    <link rel="stylesheet" href="css/search_adopt/style.css">
+
+    <!-- 引入搜索样式 -->
+    <link rel="stylesheet" type="text/css" href="css/search_css/normalize.css"/>
+    <link rel="stylesheet" href="css/search_css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/search_css/demo.css">
+    <link rel="stylesheet" href="css/search_css/style.css">
+
+
+    <!--element 上传组件-->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.4.0/css/bootstrap.min.css"/>
+    <!--<link rel="stylesheet" href="https://cdn.staticfile.org/element-ui/2.4.11/theme-chalk/index.css"/>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/animate.css/3.7.0/animate.min.css"/>-->
+    <!--element-->
+    <link rel="stylesheet" href="static/element-2.12.0/index.css">
+    <script src="static/element-2.12.0/index.js"></script>
+
+    <style type="text/css">
+        input.el-upload__input {
+            display: none;
+        }
+    </style>
+
+    <!--引入element  最后的js-->
+    <script type="text/javascript" src="https://cdn.staticfile.org/vue/2.5.22/vue.min.js"></script>
+    <script type="text/javascript" src="https://cdn.staticfile.org/Sortable/1.8.1/Sortable.min.js"></script>
+    <script type="text/javascript" src="https://cdn.staticfile.org/Vue.Draggable/2.17.0/vuedraggable.min.js"></script>
+    <script type="text/javascript" src="https://cdn.staticfile.org/element-ui/2.4.11/index.js"></script>
+    <script type="text/javascript" src="{{ asset('js/upload_images_and_sort.js') }}?t=201901212007"></script>
+
+
+    <!-- 引入自己写的样式 -->
+    <link rel="stylesheet" href="css/index_style.css">
+    <link rel="stylesheet" href="css/adopt_style.css">
+</head>
+<body>
+<div id="Vue-app">
+    <div class="header">   <!--line-height: 30px 将文字宽度与div一致 让文字居中 -->
+        <shotcut @deliver="getChildData(arguments)"></shotcut>   <!--组件化头部-->
+    </div>
+    <div class="container">
+        <!--logo图片-->
+        <div>
+            <img src="img/sa_logo.png">
+        </div>
+
+        <!--导航条-->
+        <div id="nav-1">
+            <ul class="nav">
+                <li class="slide1"></li>
+                <li class="slide2"></li>
+                <li><a  class="active" href="index.html">首页</a></li>
+                <li><a href="#/">资讯</a></li>
+                <li><a href="rescue.html">救助</a></li>
+                <li><a href="adopt.html">领养</a></li>
+                <li><a href="search.html">寻宠</a></li>
+                <li><a href="help.html">帮助</a></li>
+                <li><a href="about-us.html">关于我们</a></li>
+                <!-- 搜索框 -->
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;
+                </p>
+                <li>
+                    <div class="search d7">
+                        <form>
+                            <input type="text" placeholder="搜索从这里开始...">
+                            <button type="submit"></button>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <br><br>
+
+        <!----=========================内容开始==============================-->
+
+        <!-- 面包屑导航 -->
+        <div>
+            <ul class="breadcrumb">
+                <li><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+                <li><a href="search.html">寻宠</a></li>
+                <li>发布信息</a></li>
+            </ul>
+        </div>
+
+        <!--发布信息的导航新-->
+        <div style="height: 35px;background-color: #F9F0DA">
+            <span style="padding-left: 10px;line-height: 35px">填写基本信息</span>
+        </div>
+        <!--正文填写选项-->
+        <div class="select-message">
+            <table class="table-message">
+                <tr class="tr-message">
+                    <td class="td-message">
+                        <span style="color: red">*</span>
+                        <strong>寻宠/主：</strong>
+                    </td>
+                    <td>
+                        <select style="width: 160px" class="input-message" v-model="animalSearch.searchAnimal">
+                            <option value="1">寻宠</option>
+                            <option value="0">寻主</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="tr-message">
+                    <td class="td-message">
+                        <span style="color: red">*</span>
+                        <strong>标题：</strong>
+                    </td>
+                    <td>
+                        <input type="text" class="input-message" style="width:350px" v-model="animalSearch.title">
+                        <strong style="color: #0066CC"> （6~30个汉字）</strong>
+                    </td>
+                </tr>
+                <!--品种-->
+                <tr class="tr-message">
+                    <td class="td-message">
+                        <span style="color: red">*</span>
+                        <strong>品种：</strong>
+                    </td>
+                    <td>
+                        <select style="width: 160px" class="input-message" @change="getAnimalCategory"
+                                v-model="animalId">
+                            <option v-for="animal in animals" :value="animal.id">{{animal.type}}</option>
+                        </select>
+                        &emsp;
+                        <!-- 子选择框 -->
+                        <select style="width: 160px" class="input-message" v-model="animalSearch.categoryId">
+                            <option v-for="ca in animalsSecondCategory" :value="ca.id">{{ca.name}}</option>
+                        </select>
+                    </td>
+                </tr>
+                <!--公母-->
+                <tr class="tr-message">
+                    <td class="td-message">
+                        <span style="color: red">*</span>
+                        <strong>公母：</strong>
+                    </td>
+                    <td>
+                        <select style="width: 160px" class="input-message" v-model="animalSearch.sex">
+                            <option value="公">公</option>
+                            <option value="母">母</option>
+                        </select>
+                    </td>
+                </tr>
+                <!--年龄-->
+                <tr class="tr-message">
+                    <td class="td-message">
+                        <span style="color: red">*</span>
+                        <strong>年龄：</strong>
+                    </td>
+                    <td>
+                        <el-input-number v-model="animalSearch.age" :step="0.1" ></el-input-number>
+                       <!-- <input style="width: 160px" class="input-message" v-model="animalSearch.age" type="number"
+                               step="0.1" min="0.1" max="20"/>-->
+                        <strong style="color: #0066CC"> （单位：年）</strong>
+                    </td>
+                </tr>
+                <!--只数量-->
+                <tr class="tr-message">
+                    <td class="td-message">
+                        <span style="color: red">*</span>
+                        <strong>酬金：</strong>
+                    </td>
+                    <td>
+                        <el-input-number v-model="animalSearch.money" :step="100" ></el-input-number>
+                        <!--<input style="width: 160px" class="input-message" v-model="animalSearch.money" type="number"
+                               step="1" min="1" max="7"/>-->
+                        <strong style="color: #0066CC"> （不填为免酬金，填写负数为面议）</strong>
+                    </td>
+                </tr>
+                <!--详细位置-->
+                <tr class="tr-message">
+                    <td class="td-message">
+                        <span style="color: red">*</span>
+                        <strong>区县：</strong>
+                    </td>
+                    <td>
+                        <select style="width: 160px" class="input-message" v-model="animalSearch.countyId">
+                            <option>请选择</option>
+                            <option v-for="c in counties" :value="c.id">{{c.name}}</option>
+                        </select>
+                    </td>
+                </tr>
+                <!--宠物图片-->
+                <tr class="tr-message" style="">
+                    <td class="td-message">
+                        <span style="color: red">*</span>
+                        <strong>图片：</strong>
+                    </td>
+                    <td>
+                        <!--引入element 图片上传样式
+                        action： 上传路径；
+                        limit：总数量
+                        on-error: 上传失败回调函数
+                        -->
+                        <div class="col-sm-12 col-md-12 main" > <!--http://api.sa.com/stary-animals/upload/adopt-->
+                            <el-upload
+                                    ref="upload"
+                                    class="upload-demo"
+                                    name="file"
+                                    action="http://127.0.0.1/stary-animals/upload/search"
+                                    :before-upload="beforeUpload"
+                                    :data="uploadParams"
+                                    :headers="myHeader"
+                                    :auto-upload="false"
+                                    multiple
+                                    :limit="3"
+                                    :on-error="uploadError"
+                                    :on-success="handle_success"
+                                    list-type="picture-card"
+                                    accept="image/jpeg,image/gif,image/png,image/bmp"
+                                    :file-list="images">
+                                <el-button size="small" type="primary" >选择图片（<=3张）</el-button>
+                            </el-upload>
+                        </div>
+                        <span style="padding-left: 15px;color: red">{{uploadErrorMsg}}</span>
+                    </td>
+                </tr>
+                <!--描述丢失信息-->
+                <tr class="tr-message">
+                    <td class="td-message">
+                        <span style="color: red">*</span>
+                        <strong>描述：</strong>
+                    </td>
+                    <td>
+                    <textarea maxlength="400" rows="6" cols="80" style="padding-left: 10px"
+                              placeholder="请输入相关描述(<400)..." v-model="animalSearch.message">
+                    </textarea>
+                    </td>
+                </tr>
+                <!--联系人-->
+                <tr class="tr-message">
+                    <td class="td-message">
+                        <span style="color: red">*</span>
+                        <strong>联系人：</strong>
+                    </td>
+                    <td>
+                        <input type="text" class="input-message" style="width:160px" v-model="animalSearch.personName">
+                    </td>
+                </tr>
+                <!--联系人手机号-->
+                <tr class="tr-message">
+                    <td class="td-message">
+                        <span style="color: red">*</span>
+                        <strong>手机号：</strong>
+                    </td>
+                    <td>
+                        <input type="text" class="input-message" style="width:160px" v-model="animalSearch.phone">
+                    </td>
+                </tr>
+                <!--联系人微信号-->
+                <tr class="tr-message">
+                    <td class="td-message">
+                        <strong>微信号：</strong>
+                    </td>
+                    <td>
+                        <input type="text" class="input-message" style="width:160px" v-model="animalSearch.weChat">
+                    </td>
+                </tr>
+                <tr class="tr-message">
+                    <td class="td-message">
+                    </td>
+                    <td>
+                        <!--发布按钮-->
+                        <input type="button" value="发布信息&emsp;" class="input-message"
+                               style="background-color: #FF0000;color: white"
+                               @click="publish">
+
+                        <span style="color: #FF0000;position: relative;left: 50px">{{adoptMsg}}</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!------------====================内容结束============================-->
+    </div>
+
+
+    <!-- 设置底部布局 -->
+    <hr/>
+    <div class="footer">
+        <script type="text/javascript">$(".footer").load("/src/public/footer.html");</script>
+    </div>
+</div>
+
+<!-- 引入导航栏js,注意和引入顺序有关 必须放在后面 -->
+<script src='js/jquery.min.js'></script>
+<script src="js/my_js/script.js"></script>
+
+
+<!-- 引入公用的js-->
+<!--此处不引入本地vue依赖，会与上面的vue.min.js冲突-->
+<script src="./js/axios.min.js"></script>
+<script src="./js/common.js"></script>
+
+<script type="application/javascript">
+    new Vue({
+        el: "#Vue-app",
+        components: {
+            shotcut: () => import('./js/pages/shotcut.js'),
+        },
+        data: {
+            images: [
+            ],
+            uploadParams: {
+                animalSearchId: "",
+            },
+            // 上传图片个数
+            times: "0",
+            // 请求头中的token
+            myHeader: {
+                token: ly.store.get("token"),
+            },
+            // 图片是否发送
+            flag: "false",
+            animals: [],
+            animalsSecondCategory: [],
+            animalId: "",
+            uploadErrorMsg: "",
+            // 用来保存animalSearch保存成功后的自增id
+            saveAnimalSearchId: "",
+            animalSearch: {
+                title: "",
+                sex: "",
+                countyId: "",
+                categoryId: "",
+                age: "",
+                message: "",
+                personName: "",
+                phone: "",
+                weChat: "",
+                userId: "",
+                createTime: "",
+                money: "",
+                // 差宠物还是主人
+                searchAnimal: ""
+            },
+            provinceId: "",
+            provinces: [],
+            cityId: "",
+            cities: [],
+            countyId: "",
+            counties: [],
+            /*发布后的提醒消息*/
+            adoptMsg: ""
+        },
+        created: function () {   // created 是vue的钩子函数，即在创建Vue实例后就执行的方法
+            this.getAnimals();  // 必须要加this来调用才能生效
+        },
+        methods: {
+            /*动态获取数据库中的额数据*/
+            getAnimals() {
+                var _this = this;
+                ly.http.get('animalCategory/queryAll'
+                ).then(resp => {
+                    if (resp.status === 200) {
+                        _this.animals = resp.data;
+                        console.log(_this.animals);
+                    }
+                }).catch()
+            },
+            /*使用onchange  触发子分类菜单*/
+            getAnimalCategory() {
+                var _this = this;
+                console.log("id" + _this.animalId);
+                ly.http.get("animalCategory/queryByCategoryId", {
+                    params: {
+                        id: _this.animalId,
+                    }
+                }).then(resp => {
+                    if (resp.status === 200) {
+                        _this.animalsSecondCategory = resp.data;
+                        console.log(_this.animalsSecondCategory);
+                    }
+                }).catch(
+                )
+            },
+
+            /*获取子组件中的方法*/
+            getChildData: function (msg) {
+                this.animalSearch.userId = msg[0];
+                this.counties = msg[1];
+                console.log("--userInfo" + this.animalSearch.userId);
+                console.log("--userInfo" + this.counties);
+            },
+
+            /*element*/
+            // 只有成功发布了内容后才能添加图片
+            beforeUpload () {
+                // 上传之前要先判断基本信息是否上传
+                /*if (!this.saveanimalSearchId) {
+                    this.uploadErrorMsg = "请在上传完基本信息后再上传图片！";
+                    setTimeout(() => this.uploadErrorMsg = "", 2000);
+                    return false;
+                }
+                // 不为null 即已经上传了基本信息，允许上传图片
+                this.uploadParams.animalSearchId = this.saveanimalSearchId;*/
+                return true;
+            },
+            handle_success () {
+                this.times = this.times + 1;
+                this.uploadErrorMsg = "图片上传成功！";
+                setTimeout(() => this.uploadErrorMsg = "", 2000);
+                if (this.times === "3") {
+                    this.uploadErrorMsg = "图片上传完成，即将返回首页！";
+                    setTimeout(() => {
+                        this.uploadErrorMsg = "";
+                        window.location = "/index.html";
+                    }, 2000);
+                }
+            },
+            /*图片上传失败回调函数*/
+            uploadError () {
+                this.uploadErrorMsg = "图片上传失败，请重新选择！";
+                setTimeout(() => this.uploadErrorMsg = "", 2000);
+            },
+            remove (index) {
+                var that = this;
+                this.$confirm('确认删除?', '提示', {
+                    confirmButtonText: '确定',
+                    cancelButtonText: '取消',
+                    type: 'warning'
+                }).then(function () {
+                    that.$message({
+                        type: 'success',
+                        message: '删除成功!'
+                    });
+                    that.images[index].to_del = true;
+                    setTimeout(function () {
+                        that.images.splice(index, 1);
+                    }, 1000);
+                })
+            },
+
+           // 上传图片
+            confirm () {
+                this.$refs.upload.submit();
+            },
+
+            // 消息提示函数
+            successMsg(msg) {
+                this.$message({
+                    message: msg,
+                    type: 'success'
+                });
+            },
+            // 失败消息
+            errorMsg(msg) {
+                this.$message.error(msg);
+            },
+            /*发布信息*/
+            publish() {
+                let _this = this;
+                //设置创建时间
+                _this.animalSearch.createTime = ly.formatDate(new Date(), "yyyy-MM-dd hh:mm");
+                ly.http.post("/search/save", leyou.stringify(this.animalSearch)
+                ).then(resp => {
+                        if (resp.status === 200) {
+                            // 将最新的值赋给id，这个saveanimalSearchId不为null，才可以上传图片
+                            _this.saveAnimalSearchId = resp.data;
+                            _this.uploadParams.animalSearchId = resp.data;
+                            /*随后执行上传操作*/
+                            this.$refs.upload.submit();
+                            _this.successMsg("发布成功，即将返回首页！");
+                            setTimeout(() => {
+                               window.location = "/search.html";
+                            }, 2000);
+
+                        };
+                        if (resp.status === 400) {
+                            _this.errorMsg("信息输入有误，请重新输入！");
+                        }
+                    }
+                ).catch( () => {
+                    _this.errorMsg("信息输入有误，请重新输入！");
+                });
+            },
+            // 检验数据是否合法
+            validate() {
+            },
+
+        }
+    });
+</script>
+</body>
+</html>

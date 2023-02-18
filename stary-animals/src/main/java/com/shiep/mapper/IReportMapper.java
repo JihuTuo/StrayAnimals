@@ -1,6 +1,7 @@
 package com.shiep.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.shiep.entity.PhotoAnimalSearch;
 import com.shiep.entity.Report;
 import org.apache.ibatis.annotations.Select;
 
@@ -111,4 +112,8 @@ public interface IReportMapper extends BaseMapper<Report> {
             "WHERE  sa_report_type_id = #{typeId} AND delete_status = 0 AND verify_status = 1\n" +
             "AND create_time > NOW() - INTERVAL 1 MONTH")
     List<Report> queryReportByTypeIdAndInMonth(Integer typeId);
+
+
+    @Select("SELECT * FROM sa_report")
+    List<Report> findAll();
 }

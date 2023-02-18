@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html xmlns:javascript="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Bootstrap 模板</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- 引入 Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- 引入导航栏样式 -->
+    <link rel="stylesheet" href="css/navigation.css">
+
+    <!-- 包括所有已编译的插件 -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- 模态窗口的打开需要依赖此文件 -->
+    <script src="js/modal.js"></script>
+    <!-- 引入自己写的js文件 -->
+    <script src="js/my_js/index.js"></script>
+
+
+    <!--引入搜索框样式-->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/search_adopt/zfont-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/search_adopt/demo.css">
+    <link rel="stylesheet" href="css/search_adopt/style.css">
+
+    <!-- 引入公用的js-->
+    <script src="./js/vue/vue.js"></script>
+    <script src="./js/axios.min.js"></script>
+    <script src="./js/common.js"></script>
+
+    <!-- 引入搜索样式 -->
+    <link rel="stylesheet" type="text/css" href="css/search_css/normalize.css"/>
+    <link rel="stylesheet" href="css/search_css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/search_css/demo.css">
+    <link rel="stylesheet" href="css/search_css/style.css">
+
+    <!--element-->
+    <!-- 引入样式 -->
+    <!--<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    &lt;!&ndash; 引入组件库 &ndash;&gt;
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>-->
+    <!--element-->
+    <link rel="stylesheet" href="static/element-2.12.0/index.css">
+    <script src="static/element-2.12.0/index.js"></script>
+
+    <!-- 引入自己写的样式 -->
+    <link rel="stylesheet" href="css/index_style.css">
+    <link rel="stylesheet" href="css/report_style.css">
+
+    <script src="static/UI/ueditor.config.js"></script>
+    <script src="static/UI/ueditor.all.js"></script>
+    <script src="static/UI/lang/zh-cn/zh-cn.js"></script>
+
+</head>
+<body>
+<div id="Vue-app">
+
+    <div class="header" id="header-top">   <!--line-height: 30px 将文字宽度与div一致 让文字居中 -->
+        <shotcut @deliver="getChildData(arguments)"></shotcut>   <!--组件化头部-->
+    </div>
+    <div class="container">
+        <!--logo图片-->
+        <div>
+            <img src="img/sa_logo.png">
+        </div>
+
+        <!--导航条-->
+        <div id="nav-1">
+            <ul class="nav">
+                <li class="slide1"></li>
+                <li class="slide2"></li>
+                <li><a  class="active" href="index.html">首页</a></li>
+                <li><a href="#/">资讯</a></li>
+                <li><a href="rescue.html">救助</a></li>
+                <li><a href="adopt.html">领养</a></li>
+                <li><a href="search.html">寻宠</a></li>
+                <li><a href="help.html">帮助</a></li>
+                <li><a href="about-us.html">关于我们</a></li>
+                <!-- 搜索框 -->
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;
+                </p>
+                <li>
+                    <div class="search d7">
+                        <form>
+                            <input type="text" placeholder="搜索从这里开始...">
+                            <button type="submit"></button>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <br><br>
+
+        <!----=========================内容开始==============================-->
+
+        <!-- 面包屑导航 -->
+        <div>
+            <ul class="breadcrumb">
+                <li><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+                <li>本地社区</li>
+            </ul>
+        </div>
+
+        <!-- 地区选择器、分类等 显示div -->                                  <!--border 边框族系， solod 颜色-->
+        <div class="adopt-city">
+            <!-- 城市区域 -->
+            <div class="select-city">
+                <div class="show-city">
+                    <!--这里动态展示城市列表-->
+                    &emsp;上级板块：
+                    <!--<span v-for="c in counties"> </span>-->
+                    <span style="padding-right: 15px">无</span>
+                </div>
+                <!--  中划线隔开-->
+                <hr style="height:1px;border:none;border-top:1px dashed #0066CC;"/>
+                <!-- 全部时间 -->
+                <div class="select-pet">
+                    &emsp;下级板块：
+                   <span style="padding-right: 15px">无</span>
+                </div>
+            </div>
+        </div>
+        <div style="height: 15px"></div>
+        <!--发帖按钮-->
+        <div style="background-color: white;width: 150px;height: 60px;">
+            <div style="width: 140px;margin: auto; border-radius:5px; border:2px solid #d9d9d9;height: 52px;">
+                <div style="width: 130px;height: 48px;margin: auto;padding-left: 10px;padding-top: 5px">
+                    <a href="#publishArea" style="color: black;text-decoration:none">
+                        <img width="42" height="36" src="img/comiis_01.gif">
+                        <span>发表帖子</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <br><br>  <!-- 流出空隙 -->
+        <!--信息部分-左侧-->
+        <div class="adopt-message">
+            <!-- 过滤不同状态的消息 -->
+            <div class="adopt-message-status">
+                <a href="javascript:void(0)">
+                    <div class="adopt-message-status-font">帖子</div>
+                </a>
+                <div style="height: 30px;float: right">
+                    <input type="button" value="搜索" class="search-btn" type="button" style="float: right">
+                    <input class="input" type="text" placeholder="请输入内容" style="float: right">
+                </div>
+            </div>
+            <!--首先是一个搜索框-->
+
+
+            <br>  <!--换行-->
+            <!--主题-->
+            <div class="total-amount">
+                &emsp;    <!--这里需要渲染数据-->
+                &emsp;主题分类：
+                <!--<span v-for="c in counties"> </span>-->
+                <a href="javascript:void(0);" @click="changeAllType()"><span style="padding-right: 15px;line-height: 40px">全部</span></a>
+                <a v-for="(c,index) in reportTypes" href="javascript:void(0);"
+                   :class="isCountyActive == index ? 'addclass' : '' " @click="changeType(c.id, index)"><span
+                        style="padding-right: 15px">{{c.type}}</span></a>
+            </div>
+            <!--时间-->
+            <div class="total-amount2">
+                &emsp;    <!--这里需要渲染数据-->
+                &emsp;<strong style="padding-left: 13px">全部时间</strong>&emsp;|
+                <!--<span v-for="c in counties"> </span>-->
+                <a  :style="redStyle1" href="javascript:void(0);" @click="changeDayTime(1)">
+                    <span style="padding-right: 10px;padding-left: 10px;line-height: 40px">
+                        一天
+                    </span>
+                </a>    |
+                <a  :style="redStyle2" href="javascript:void(0);" @click="changeDayTime(2)">
+                    <span style="padding-right: 10px;padding-left: 10px;line-height: 40px">
+                        一周
+                    </span>
+                </a>   |
+                <a  :style="redStyle3" href="javascript:void(0);" @click="changeDayTime(3)">
+                    <span style="padding-right: 10px;padding-left: 10px;line-height: 40px">
+                        一个月
+                    </span>  |
+                </a>
+                <a  :style="redStyle4" href="javascript:void(0);" @click="changeDayTime('')">
+                    <span style="padding-right: 10px;padding-left: 10px;line-height: 40px">
+                        最后发表
+                    </span>
+                </a>
+            </div>
+            <!--主题-->
+            <!--时间-->
+            <div class="total-amount3">
+                <span style="padding-left: 30px; font-size: larger;line-height: 40px"><strong>主题</strong></span>
+            </div>
+            <!--帖子的主要内容-->
+            <div class="total-amount4">
+                <!--用表格来呈现-->
+                <div class="container" style="width: 100%">
+                    <div class="row clearfix">
+                        <div class="col-md-12 column">
+                            <table class="table table-hover table-striped">
+                                <tr v-for="r in reportVos">
+                                    <td style="width: 800px">
+                                        <img src="img/folder_hot.gif">
+                                        <span style='color:#993300;'>[1人赞]</span>
+                                        <label style="color: #993300">[{{r.reportType.type}}]</label>
+                                        <a href="javascript:void(0);" @click="toReportDetails(r.report.id)">
+                                            {{r.report.title}}
+                                        </a>
+                                    </td>
+                                    <td style="font-size: smaller;width: 150px">
+                                        {{r.user.username}}
+                                    </td>
+                                    <td style="font-size: smaller;width: 150px">
+                                        {{r.report.createTime}}
+                                    </td>
+                                    <td style="font-size: smaller;width: 150px">
+                                        我爱阿卡丽坏好月圆
+                                    </td>
+                                </tr>
+                            </table>
+                            <el-pagination
+                                    style="margin-top:15px;"
+                                    background
+                                    layout="prev, pager, next"
+                                    :current-page.sync="pagination.page"
+                                    :page-size.sync="pagination.size"
+                                    :total="pagination.count"
+                                    @current-change="handleCurrentChange">
+                            </el-pagination>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br> <br>
+            <!--开始进行信息循环展示-->
+            <div id="publishArea" style="height: 35px;background-color: #f5f5f5;border-radius:5px">
+                <span style="line-height: 35px;font-size: medium;padding-left: 20px">
+                    <strong>快速发帖</strong>
+                </span>
+            </div>
+            <div class="show-adopt-message">
+                <div style="height: 20px"></div>
+                <!--主题分类-->
+                <div style="height: 40px">
+                    <div>
+                        <el-select v-model="report.typeId" clearable placeholder="请选择主题"
+                                   style="float: left;padding-left: 22px">
+                            <el-option
+                                    v-for="item in reportTypes"
+                                    :key="item.id"
+                                    :label="item.type"
+                                    :value="item.id">
+                            </el-option>
+                        </el-select>
+                    </div>
+                    <!--标题-->
+                    <div style="padding-left: 30px;width: 600px;float: left">
+                        <el-input
+                                placeholder="请输入标题（6~60）"
+                                v-model="report.title"
+                                clearable>
+                        </el-input>
+                    </div>
+                </div>
+                <div style="height: 10px"></div>
+                <!--快速发帖-->
+                <div style="width: 96%;height: auto;margin: auto">
+                    <!--引入富文本框-->
+                    <ue :defaultMsg=defaultmsg :config=config :id=ue1 ref="ue1"></ue>
+                    <div style="height: 20px"></div>
+                    <div slot="footer" class="dialog-footer">
+                        <el-button style="padding-left: 20px" class="buttons" type="primary" @click="publishReport">
+                            写好了，去发布
+                        </el-button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- 设置底部布局 -->
+<hr/>
+<div class="footer">
+    <script type="text/javascript">$(".footer").load("/src/public/footer.html");</script>
+</div>
+<!-- 引入导航栏js,注意和引入顺序有关 必须放在后面 -->
+<script src='js/jquery.min.js'></script>
+<script src="js/my_js/script.js"></script>
+
+<script type="application/javascript">
+    new Vue({
+        el: "#Vue-app",
+        components: {
+            shotcut: () => import('./js/pages/shotcut.js'),
+            ue: () => import('./js/pages/UEdit.js')
+        },
+        data: {
+            report: {
+                typeId: "",
+                title: "",
+                content: "",
+                createTime: "",
+                updateTime: "",
+                userId: "",
+                cityId: ""
+            },
+            // 帖子分类
+            typeId: "",
+            // 按时间分裂
+            timeType: "",
+            // 来自子组件
+            cityId: "",
+            // 分类总
+            reportTypes: "",
+            // 总的vo
+            reportVos: "",
+
+            redStyle1: "",
+            redStyle2: "",
+            redStyle3: "",
+            redStyle4: "",
+            // 县区过滤器
+            countyId: "",
+            // 分页组件参数
+            pagination: {
+                page: 1,
+                size: 5,
+                count: 0,
+            },
+            isCountyActive: -1,
+            isactive: -1,
+            config: {
+                initialFrameWidth: null,
+                initialFrameHeight: 350,
+                toolbars: [
+                    ['fullscreen', 'source', '|', 'undo', 'redo', '|',
+                        'bold', 'italic', 'underline', 'fontborder', 'strikethrough', 'superscript', 'subscript', 'removeformat', 'formatmatch', 'autotypeset', 'blockquote', 'pasteplain', '|', 'forecolor', 'backcolor', 'insertorderedlist', 'insertunorderedlist', 'selectall', 'cleardoc', '|',
+                        'rowspacingtop', 'rowspacingbottom', 'lineheight', '|',
+                        'customstyle', 'paragraph', 'fontfamily', 'fontsize', '|',
+                        'directionalityltr', 'directionalityrtl', 'indent', '|',
+                        'justifyleft', 'justifycenter', 'justifyright', 'justifyjustify', '|', 'touppercase', 'tolowercase', '|',
+                        'link', 'unlink', 'anchor', '|', 'imagenone', 'imageleft', 'imageright', 'imagecenter', '|',
+                        'insertimage', 'emotion', 'scrawl', 'insertvideo', 'music', 'attachment', 'map', 'gmap', 'insertframe', 'insertcode', 'webapp', 'pagebreak', 'template', 'background', '|',
+                        'horizontal', 'date', 'time', 'spechars', 'snapscreen', 'wordimage', '|',
+                        'inserttable', 'deletetable', 'insertparagraphbeforetable', 'insertrow', 'deleterow', 'insertcol', 'deletecol', 'mergecells', 'mergeright', 'mergedown', 'splittocells', 'splittorows', 'splittocols', 'charts', '|',
+                        'print', 'preview', 'searchreplace', 'drafts', 'help']
+                ],//'simpleupload',单个图片上传，不显示
+            },
+            defaultmsg: '',
+            ue1: "ue", // 不同编辑器必须不同的id
+            //---- end----- ue 编辑器相关
+        },
+        created() {
+            // 获取所有类型
+            this.getAllReportType();
+            // 获取总的数据
+            this.getAllReportInPage();
+        },
+        // 监听地区的变化的值，
+        watch: {
+            counties(newCity, oldCity) {
+                // 如果地区改变触发事件,首先清楚countyId的字
+                this.countyId = "";
+                this.getAllReportInPage();
+            }
+        },
+        methods: {
+            getAllReportType() {
+                let _this = this;
+                ly.http.get("/report/getAllReportType")
+                    .then(resp => {
+                            if (resp.status === 200) {
+                                _this.reportTypes = resp.data;
+                            }
+                        }
+                    )
+            },
+            /*獲取诶荣*/
+            // 获取编辑器html内容
+            publishReport() {
+                /*首先参数复制  this.$refs.ue1.getUEContent()获取输入框中内容*/
+                this.report.content = this.$refs.ue1.getUEContent();
+                this.report.createTime =  ly.formatDate(new Date(), "yyyy-MM-dd hh:mm");
+                this.report.updateTime =  this.report.createTime;
+                this.report.userId = ly.store.getJson("user").id;
+                this.report.cityId = ly.store.getJson("city").id;
+                console.log("cityid="+this.cityId + "   userid="+this.userId);
+                console.log(JSON.stringify(this.report) + "<---------report");
+                if (this.report.title === "" || this.report.typeId === "" || this.report.content === "") {
+                    this.showFaileMsg("请输入主题类型、标题、内容后再发布！");
+                    return;
+                }
+                if (!this.report.cityId) {
+                    this.showFaileMsg("请选择城市之后再发布！");
+                    return;
+                }
+               let _this = this;
+               ly.http.post("/report/saveReport", ly.stringify(this.report))
+                        .then(resp => {
+                            if (resp.status === 200) {
+                                _this.showSuccessMsg("帖子发布成功！");
+                                window.setTimeout( () => {
+                                    window.location = "rescue.html";
+                                }, 1000);
+
+                            } else {
+                                _this.showFaileMsg("帖子发布失败，请重新发布！");
+                            }
+                    }
+                ).catch( () => {
+                       _this.showFaileMsg("帖子发布失败，请重新发布！");
+                  }
+               )
+            },
+            /*发布陈宫消息提示*/
+            showSuccessMsg(data) {
+                this.$message(
+                    {
+                        message: data,
+                        type: 'success'
+                    }
+                );
+            },
+            /*失败消息*/
+            showFaileMsg(data) {
+                this.$message.error(data);
+            },
+            // 获得全部adopt使用分页
+            getAllReportInPage() {
+                let _this = this;
+                ly.http.get("/report/getReportByTypeOrTimeInPage",{
+                    params: {
+                        size: this.pagination.size,
+                        page: this.pagination.page,
+                        cityId: ly.store.getJson("city").id,
+                        typeId: this.typeId,
+                        timeType: this.timeType
+                    }
+                })
+                    .then(resp => {
+                        if (resp.status === 200) {
+                            // .list 拿到集合数据
+                            _this.reportVos = resp.data.list;
+                            // .total 拿到总个数
+                            _this.pagination.count = resp.data.total;
+                            console.log(_this.pagination.count + "count");
+                            console.log(ly.parse(_this.reportVos));
+                        }
+                    })
+            },
+            handleCurrentChange(page) {
+                this.pagination.page = page;
+                this.getAllReportInPage();
+            },
+            // 主题过滤
+            changeType(id, index) {
+                this.isCountyActive = index;
+                this.typeId = id;
+                console.log("countyId" + id);
+                // 每当产生变化的时候就调用函数获取分页
+                this.getAllReportInPage();
+            },
+            // 即选择全部主题
+            changeAllType() {
+                this.isCountyActive = -1;
+                this.typeId = "";
+                this.getAllReportInPage();
+            },
+            // 时间过滤
+            changeDayTime(timeType) {
+                this.redStyle1 = "";
+                this.redStyle2 = "";
+                this.redStyle3 = "";
+                this.redStyle4 = "";
+                if (timeType === 1) {
+                    this.redStyle1 = "color: red;font-size: larger";
+                }
+                if (timeType === 2) {
+                    this.redStyle2 = "color: red;font-size: larger";
+                }
+                if (timeType === 3) {
+                    this.redStyle3 = "color: red;font-size: larger";
+                }
+                if (!timeType) {
+                    this.redStyle4 = "color: red;font-size: larger";
+                }
+                this.timeType = timeType;
+                this.getAllReportInPage();
+            },
+            toReportDetails (id) {
+                console.log("id" + id);
+                window.location.href="rescue-details.html" + "?id=" + id;
+            },
+
+
+            getUEContent() {
+                let content = this.$refs.ue.getUEContent(); // 调用子组件方法
+                this.$notify({
+                    title: "获取成功，可在控制台查看！",
+                    message: content,
+                    type: "success"
+                });
+                console.log(content);
+            },
+            getUEContentTxt() {
+                let content = this.$refs.ue.getUEContentTxt(); // 调用子组件方法
+                this.$notify({
+                    title: "获取成功，可在控制台查看！",
+                    message: content,
+                    type: "success"
+                });
+                console.log(content);
+            },
+
+            /*获取子组件中的方法*/
+            getChildData: function (msg) {
+                this.counties = msg[1];
+                this.cityId = msg[2]
+            },
+        }
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html xmlns:javascript="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Bootstrap 模板</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- 引入 Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- 引入导航栏样式 -->
+    <link rel="stylesheet" href="css/navigation.css">
+
+    <!-- 包括所有已编译的插件 -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- 模态窗口的打开需要依赖此文件 -->
+    <script src="js/modal.js"></script>
+    <!-- 引入自己写的js文件 -->
+    <script src="js/my_js/index.js"></script>
+
+
+
+    <!--引入搜索框样式-->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/search_adopt/zfont-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/search_adopt/demo.css">
+    <link rel="stylesheet" href="css/search_adopt/style.css">
+
+    <!-- 引入公用的js-->
+    <script src="./js/vue/vue.js"></script>
+    <script src="./js/axios.min.js"></script>
+    <script src="./js/common.js"></script>
+
+    <!-- 引入搜索样式 -->
+    <link rel="stylesheet" type="text/css" href="css/search_css/normalize.css"/>
+    <link rel="stylesheet" href="css/search_css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/search_css/demo.css">
+    <link rel="stylesheet" href="css/search_css/style.css">
+
+    <!--element-->
+    <!-- 引入样式 -->
+    <!--<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    &lt;!&ndash; 引入组件库 &ndash;&gt;
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>-->
+    <!--element-->
+    <link rel="stylesheet" href="static/element-2.12.0/index.css">
+    <script src="static/element-2.12.0/index.js"></script>
+
+    <!-- 引入自己写的样式 -->
+    <link rel="stylesheet" href="css/index_style.css">
+    <link rel="stylesheet" href="css/search_style.css">
+
+
+</head>
+<body>
+<div id="Vue-app">
+    <div class="header" id="header-top">   <!--line-height: 30px 将文字宽度与div一致 让文字居中 -->
+        <shotcut @deliver="getChildData(arguments)"></shotcut>   <!--组件化头部-->
+    </div>
+    <div class="container">
+        <!--logo图片-->
+        <div>
+            <img src="img/sa_logo.png">
+        </div>
+
+        <!--导航条-->
+        <div id="nav-1">
+            <ul class="nav">
+                <li class="slide1"></li>
+                <li class="slide2"></li>
+                <li><a  class="active" href="index.html">首页</a></li>
+                <li><a href="#/">资讯</a></li>
+                <li><a href="rescue.html">救助</a></li>
+                <li><a href="adopt.html">领养</a></li>
+                <li><a href="search.html">寻宠</a></li>
+                <li><a href="help.html">帮助</a></li>
+                <li><a href="about-us.html">关于我们</a></li>
+                <!-- 搜索框 -->
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;
+                </p>
+                <li>
+                    <div class="search d7">
+                        <form>
+                            <input type="text" placeholder="搜索从这里开始...">
+                            <button type="submit"></button>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <br><br>
+
+        <!----=========================内容开始==============================-->
+
+        <!-- 面包屑导航 -->
+        <div>
+            <ul class="breadcrumb">
+                <li><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+                <li><a href="adopt.html">领养</a></li>
+                <li>详情</li>
+            </ul>
+        </div>
+
+        <!--信息部分-左侧-->
+        <div class="adopt-message">
+            <!-- 标题 -->
+            <div class="adopt-message-status" >
+                <strong>
+                    <span style="font-size: 25px;padding-left: 5px;color: #7fb06a">[{{animalSearchVo.searchAnimal === 1 ? "寻宠":"寻主"}}]</span>
+                    <span style="font-size: 25px;">{{animalSearchVo.animalSearch.title}}</span>
+                    <span class="label label-info" > 寻找中</span>
+                </strong>
+            </div>
+            <!--创建时间-->
+            <div class="total-amount">
+                <span style="padding-left: 5px;">时间：{{animalSearchVo.animalSearch.createTime}}</span>
+                <span style="padding-left: 50px;">信息编号：{{animalSearchVo.animalSearch.id}}</span>
+                <!--主要信息展示-->
+                <div style="bheight: 220px">
+                    <!--表格-->
+                    <div style="width: 98%;height: 210px;margin: 0 auto">
+                        <table border="1" cellspacing="0">
+                            <tr>
+                                <td style="width: 120px;height: 50px;background-color: #eceaea;text-align: center">
+                                    <span style="line-height: 40px">宠类/品种</span>
+                                </td>
+                                <td style="width: 250px;height: 50px;padding-left: 10px">
+                                    <span style="line-height: 40px">
+                                         {{animalSearchVo.category.type}} / {{animalSearchVo.category.name}}
+                                    </span>
+                                </td>
+                                <td style="width: 120px;height: 50px;background-color: #eceaea;text-align: center">
+                                    <span style="line-height: 40px;">酬金</span>
+                                </td>
+                                <td style="width: 250px;height: 50px;padding-left: 10px">
+                                    <span style="line-height: 40px;color: red">
+                                         {{animalSearchVo.animalSearch.money > 0 ? animalSearchVo.animalSearch.money : animalSearchVo.animalSearch.money < 0 ? "面议" : "免酬金"}}
+                                    </span>
+                                </td>
+                                <td style="width: 150px;height: 50px;text-align: center" rowspan="4">
+                                   <!-- <img id="aimg_1" src="img/dog/dog-search.jpg" file="img/dog/dog-search.jpg" class="zoom" onclick="zoom(this, this.src, 0, 0, 0)" style="width: 140px">-->
+                                    <el-image
+                                            style="width: 140px; height: 200px"
+                                            :src="url"
+                                            :preview-src-list="srcList">
+                                    </el-image>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 120px;height: 50px;background-color: #eceaea;text-align: center;">
+                                    <span style="line-height: 40px">位置</span>
+                                </td>
+                                <td style="width: 250px;height: 50px;padding-left: 10px" colspan="3">
+                                    <span style="line-height: 40px">
+                                         {{animalSearchVo.location.province}}-{{animalSearchVo.location.city}}-{{animalSearchVo.location.county}}
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 120px;height: 50px;background-color: #eceaea;text-align: center">
+                                    <span style="line-height: 40px">性别</span>
+                                </td>
+                                <td style="width: 250px;height: 50px;padding-left: 10px">
+                                    <span style="line-height: 40px">
+                                        {{animalSearchVo.animalSearch.sex}}
+                                    </span>
+                                </td>
+                                <td style="width: 120px;height: 50px;background-color: #eceaea;text-align: center">
+                                    <span style="line-height: 40px">年龄</span>
+                                </td>
+                                <td style="width: 250px;height: 50px;padding-left: 10px">
+                                    <span style="line-height: 40px">
+                                        {{animalSearchVo.animalSearch.age}}
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 120px;height: 50px;background-color: #eceaea;text-align: center">
+                                    <span style="line-height: 40px">联系人</span>
+                                </td>
+                                <td style="width: 250px;height: 50px;padding-left: 10px">
+                                    <span style="line-height: 40px">
+                                        {{animalSearchVo.animalSearch.personName}}
+                                    </span>
+                                </td>
+                                <td style="width: 120px;height: 50px;background-color: #eceaea;text-align: center">
+                                    <span style="line-height: 40px">电话/微信</span>
+                                </td>
+                                <td style="width: 250px;height: 50px;padding-left: 10px">
+                                    <span style="line-height: 40px">
+                                        {{animalSearchVo.animalSearch.phone}} /  {{animalSearchVo.animalSearch.weChat}}
+                                    </span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <!--情况描述“-->
+                <!-- 标题 -->
+                <div class="adopt-message-status2" >
+                    <strong>
+                        <span style="font-size: larger"> 情况描述</span>
+                    </strong>
+                </div>
+
+
+                <!--下面的而图片选择器的div-->
+                <div style=" height: auto">
+                    <!--其他信息和评论-->
+                    <div style="height: auto;width: 98%;margin: 0 auto">
+                        <!--主要的message描述-->
+                        <span  style="font-size: medium; padding-left: 30px; line-height: 30px;">
+                            {{animalSearchVo.animalSearch.message}}
+                        </span>
+                    </div>
+                    <!--宠物图片-->
+                    <div style="padding-left: 30px; height: 185px" >
+                        <ul>
+                            <li v-for="s in animalSearchVo.photoAnimalSearch" style="float: left;padding-left: 5px">
+                                <div style="width: 250px;height: 250px">
+                                    <img  :src="s.photo" :file="s.photo" class="zoom" onclick="zoom(this, this.src, 0, 0, 0)" style="width: 220px;height: 220px">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--留言区-->
+                    <div style="height: auto;">
+                        <el-input
+                                type="textarea"
+                                :autosize="{ minRows: 2, maxRows: 4}"
+                                placeholder="请输入内容"
+                                v-model="searchComment.content">
+                        </el-input>
+                        <!--按钮-->
+                        <div style="float: right;padding-right: 30px;padding-top: 5px;height: 52px">
+                            <el-button type="danger" @click="publishMsg">留言</el-button>
+                        </div>
+                    </div>
+                    <br><br>
+                    <!--浏览展示-->
+                    <div style="height: auto;width: 98%">
+                        <div v-for="a in searchCommentShow" style="height: 60px;padding-left: 5px">
+                            <div style="float: left;width: 100%;height: 50px;">
+                                <img :src="a.user.photo" style="height: 50px;width: 50px">
+                            </div>
+                            <div  style="float: left;">
+                                <div style="height: 5px;color: #DCAC6C">
+                                        <span style="float: left;padding-left: 5px">{{a.searchComment.commentUserName}}
+                                            &emsp;&emsp;&emsp; &emsp;&emsp;&emsp; &emsp;&emsp;&emsp; &emsp;&emsp;&emsp; &emsp;&emsp;&emsp;
+                                             &emsp;&emsp;&emsp; &emsp;&emsp;&emsp; &emsp;&emsp;&emsp; &emsp;&emsp;&emsp; &emsp;&emsp;&emsp;
+                                             &emsp;&emsp;&emsp; &emsp;&emsp;&emsp; &emsp;&emsp;&emsp; &emsp;&emsp;
+                                        </span>
+                                    <span style="float: right;color: #66afe9;">{{a.searchComment.commentTime}}</span>
+                                </div>
+                                <div style="height: 55px;">
+                                    <span style="padding-left: 20px">{{a.searchComment.content}}</span>
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+        <br>
+        <!--温馨提示区-->
+        <div style="height: 30px;">
+                <span class="el-icon-warning" style="background-color: #f2e7c7;padding-left:20px;line-height: 30px">
+                    小贴士：本页信息由用户及第三方发布，真实性、合法性由发布人负责。&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</span>
+        </div>
+        <!--发布信息部分-右侧-->
+        <div class="adopt-publish-message">
+            <!--首先是一个搜索框-->
+            <div style="height: 35px;">
+                <input class="input" type="text" placeholder="请输入领养内容">
+                <button class="search-btn" type="button"><span class="	glyphicon glyphicon-search"></span>
+                </button>
+            </div>
+            <br>
+            <!--发布信息和信息管理-->
+            <div style="height: 40px;">
+                <div style="background-color: crimson;width: 49%;float: left;text-align: center">
+                    <a style="height: 40px" href="javascript:void (0)" @click="toPublish">
+                        <span class="glyphicon glyphicon-edit" style="line-height: 40px;color: white;"> 发布信息</span>
+                    </a>
+                </div>
+                <div style="background-color: crimson;width: 49%;float: right;text-align: center">
+                    <a style="height: 40px" href="javascript:void (0)" @click="toManage">
+                        <span class="glyphicon glyphicon-check" style="line-height: 40px;color: white;"> 信息管理</span>
+                    </a>
+                </div>
+            </div>
+            <br>
+            <!--发布领养信息必读公告-->
+            <div style="height: 30px;">
+                <!--作者信息-->
+                <div style="height: 100px;;">
+                    <!--头像-->
+                    <div style="width: 80px;height: 90px;float: left;">
+                        <img src="img/cat/1.jpg" style="width: 90px;height: 90px">
+                    </div>
+                    <!--作者相关信息-->
+                    <div style="float: left;padding-left: 15px;">
+                        用户名：{{animalSearchVo.user.username}}
+                        <br>
+                        注册时间：{{animalSearchVo.user.createTime}}
+                        <br>
+                        <br>
+                        <a href="javascript:void (0);">
+                            <div style="background-color: #FF0000;color: white;width: 80px;">
+                                <span class="el-icon-chat-dot-round"> &nbsp;发私信</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a href="javascript:void (0)">
+                    <span style="color: #FF0000;padding-left: 10px;line-height: 30px">[必读]</span><span
+                        style="padding-left: 10px;line-height: 30px">领养信息发布规则</span>
+                </a>
+                <img width="100%" height="220px" src="img/dog/adopt.jpg">
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- 设置底部布局 -->
+<hr/>
+<div style="height: 30px"></div>
+<div class="footer">
+    <script type="text/javascript">$(".footer").load("/src/public/footer.html");</script>
+</div>
+<!-- 引入导航栏js,注意和引入顺序有关 必须放在后面 -->
+<script src='js/jquery.min.js'></script>
+<script src="js/my_js/script.js"></script>
+
+<script type="application/javascript">
+    new Vue({
+        el: "#Vue-app",
+        components: {
+            shotcut: () => import('./js/pages/shotcut.js'),
+        },
+        data: {
+            id: "",
+            animalSearchVo: "",
+            userId: "",
+            url: "img/dog/adopt.jpg",
+            srcList: [
+                'img/cat/1.jpg',
+                'img/cat/cat01.jpg',
+                'img/cat/cat02.jpg',
+            ],
+            textarea2: "",
+            user: "",
+
+            searchCommentShow: "",
+            searchComment: {
+                content: "",
+                commentUserId: "",
+                commentTime: "",
+                searchId: "",
+                commentUserName: ""
+            },
+        },
+        created () {
+          this.getanimalSearchDetailsById();
+          this.querySearchByAdoptId();
+        },
+        methods: {
+            showSuccessMsg(data) {
+                this.$message(
+                    {
+                        message: data,
+                        type: 'success'
+                    }
+                );
+            },
+            /*失败消息*/
+            showFaileMsg(data) {
+                this.$message.error(data);
+            },
+            // 鼠标滑过 放大图片大指定区域
+            onmouseover(src) {
+                this.url = src;
+            },
+            /*获取子组件中的方法*/
+            getChildData: function (msg) {
+                this.userId = msg[0];
+            },
+            // 页面跳转后立马记载数据
+            getanimalSearchDetailsById() {
+                this.userId = ly.store.getJson("user").id;
+                // 获取页面中的参数
+                this.id = ly.getUrlParam("id");
+                let _this = this;
+                ly.http.get("/search/getAnimalSearchDetailsById?id=" + this.id)
+                    .then(resp => {
+                        if (resp.status === 200) {
+                            _this.animalSearchVo = resp.data;
+
+                            _this.srcList = _this.animalSearchVo.photoAnimalSearch;
+                            let arr = _this.animalSearchVo.photoAnimalSearch;
+                            _this.url = arr[0].photo;
+                            console.log(this.animalSearchVo);
+                        }
+                    })
+            },
+
+            toPublish() {
+                if (!ly.store.get("token")) {
+                    window.location = "/login.html";
+                } else {
+                    window.location = "/search-publish-message.html";
+                }
+            },
+            toManage() {
+                if (!ly.store.get("token")) {
+                    window.location = "/login.html";
+                } else {
+                    window.location = "/search-manage-message.html";
+                }
+            },
+
+            getUserById(userId) {
+                let _this = this;
+                ly.http.get("/user/getUserById?userId=" + _this.userId)
+                    .then(resp => {
+                            if (resp.status === 200) {
+                                _this.user = resp.data;
+                                console.log(_this.user);
+                            }
+                        }
+                    )
+            },
+            // 留言
+            publishMsg() {
+                this.searchComment.searchId = this.id;
+                this.searchComment.commentUserId = ly.store.getJson("user").id;
+                this.searchComment.commentUserName = ly.store.getJson("user").username;
+                this.searchComment.commentTime = ly.formatDate(new Date(), "yyyy-MM-dd hh:mm");
+                let _this = this;
+                ly.http.post("/search/saveComment", ly.stringify(this.searchComment))
+                    .then(resp => {
+                        if (resp.status === 200) {
+                            _this.showSuccessMsg("留言成功！");
+                            // 清楚信息
+                            _this.searchComment.content = "",
+                                // 刷新信息
+                                _this.querySearchByAdoptId();
+                        } else {
+                            _this.showFaileMsg("留言失败！请重新留言!");
+                        }
+                    }).cache(() => { _this.showFaileMsg("留言失败！请重新留言!");})
+            },
+            // 获取浏览消息
+            querySearchByAdoptId () {
+                let _this = this;
+                ly.http.get("/search/queryCommentBySearchId?searchId=" + this.id).then(resp => {
+                    if (resp.status === 200) {
+                        _this.searchCommentShow = resp.data;
+                    }
+                })
+            },
+        }
+    });
+</script>
+</body>
+</html>

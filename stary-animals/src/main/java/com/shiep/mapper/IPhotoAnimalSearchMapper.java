@@ -13,4 +13,7 @@ public interface IPhotoAnimalSearchMapper extends BaseMapper<PhotoAnimalSearch> 
             "FROM sa_photo_search\n" +
             "WHERE sa_animal_search_id = #{animalSearchId}")
     List<PhotoAnimalSearch> getPhotoByAnimalSearchId(Long animalSearchId);
+
+    @Select("SELECT * FROM sa_photo_search")
+    List<PhotoAnimalSearch> findAll();
 }

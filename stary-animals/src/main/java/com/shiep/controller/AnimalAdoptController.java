@@ -29,8 +29,6 @@ public class AnimalAdoptController {
     @Resource
     private IAnimalAdoptMapper animalAdoptMapper;
 
-
-
     @PostMapping("save")
     public ResponseEntity<Long> saveAnimalAdopt(AnimalAdopt animalAdopt) {
         boolean flag = this.animalAdoptService.saveAnimalAdopt(animalAdopt);
@@ -121,7 +119,7 @@ public class AnimalAdoptController {
     }
 
     @GetMapping("queryCommentByAdoptId")
-    public ResponseEntity<List<AnimalAdoptCommentVo>> queryCommentByAdoptId(Long adoptId) {
+    public ResponseEntity<List<AnimalAdoptCommentVo>> queryCommentByAdoptId(@RequestParam Long adoptId) {
         List<AnimalAdoptCommentVo> commentVos = this.animalAdoptService.queryCommentByAdoptId(adoptId);
         if (CollectionUtils.isEmpty(commentVos)) {
             return ResponseEntity.notFound().build();

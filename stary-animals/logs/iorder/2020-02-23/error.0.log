@@ -476,7 +476,7 @@ org.apache.catalina.LifecycleException: Protocol handler start failed
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.shiep.SpringBootApplication.main(SpringBootApplication.java:13)
+	at com.shiep.StaryAnimalsApplication.main(SpringBootApplication.java:13)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

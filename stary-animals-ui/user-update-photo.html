@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html xmlns:javascript="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Bootstrap 模板</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- 引入 Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- 引入导航栏样式 -->
+    <link rel="stylesheet" href="css/navigation.css">
+
+    <!-- 包括所有已编译的插件 -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- 模态窗口的打开需要依赖此文件 -->
+    <script src="js/modal.js"></script>
+    <!-- 引入自己写的js文件 -->
+    <script src="js/my_js/index.js"></script>
+
+
+    <!--引入搜索框样式-->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/search_adopt/zfont-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/search_adopt/demo.css">
+    <link rel="stylesheet" href="css/search_adopt/style.css">
+
+    <!-- 引入公用的js-->
+    <script src="./js/vue/vue.js"></script>
+    <script src="./js/axios.min.js"></script>
+    <script src="./js/common.js"></script>
+
+    <!-- 引入搜索样式 -->
+    <link rel="stylesheet" type="text/css" href="css/search_css/normalize.css"/>
+    <link rel="stylesheet" href="css/search_css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/search_css/demo.css">
+    <link rel="stylesheet" href="css/search_css/style.css">
+
+    <!--element-->
+    <!-- 引入样式 -->
+    <!--<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    &lt;!&ndash; 引入组件库 &ndash;&gt;
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>-->
+    <!--element-->
+    <link rel="stylesheet" href="static/element-2.12.0/index.css">
+    <script src="static/element-2.12.0/index.js"></script>
+
+    <!-- 引入自己写的样式 -->
+    <link rel="stylesheet" href="css/index_style.css">
+    <link rel="stylesheet" href="css/adopt_style.css">
+    <link rel="stylesheet" href="css/adopt_manage_style.css">
+    <link rel="stylesheet" href="css/help_style.css">
+
+
+</head>
+<body>
+<div id="Vue-app">
+    <div class="header" id="header-top">   <!--line-height: 30px 将文字宽度与div一致 让文字居中 -->
+        <shotcut @deliver="getChildData(arguments)"></shotcut>   <!--组件化头部-->
+    </div>
+    <div class="container">
+        <!--logo图片-->
+        <div>
+            <img src="img/sa_logo.png">
+        </div>
+
+        <!--导航条-->
+        <div id="nav-1">
+            <ul class="nav">
+                <li class="slide1"></li>
+                <li class="slide2"></li>
+                <li><a  class="active" href="index.html">首页</a></li>
+                <li><a href="#/">资讯</a></li>
+                <li><a href="rescue.html">救助</a></li>
+                <li><a href="adopt.html">领养</a></li>
+                <li><a href="search.html">寻宠</a></li>
+                <li><a href="help.html">帮助</a></li>
+                <li><a href="about-us.html">关于我们</a></li>
+                <!-- 搜索框 -->
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;
+                </p>
+                <li>
+                    <div class="search d7">
+                        <form>
+                            <input type="text" placeholder="搜索从这里开始...">
+                            <button type="submit"></button>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <br><br>
+
+        <!----=========================内容开始==============================-->
+
+        <!-- 面包屑导航 -->
+        <div>
+            <ul class="breadcrumb">
+                <li><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+                <li>个人资料</li>
+            </ul>
+        </div>
+
+        <!--主面板-->
+        <div class="mainTable" style="height: 480px; width: 100%; background-color: #eeeeee">
+            <!--左侧部分-->
+            <div class="left">
+                <ul>
+                    <li style="font-size: 18px; height: 40px">
+                        <span style="padding-left: 15px; line-height: 40px"><strong>设置</strong></span>
+                    </li>
+                    <li style="background-color:wheat;" class="left-li">
+                        <a href="javascript:void (0);"><span class="left-span">个人资料</span></a>
+                    </li>
+                </ul>
+            </div>
+            <!--设置总的右侧-->
+            <div class="right">
+                <!--右侧表格显示-->
+                <div class="right-main">
+                    <div style=";height: 30px;width: 94px;float: left;border:1px solid #cccccc;">
+                        <a style="text-decoration:none" href="user-update.html"><span style="color: black;font-size: medium;padding-left: 12px;line-height: 30px">基本资料</span></a>
+                    </div>
+
+                    <div style="height: 30px;float: left;width: 15px"></div>
+                    <div style=";height: 30px;background-color: #e6e6e6;width: 94px;float: left;border:1px solid #cccccc;">
+                        <a href="javascript:void (0)" style="text-decoration:none">
+                            <span style="color: black;font-size: medium;padding-left: 12px;line-height: 30px"><strong>头像修改</strong></span>
+                        </a>
+                    </div>
+
+                    <div style="height: 30px;float: left;width: 15px"></div>
+                    <div style=";height: 30px;background-color: #e6e6e6;width: 94px;float: left;border:1px solid #cccccc;">
+                        <a style="text-decoration:none" href="user-update-password.html"><span style="color:black;font-size: medium;padding-left: 12px;line-height: 30px">密码修改</span></a>
+                    </div>
+
+                    <div style="height: 20px"> </div>
+                    <!--总的信息显示-->
+                    <div style="height: 10px;"></div>
+                    <!--内容-->
+                    <div style="border:2px solid #7fb06a; border-left:0px;
+                     border-right:0px; border-bottom: 0px;height: 300px;margin: 0 auto">
+                        <!--主要内容-->
+                        <div style="width: 100%;background-color: #eceaea;height: 446px;padding-left: 20px">
+                            <br>
+
+                            <div style="float:left;width: 300px;height: 250px;background-color: #d9d9d9">
+                               <div style="width: 160px;height: 160px;margin: 0  auto;position: relative;top: 45px">
+                                    <img height="160px" width="160px" :src="user.photo">
+                                </div>
+
+                            </div>
+                            <div style="float: left;width: 100px;height: 250px"></div>
+                            <div style="float:left;width: 500px;height: 250px;background-color: #d9d9d9">
+                                <br>
+                                <el-upload
+                                        style="position: relative;left: 140px"
+                                        :header="header"
+                                        class="avatar-uploader"
+                                        action="http://127.0.0.1/stary-animals/user/updatePhoto/"
+                                        :data= "data"
+                                        :show-file-list="false"
+                                        :on-success="handleAvatarSuccess"
+                                        :on-error="errorPhoto"
+                                        :before-upload="beforeAvatarUpload">
+                                    <img v-if="updatePhoto" :src="updatePhoto" class="avatar">
+                                    <i v-else class="el-icon-plus avatar-uploader-icon"></i>
+                                </el-upload>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+
+<!-- 设置底部布局 -->
+<hr/>
+<div class="footer">
+    <script type="text/javascript">$(".footer").load("/src/public/footer.html");</script>
+</div>
+
+<!-- 引入导航栏js,注意和引入顺序有关 必须放在后面 -->
+<script src='js/jquery.min.js'></script>
+<script src="js/my_js/script.js"></script>
+
+<script type="application/javascript">
+    new Vue({
+        el: "#Vue-app",
+        components: {
+            shotcut: () => import('./js/pages/shotcut.js'),
+        },
+        data: {
+            userId: ly.store.getJson("user").id,
+            user: "",
+            updatePhoto: "",
+            header: {
+                token: ly.store.get("token")
+            },
+            data: {
+                userId: ly.store.getJson("user").id,
+                token: ly.store.get("token")
+            },
+        },
+        created() {
+            this.getUserInfoById();
+        },
+        methods: {
+            /*发布陈宫消息提示*/
+            showSuccessMsg(data) {
+                this.$message(
+                    {
+                        message: data,
+                        type: 'success'
+                    }
+                );
+            },
+            /*失败消息*/
+            showFaileMsg(data) {
+                this.$message.error(data);
+            },
+            /*获取子组件中的方法*/
+            getChildData: function (msg) {
+                this.userId = msg[0];
+                this.counties = msg[1];
+                this.cityId = msg[2]
+            },
+            toSearch () {
+                if (!ly.store.get("token")) {
+                    window.location = "/login.html";
+                } else {
+                    window.location = "/adopt-publish-message.html";
+                }
+            },
+            toAdopt () {
+                if (!ly.store.get("token")) {
+                    window.location = "/login.html";
+                } else {
+                    window.location = "/adopt-publish-message.html";
+                }
+            },
+            getUserInfoById() {
+                let _this = this;
+                ly.http.get("/user/getUserById?userId=" + this.userId)
+                    .then(resp => {
+                        if (resp.status === 200) {
+                            _this.user = resp.data;
+                        }
+                    })
+            },
+            update() {
+                let _this = this;
+                ly.http.post("/user/updateUserById", ly.stringify(this.updateUser))
+                    .then( resp => {
+                            if (resp.status === 200) {
+                                this.showSuccessMsg("个人资料修改成功！");
+                            } else {
+                                this.showFaileMsg("个人资料修改失败，请重新再试！");
+                            }
+                        }
+
+                    ).catch( () => {
+                    this.showFaileMsg("个人资料修改失败，请重新再试！");
+                    }
+                )
+            },
+            handleAvatarSuccess(res, file) {
+                this.updatePhoto = URL.createObjectURL(file.raw);
+                this.user.photo = this.updatePhoto;
+                this.showSuccessMsg("头像上传成功！");
+
+            },
+            beforeAvatarUpload(file) {
+                /*const isJPG = file.type === 'image/jpeg';
+                const isLt2M = file.size / 1024 / 1024 < 2;
+
+                if (!isJPG) {
+                    this.$message.error('上传头像图片只能是 JPG 格式!');
+                }*/
+                /*if (!isLt2M) {
+                    this.$message.error('上传头像图片大小不能超过 2MB!');
+                }
+                return  isLt2M;*/
+            },
+            errorPhoto() {
+                this.$message.error('上传头像图片失败，请重新选择!');
+            },
+        }
+    });
+</script>
+</body>
+</html>

@@ -1,7 +1,6 @@
 package com.shiep;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.shiep.entity.AnimalAdopt;
 import com.shiep.mapper.ILocationDao;
 import com.shiep.mapper.IAnimalAdoptMapper;
 import com.shiep.mapper.ICountyMapper;
@@ -12,8 +11,6 @@ import com.shiep.jwt.config.JwtConfig;
 import com.shiep.jwt.pojo.UserInfo;
 import com.shiep.service.IAnimalAdoptService;
 import com.shiep.service.IMailService;
-import com.shiep.vo.AnimalAdoptVo;
-import com.shiep.vo.Location;
 import io.jsonwebtoken.Claims;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -163,7 +160,7 @@ public class DBtest {
 
     @Test
     public  void printAllBeans() {
-        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(SpringBootApplication.class);
+        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(StaryAnimalsApplication.class);
         String[] beans =  applicationContext.getBeanDefinitionNames();
         for (String beanName : beans) {
             System.out.println("BeanName:" + beanName);

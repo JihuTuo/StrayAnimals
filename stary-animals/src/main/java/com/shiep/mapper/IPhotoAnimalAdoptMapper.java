@@ -12,4 +12,7 @@ public interface IPhotoAnimalAdoptMapper extends BaseMapper<PhotoAnimalAdopt> {
             "FROM sa_photo_adopt\n" +
             "WHERE sa_animal_adopt_id = #{animalAdoptId}")
     List<PhotoAnimalAdopt> getPhotoByAnimalAdoptId(Long animalAdoptId);
+
+    @Select("SELECT * FROM sa_photo_adopt")
+    List<PhotoAnimalAdopt> findAll();
 }

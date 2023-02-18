@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html xmlns:javascript="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Bootstrap 模板</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- 引入 Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- 引入导航栏样式 -->
+    <link rel="stylesheet" href="css/navigation.css">
+
+    <!-- 包括所有已编译的插件 -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- 模态窗口的打开需要依赖此文件 -->
+    <script src="js/modal.js"></script>
+
+
+    <!-- 引入搜索样式 -->
+    <link rel="stylesheet" type="text/css" href="css/search_css/normalize.css"/>
+    <link rel="stylesheet" href="css/search_css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/search_css/demo.css">
+    <link rel="stylesheet" href="css/search_css/style.css">
+
+    <!-- 引入自己写的样式 -->
+    <link rel="stylesheet" href="css/index_style.css">
+    <link rel="stylesheet" href="css/login_style.css">
+    <link rel="stylesheet" href="css/adopt_style.css">
+
+    <!-- 引入公用的js-->
+    <script src="./js/vue/vue.js"></script>
+    <script src="./js/axios.min.js"></script>
+    <script src="./js/common.js"></script>
+
+    <!--element-->
+    <link rel="stylesheet" href="static/element-2.12.0/index.css">
+    <script src="static/element-2.12.0/index.js"></script>
+
+    <!-- 引入自己写的js文件 -->
+    <script src="js/my_js/index.js"></script>
+
+</head>
+<body>
+<div class="header" id="header-top">   <!--line-height: 30px 将文字宽度与div一致 让文字居中 -->
+    <shotcut2/>   <!--组件化头部-->
+</div>
+<script type="text/javascript">
+    var indexVm = new Vue({
+        el: "#header-top",
+        components: {
+            shotcut2: () => import('./js/pages/shotcut2.js'),
+        }
+    });
+</script>
+
+
+<div class="container">
+    <!--logo图片-->
+    <div>
+        <img src="img/sa_logo.png">
+    </div>
+
+    <!--导航条-->
+    <div id="nav-1">
+        <ul class="nav">
+            <li class="slide1"></li>
+            <li class="slide2"></li>
+            <li><a class="active" href="index.html">首页</a></li>
+            <li><a href="news.html">资讯</a></li>
+            <li><a href="rescue.html">救助</a></li>
+            <li><a href="adopt.html">领养</a></li>
+            <li><a href="search.html">寻宠</a></li>
+            <li><a href="help.html">帮助</a></li>
+            <li><a href="about-us.html">关于我们</a></li>
+            <!-- 搜索框 -->
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;
+            </p>
+            <li>
+                <div class="search d7">
+                    <form>
+                        <input type="text" placeholder="搜索从这里开始...">
+                        <button type="submit"></button>
+                    </form>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <br>  <!--换行-->
+    <br>  <!--换行-->
+    <div class="news">
+        <!----=================新闻左侧部================---------->
+        <div class="news-left">
+            <!--左上轮播-->
+            <div class="news-left-photo">
+                <div style="width: 94%;margin: 0 auto">
+                    <div style="height: 10px"></div>
+                    <div id="myCarousel" class="carousel slide">
+                        <!-- 轮播（Carousel）指标 -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+                        <!-- 轮播（Carousel）项目 -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <a href="news-details.html?id=15">
+                                    <img src="img/movie/movie01.jpg" alt="First slide">
+                                    <div class="carousel-caption">主人养了一条狗，后来嫌弃狗老了，便抛弃了。后来狗竟然... ... ... ... ... ...
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="news-details.html?id=14" style="color: black">
+                                    <img src="img/movie/movie02.jpg" alt="Second slide">
+                                    <div class="carousel-caption">猫咪中毒输狗血续命 原来猫狗之间也有爱!</div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="news-details.html?id=12" style="color: black">
+                                    <img src="img/movie/movie03.jpg" alt="Third slide">
+                                    <div class="carousel-caption">小区内流浪猫叼着猫皮，路人嫌弃远离，保安说出原由所有人哭了 ...</div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- 轮播（Carousel）导航 -->
+                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--右上热点新闻-->
+            <div style="width: 96%;margin: 0 auto">
+                <div style="height: 10px"></div>
+                <div class="news-left-hot">
+                    <!--第一条-->
+                    <div style="height: 50px;width: 100%; text-decoration:none">
+                        <a href="javascript:void(0);" style="text-decoration:none">
+                            <span style="color: red">[热点]</span>
+                            <strong style="font-size: large;color: black">杭州一妈妈自曝被小区内不牵狗绳男主人骑身上打至骨折！</strong>
+                        </a>
+                    </div>
+                    <!--普通新闻-->
+                    <div style="height: 30px;width: 100%; text-decoration:none">
+                        <a  href="news-details.html?id=12" style="color: black;text-decoration:none">
+                            <span style="font-size: 20px">·</span> <span style="line-height: 30px">小区内流浪猫叼着猫皮，路人嫌弃远离......</span>
+                        </a>
+                    </div>
+                    <!--普通新闻-->
+                    <div style="height: 30px;width: 100%; text-decoration:none">
+                        <a href="news-details.html?id=14" style="color: black;text-decoration:none">
+                            <span style="font-size: 20px">·</span> <span style="line-height: 30px">猫咪中毒输狗血续命 原来猫狗之间也有爱!</span>
+                        </a>
+                    </div>
+                    <!--普通新闻-->
+                    <div style="height: 30px;width: 100%; text-decoration:none">
+                        <a href="news-details.html?id=13" style="color: black;text-decoration:none">
+                            <span style="font-size: 20px">·</span> <span style="line-height: 30px"> 有了这份《全国小动物保护组织通讯......</span>
+                        </a>
+                    </div>
+                    <!--普通新闻-->
+                    <div style="height: 30px;width: 100%; text-decoration:none">
+                        <a href="news-details.html?id=15" style="color: black;text-decoration:none">
+                            <span style="font-size: 20px">·</span> <span style="line-height: 30px">主人养了一条狗，后来嫌弃狗老了，便抛弃了。后来狗竟然......</span>
+                        </a>
+                    </div>
+                    <!--普通新闻-->
+                    <div style="height: 30px;width: 100%; text-decoration:none">
+                        <a href="news-details.html?id=7" style="color: black;text-decoration:none">
+                            <span style="font-size: 20px">·</span> <span style="line-height: 30px">罗志祥妈妈低调行善 为受虐待狗狗捐一月医药费......</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--左下 养宠必学部分-->
+            <div class="news-left-knowledge">
+                <div style="width: 94%;height: 160px;margin: 0 auto">
+                    <div style="height: 12px"></div>
+                    <div style="height: 40px;width: 100%">
+                        <span style="line-height: 40px;font-size: 20px;color: #a5ce6d"><strong>养宠必学</strong></span>
+                    </div>
+                    <!--普通新闻-->
+                    <div style="height: 30px;width: 100%; text-decoration:none">
+                        <a href="news-details.html?id=6" style="color: black;text-decoration:none">
+                            <span style="font-size: 20px">·</span> <span style="line-height: 30px">最全狗狗智商排名，你家汪排第几？......</span>
+                        </a>
+                    </div>
+                    <!--普通新闻  五种中华血统的「汪星人」-->
+                    <div style="height: 30px;width: 100%; text-decoration:none">
+                        <a href="news-details.html?id=16" style="color: black;text-decoration:none">
+                            <span style="font-size: 20px">·</span> <span style="line-height: 30px">宠物狗狗怀孕期间护理正确方法......</span>
+                        </a>
+                    </div>
+                    <!--普通新闻  五种中华血统的「汪星人」-->
+                    <div style="height: 30px;width: 100%; text-decoration:none">
+                        <a href="news-details.html?id=17" style="color: black;text-decoration:none">
+                            <span style="font-size: 20px">·</span> <span style="line-height: 30px">五种中华血统的「汪星人」......</span>
+                        </a>
+                    </div>
+                    <!--普通新闻  五种中华血统的「汪星人」-->
+                    <div style="height: 30px;width: 100%; text-decoration:none">
+                        <a href="news-details.html?id=18" style="color: black;text-decoration:none">
+                            <span style="font-size: 20px">·</span> <span style="line-height: 30px">你永远不知道能在狗狗的胃里找到什么......</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--右下 救助部分-->
+            <div class="news-left-help">
+                <div style="width: 98%;height: 160px">
+                    <div style="height: 10px"></div>
+                    <!--第一条-->
+                    <div style="height: 50px;width: 100%; text-decoration:none">
+                        <a href="rescue-details.html?id=16" style="text-decoration:none">
+                            <span style="color: red">[救助]</span>
+                            <strong style="font-size: large;color: black">通州区果园有一只狗狗伤的很厉害，附近人有能去救救它吗？！</strong>
+                        </a>
+                    </div>
+                    <!--普通新闻-->
+                    <div style="height: 30px;width: 100%; text-decoration:none">
+                        <a href="rescue-details.html?id=17" style="color: black;text-decoration:none">
+                            <span style="font-size: 20px">·</span> <span style="line-height: 30px">求助：海淀凤凰岭一只剃了毛的阿拉斯加被人当疯狗抓......</span>
+                        </a>
+                    </div>
+                    <!--普通新闻-->
+                    <div style="height: 30px;width: 100%; text-decoration:none">
+                        <a href="rescue-details.html?id=18" style="color: black;text-decoration:none">
+                            <span style="font-size: 20px">·</span> <span style="line-height: 30px">转发北京求助......</span>
+                        </a>
+                    </div>
+                    <!--普通新闻-->
+                    <div style="height: 30px;width: 100%; text-decoration:none">
+                        <a href="rescue-details.html?id=19" style="color: black;text-decoration:none">
+                            <span style="font-size: 20px">·</span> <span style="line-height: 30px">北京昌平区西二旗天巢园小区门口有四只可怜的狗娃需要帮助！......</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!----=================新闻右侧部分==========-=====-------->
+        <div class="login-right">
+            <!--签到部分-->
+            <div style="width: 100%;height: 60px;background-color: #e5ffc8;border-radius: 5px">
+                <div style="height: 10px"></div>
+                <div style="width: 94%;height: 40px;margin: 0 auto">
+                    <a href="rescue.html#publishArea">
+                        <div style="float: left;background-color: #77ce78;height: 40px;width: 31%;border-radius: 5px;text-align: center">
+                            <span style="line-height: 40px;color: white"><strong>快速发帖</strong></span>
+                        </div>
+                    </a>
+                    <div style="float: left; width: 10px;height: 40px"></div>
+                    <a href="javascript:void (0)">
+                        <div style="float: left;background-color: #DCAC6C;height: 40px;width: 31%;border-radius: 5px;text-align: center">
+                            <span style="line-height: 40px;color: white"><strong>每日签到</strong></span>
+                        </div>
+                    </a>
+                    <div style="float: left; width: 10px;height: 40px"></div>
+                    <a href="javascript:void (0)">
+                        <div style="float: left;background-color: #dd6161;height: 40px;width: 31%;border-radius: 5px;text-align: center">
+                            <span style="line-height: 40px;color: white"><strong>我的空间</strong></span>
+                        </div>
+                    </a>
+                    <div style="float: left; width: 10px"></div>
+                </div>
+            </div>
+            <div style="height: 15px"></div>
+            <div style="border-radius: 5px;background-color: white; width: 100%;height: 325px">
+                <div style="width: 92%;height: 325px;margin: 0 auto">
+                    <div style="height: 10px"></div>
+                    <div style="height: 40px;width: 100%">
+                        <span style="line-height: 40px;font-size: 20px;color: #a5ce6d"><strong>宠物趣闻</strong></span>
+                    </div>
+                    <div style="height: 5px"></div>
+                    <div style="height: 85px;width: 100%">
+                        <a href="news-details.html?id=19" style="color: black">
+                            <div style="float: left;height: 75px;width: 30%">
+                                <img src="img/news/news005.jpg" width="75px" height="75px">
+                            </div>
+                            <div style="height: 75px;width: 70%;float: right">
+                                好想生个女儿并养只小狗
+                            </div>
+                        </a>
+                        <div style="height: 10px"></div>
+                    </div>
+                    <div style="height: 85px;width: 100%">
+                        <a href="news-details.html?id=20" style="color: black">
+                            <div style="float: left;height: 75px;width: 30%">
+                                <img src="img/news/news006.jpg" width="75px" height="75px">
+                            </div>
+                            <div style="height: 75px;width: 70%;float: right">
+                                一天24小时，狗狗都在干嘛？
+                            </div>
+                        </a>
+                        <div style="height: 10px"></div>
+                    </div>
+                    <div style="height: 85px;width: 100%">
+                        <a href="news-details.html?id=21" style="color: black">
+                            <div style="float: left;height: 75px;width: 30%">
+                                <img src="img/news/news007.jpg" width="75px" height="75px">
+                            </div>
+                            <div style="height: 75px;width: 70%;float: right">
+                                见证我16年幸福的狗狗
+                            </div>
+                        </a>
+                        <div style="height: 10px"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>  <!--换行-->
+    <!-- ；领养区域 -->
+    <div class="adopt-area">
+        <br>
+        <!--标题-->
+        <h4><strong style="color: goldenrod" style="color: goldenrod">&emsp;我要</strong><strong
+                style="color: #7fb06a">领养</strong></h4>
+        <!--margin:auto  可以使得div中的div居中显示-->
+        <!--这里设置一个div为了让整体内容和左右有边距-->
+        <div style="width: 94%;height: 600px;margin:auto">
+            <!------================  狗狗领养 ===============-->
+            <!--分割线-->
+            <hr color="goldenrod" class="hrLine" style="width:43%;"/>
+            <strong style="font-size: large">&emsp;狗狗领养&emsp;</strong>
+            <hr color="goldenrod" class="hrLine" style="width:43%;"/>
+            <!--展示狗狗-->
+            <div style="width: 100%;height: 170px">
+                <!--狗狗领养第一个div 图片-->
+                <div style="width: 20%;height: 165px; float: left">
+                    <a href="adopt-details.html?id=41">
+                        <!--展示图片-->
+                        <img width="200px" height="150px" src="img/dog/dog01.jpg">
+                        <!--文字描述-->
+                        <div style="width: 95%;height: 25px;background-color: #727272;text-align: center;line-height: 25px">
+                            <strong style="color: white;">
+                                &nbsp;被遗弃的小狗急需一个家&nbsp;</strong>
+                        </div>
+                    </a>
+                </div>
+                <!--狗狗领养第2个div 图片-->
+                <div style="width: 20%;height: 165px; float: left">
+                    <a href="adopt-details.html?id=42">
+                        <!--展示图片-->
+                        <img width="200px" height="150px" src="img/dog/dog02.jpg">
+                        <!--文字描述-->
+                        <div style="width: 95%;height: 25px;background-color: #727272;text-align: center;line-height: 25px">
+                            <strong style="color: white;">
+                                &nbsp;长得像边牧的小型狗领养&nbsp;</strong>
+                        </div>
+                    </a>
+                </div>
+                <!--狗狗领养第3个div 图片-->
+                <div style="width: 20%;height: 165px; float: left">
+                    <a href="adopt-details.html?id=43">
+                        <!--展示图片-->
+                        <img width="200px" height="150px" src="img/dog/dog03.jpg">
+                        <!--文字描述-->
+                        <div style="width: 95%;height: 25px;background-color: #727272;text-align: center;line-height: 25px">
+                            <strong style="color: white;">
+                                &nbsp;可爱小黄狗找领养&nbsp;</strong>
+                        </div>
+                    </a>
+                </div>
+                <!--狗狗领养第4个div 图片-->
+                <div style="width: 20%;height: 165px; float: left">
+                    <a href="adopt-details.html?id=44">
+                        <!--展示图片-->
+                        <img width="200px" height="150px" src="img/dog/dog04.jpg">
+                        <!--文字描述-->
+                        <div style="width: 95%;height: 25px;background-color: #727272;text-align: center;line-height: 25px">
+                            <strong style="color: white;">
+                                &nbsp;蝴蝶串串有喜欢的吗？&nbsp;</strong>
+                        </div>
+                    </a>
+                </div>
+                <!--狗狗领养第5个div 图片-->
+                <div style="width: 20%;height: 165px; float: left">
+                    <!--展示图片-->
+                    <a href="adopt-details.html?id=45">
+                        <img width="200px" height="150px" src="img/dog/dog05.jpg">
+                        <!--文字描述-->
+                        <div style="width: 95%;height: 25px;background-color: #727272;text-align: center;line-height: 25px">
+                            <strong style="color: white;">
+                                &nbsp;可爱小田园犬找家了！&nbsp;</strong>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!--==================猫咪领养======================-->
+            <br>
+            <!--分割线-->
+            <hr color="goldenrod" class="hrLine" style="width:43%;"/>
+            <strong style="font-size: large">&emsp;猫咪领养&emsp;</strong>
+            <hr color="goldenrod" class="hrLine" style="width:43%;"/>
+            <!--展示猫咪-->
+            <div style="width: 100%;height: 170px">
+                <!--猫咪领养第一个div 图片-->
+                <div style="width: 20%;height: 165px; float: left">
+                    <a href="adopt-details.html?id=46">
+                        <img width="190px" height="150px" src="img/cat/cat01.jpg">
+                        <!--文字描述-->
+                        <div style="width: 95%;height: 25px;background-color: #727272;text-align: center;line-height: 25px">
+                            <strong style="color: white;">
+                                &nbsp;橘哥两寻善主&nbsp;</strong>
+                        </div>
+                    </a>
+                </div>
+                <!--猫咪领养第2个div 图片-->
+                <div style="width: 20%;height: 165px; float: left">
+                    <a href="adopt-details.html?id=47">
+                        <img width="190px" height="150px" src="img/cat/cat02.jpg">
+                        <!--文字描述-->
+                        <div style="width: 95%;height: 25px;background-color: #727272;text-align: center;line-height: 25px">
+                            <strong style="color: white;">
+                                &nbsp;温顺流浪猫求收养&nbsp;</strong>
+                        </div>
+                    </a>
+                </div>
+                <!--猫咪领养第3个div 图片-->
+                <div style="width: 20%;height: 165px; float: left">
+                    <a href="adopt-details.html?id=48">
+                        <img width="190px" height="150px" src="img/cat/cat03.jpg">
+                        <!--文字描述-->
+                        <div style="width: 95%;height: 25px;background-color: #727272;text-align: center;line-height: 25px">
+                            <strong style="color: white;">
+                                &nbsp;四个月加菲串串求带走&nbsp;</strong>
+                        </div>
+                    </a>
+                </div>
+                <!--猫咪领养第4个div 图片-->
+                <div style="width: 20%;height: 165px; float: left">
+                    <a href="adopt-details.html?id=49">
+                        <img width="190px" height="150px" src="img/cat/cat04.jpg">
+                        <!--文字描述-->
+                        <div style="width: 95%;height: 25px;background-color: #727272;text-align: center;line-height: 25px">
+                            <strong style="color: white;">
+                                &nbsp;可爱猫咪找新家&nbsp;</strong>
+                        </div>
+                    </a>
+                </div>
+                <!--猫咪领养第5个div 图片-->
+                <div style="width: 20%;height: 165px; float: left">
+                    <a href="adopt-details.html?id=50">
+                        <img width="190px" height="150px" src="img/cat/cat05.jpg">
+                        <!--文字描述-->
+                        <div style="width: 95%;height: 25px;background-color: #727272;text-align: center;line-height: 25px">
+                            <strong style="color: white;">
+                                &nbsp;五个月橘猫找个家&nbsp;</strong>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!------======================小宠领养=========----->
+            <br>
+            <hr color="goldenrod" class="hrLine" style="width:43%;"/>
+            <strong style="font-size: large">&emsp;小宠领养&emsp;</strong>
+            <hr color="goldenrod" class="hrLine" style="width:43%;"/>
+            <!--展示小宠-->
+            <div style="width: 100%;height: 170px">
+                <!--小宠领养第一个div 图片-->
+                <div style="width: 20%;height: 165px; float: left">
+                    <a href="adopt-details.html?id=51">
+                        <img width="190px" height="150px" src="img/pet/pet01.jpg">
+                        <!--文字描述-->
+                        <div style="width: 95%;height: 25px;background-color: #727272;text-align: center;line-height: 25px">
+                            <strong style="color: white;">
+                                &nbsp;灰色斑鸠免费领养&nbsp;</strong>
+                        </div>
+                    </a>
+                </div>
+                <!--小宠领养第2个div 图片-->
+                <div style="width: 20%;height: 165px; float: left">
+                    <a href="adopt-details.html?id=52">
+                        <img width="190px" height="150px" src="img/pet/pet02.jpg">
+                        <!--文字描述-->
+                        <div style="width: 95%;height: 25px;background-color: #727272;text-align: center;line-height: 25px">
+                            <strong style="color: white;">
+                                &nbsp;小巴西龟找新家&nbsp;</strong>
+                        </div>
+                    </a>
+                </div>
+                <!--小宠领养第3个div 图片-->
+                <div style="width: 20%;height: 165px; float: left">
+                    <a href="adopt-details.html?id=53">
+                        <img width="190px" height="150px" src="img/pet/pet03.jpg">
+                        <!--文字描述-->
+                        <div style="width: 95%;height: 25px;background-color: #727272;text-align: center;line-height: 25px">
+                            <strong style="color: white;">
+                                &nbsp;萌萌哒小兔子免费领养&nbsp;</strong>
+                        </div>
+                    </a>
+                </div>
+                <!--小宠领养第4个div 图片-->
+                <div style="width: 20%;height: 165px; float: left">
+                    <a href="adopt-details.html?id=54">
+                        <img width="190px" height="150px" src="img/pet/pet04.jpg">
+                        <!--文字描述-->
+                        <div style="width: 95%;height: 25px;background-color: #727272;text-align: center;line-height: 25px">
+                            <strong style="color: white;">
+                                &nbsp;道奇兔免费赠送&nbsp;</strong>
+                        </div>
+                    </a>
+                </div>
+                <!--小宠领养第5个div 图片-->
+                <div style="width: 20%;height: 165px; float: left">
+                    <a href="adopt-details.html?id=55">
+                        <img width="190px" height="150px" src="img/pet/pet05.jpg">
+                        <!--文字描述-->
+                        <div style="width: 95%;height: 25px;background-color: #727272;text-align: center;line-height: 25px">
+                            <strong style="color: white;">
+                                &nbsp;豚鼠宝宝求包养&nbsp;</strong>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <br>  <!--换行-->
+    <!-- ---============================寻宠区域===========================-------- -->
+    <div class="publish-area">
+        <br>
+        <!--标题-->
+        <h4><strong style="color: goldenrod" style="color: goldenrod">&emsp;寻宠</strong><strong
+                style="color: #7fb06a">启示</strong></h4>
+        <!--margin:auto  可以使得div中的div居中显示-->
+        <!--这里设置一个div为了让整体内容和左右有边距-->
+        <div style="width: 96%;height: 600px;margin:auto">
+            <!--左侧第一张照片-->
+            <div style="height: 450px; width: 20%; float: left">
+                <a href="search-details.html?id=45">
+                    <img width="180px" height="330px" src="img/publish/publish01.jpg">
+                    <!--文字描述-->
+                    <div style="width: 180px;height: 25px;background-color: #d9d9d9;text-align: center;line-height: 25px">
+                        <span style="color: black">&nbsp;寻找走失一个月的萨摩&nbsp;</span>
+                    </div>
+                </a>
+            </div>
+            <!--=============右上图片======-->
+            <!--右上---第一张照片-->
+            <div style="height: 200px; width: 16%;float: left">
+                <a href="search-details.html?id=46">
+                    <img width="150px" height="130px" src="img/publish/publish02.jpg">
+                    <!--文字描述-->
+                    <div style="width: 150px;height: 25px;background-color: #d9d9d9;text-align: center;line-height: 25px">
+                        <span style="color: black">&nbsp;爱犬于2019年12月4号&nbsp;</span>
+                    </div>
+                </a>
+            </div>
+            <!--右上---第二张照片-->
+            <div style="height: 200px; width: 16%;float: left">
+                <a href="search-details.html?id=47">
+                    <img width="150px" height="130px" src="img/publish/publish03.jpg">
+                    <!--文字描述-->
+                    <div style="width: 150px;height: 25px;background-color: #d9d9d9;text-align: center;line-height: 25px">
+                        <span style="color: black">&nbsp;爱犬于2019年12月4号&nbsp;</span>
+                    </div>
+                </a>
+            </div>
+            <!--右上---第3张照片-->
+            <div style="height: 200px; width: 16%;float: left">
+                <a href="search-details.html?id=48">
+                    <img width="150px" height="130px" src="img/publish/publish04.jpg">
+                    <!--文字描述-->
+                    <div style="width: 150px;height: 25px;background-color: #d9d9d9;text-align: center;line-height: 25px">
+                        <span style="color: black">&nbsp;爱犬于2019年12月4号&nbsp;</span>
+                    </div>
+                </a>
+            </div>
+            <!--右上---第4张照片-->
+            <div style="height: 200px; width: 16%;float: left">
+                <a href="search-details.html?id=49">
+                    <img width="150px" height="130px" src="img/publish/publish05.jpg">
+                    <!--文字描述-->
+                    <div style="width: 150px;height: 25px;background-color: #d9d9d9;text-align: center;line-height: 25px">
+                        <span style="color: black">&nbsp;爱犬于2019年12月4号&nbsp;</span>
+                    </div>
+                </a>
+            </div>
+            <!--右上---第5张照片-->
+            <div style="height: 200px; width: 16%;float: left">
+                <a href="search-details.html?id=50">
+                    <img width="150px" height="130px" src="img/publish/publish06.jpg">
+                    <!--文字描述-->
+                    <div style="width: 150px;height: 25px;background-color: #d9d9d9;text-align: center;line-height: 25px">
+                        <span style="color: black">&nbsp;爱猫于2019年11月19&nbsp;</span>
+                    </div>
+                </a>
+            </div>
+            <!--=============右下图片======-->
+            <!--右上---第一张照片-->
+            <div style="height: 200px; width: 16%;float: left">
+                <a href="javascript:void(0);">
+                    <img width="150px" height="130px" src="img/publish/publish07.jpg">
+                    <!--文字描述-->
+                    <div style="width: 150px;height: 25px;background-color: #d9d9d9;text-align: center;line-height: 25px">
+                        <span style="color: black">&nbsp;爱犬于2019年12月4号&nbsp;</span>
+                    </div>
+                </a>
+            </div>
+            <!--右上---第二张照片-->
+            <div style="height: 200px; width: 16%;float: left">
+                <a href="javascript:void(0);">
+                    <img width="150px" height="130px" src="img/publish/publish08.jpg">
+                    <!--文字描述-->
+                    <div style="width: 150px;height: 25px;background-color: #d9d9d9;text-align: center;line-height: 25px">
+                        <span style="color: black">&nbsp;爱犬于2019年12月4号&nbsp;</span>
+                    </div>
+                </a>
+            </div>
+            <!--右上---第3张照片-->
+            <div style="height: 200px; width: 16%;float: left">
+                <a href="javascript:void(0);">
+                    <img width="150px" height="130px" src="img/publish/publish09.jpg">
+                    <!--文字描述-->
+                    <div style="width: 150px;height: 25px;background-color: #d9d9d9;text-align: center;line-height: 25px">
+                        <span style="color: black">&nbsp;爱犬于2019年12月4号&nbsp;</span>
+                    </div>
+                </a>
+            </div>
+            <!--右上---第4张照片-->
+            <div style="height: 200px; width: 16%;float: left">
+                <a href="javascript:void(0);">
+                    <img width="150px" height="130px" src="img/publish/publish10.jpg">
+                    <!--文字描述-->
+                    <div style="width: 150px;height: 25px;background-color: #d9d9d9;text-align: center;line-height: 25px">
+                        <span style="color: black">&nbsp;爱犬于2019年12月4号&nbsp;</span>
+                    </div>
+                </a>
+            </div>
+            <!--右上---第5张照片-->
+            <div style="height: 200px; width: 16%;float: left">
+                <a href="javascript:void(0);">
+                    <img width="150px" height="130px" src="img/publish/publish11.jpg">
+                    <!--文字描述-->
+                    <div style="width: 150px;height: 25px;background-color: #d9d9d9;text-align: center;line-height: 25px">
+                        <span style="color: black">&nbsp;爱犬于2019年12月4号&nbsp;</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 设置底部布局 -->
+<hr>
+<div class="footer">
+    <script type="text/javascript">$(".footer").load("/src/public/footer.html");</script>
+</div>
+
+
+<!-- 引入导航栏js,注意和引入顺序有关 必须放在后面 -->
+<script src='js/jquery.min.js'></script>
+<script src="js/my_js/script.js"></script>
+<script type="application/javascript">
+    // el: "#Vue-app"
+</script>
+</body>
+</html>

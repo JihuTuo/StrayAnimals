@@ -1,7 +1,7 @@
 [INFO ] 2020-02-18 09:57:33 [main] o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.shiep.DBtest], using SpringBootContextLoader
 [INFO ] 2020-02-18 09:57:33 [main] o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.shiep.DBtest]: no resource found for suffixes {-context.xml, Context.groovy}.
 [INFO ] 2020-02-18 09:57:33 [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.shiep.DBtest]: DBtest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-[INFO ] 2020-02-18 09:57:33 [main] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.shiep.SpringBootApplication for test class com.shiep.DBtest
+[INFO ] 2020-02-18 09:57:33 [main] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.shiep.StaryAnimalsApplication for test class com.shiep.DBtest
 [INFO ] 2020-02-18 09:57:33 [main] o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
 [INFO ] 2020-02-18 09:57:33 [main] o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4a7f959b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@429bffaa, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5403f35f, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@483f6d77, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7e5afaa6, org.springframework.test.context.transaction.TransactionalTestExecutionListener@63a12c68, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@28f3b248, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1b1426f4, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@32b260fa, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@581ac8a8, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6d4e5011, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@57d7f8ca]
 [INFO ] 2020-02-18 09:57:35 [main] com.shiep.DBtest - Starting DBtest on DESKTOP-6UGKRGF with PID 24500 (started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
@@ -21,7 +21,7 @@
 [INFO ] 2020-02-18 09:59:42 [main] o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.shiep.DBtest], using SpringBootContextLoader
 [INFO ] 2020-02-18 09:59:42 [main] o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.shiep.DBtest]: no resource found for suffixes {-context.xml, Context.groovy}.
 [INFO ] 2020-02-18 09:59:42 [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.shiep.DBtest]: DBtest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-[INFO ] 2020-02-18 09:59:42 [main] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.shiep.SpringBootApplication for test class com.shiep.DBtest
+[INFO ] 2020-02-18 09:59:42 [main] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.shiep.StaryAnimalsApplication for test class com.shiep.DBtest
 [INFO ] 2020-02-18 09:59:42 [main] o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
 [INFO ] 2020-02-18 09:59:42 [main] o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3e84448c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4a7f959b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@429bffaa, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5403f35f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@483f6d77, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7e5afaa6, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@63a12c68, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@28f3b248, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1b1426f4, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@32b260fa, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@581ac8a8, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6d4e5011]
 [INFO ] 2020-02-18 09:59:44 [main] com.shiep.DBtest - Starting DBtest on DESKTOP-6UGKRGF with PID 33000 (started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
@@ -41,7 +41,7 @@
 [INFO ] 2020-02-18 10:00:52 [main] o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.shiep.DBtest], using SpringBootContextLoader
 [INFO ] 2020-02-18 10:00:52 [main] o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.shiep.DBtest]: no resource found for suffixes {-context.xml, Context.groovy}.
 [INFO ] 2020-02-18 10:00:52 [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.shiep.DBtest]: DBtest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-[INFO ] 2020-02-18 10:00:52 [main] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.shiep.SpringBootApplication for test class com.shiep.DBtest
+[INFO ] 2020-02-18 10:00:52 [main] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.shiep.StaryAnimalsApplication for test class com.shiep.DBtest
 [INFO ] 2020-02-18 10:00:52 [main] o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
 [INFO ] 2020-02-18 10:00:52 [main] o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4d5b6aac, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3e84448c, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4a7f959b, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@429bffaa, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5403f35f, org.springframework.test.context.transaction.TransactionalTestExecutionListener@483f6d77, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7e5afaa6, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@63a12c68, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@28f3b248, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1b1426f4, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@32b260fa, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@581ac8a8]
 [INFO ] 2020-02-18 10:00:54 [main] com.shiep.DBtest - Starting DBtest on DESKTOP-6UGKRGF with PID 1320 (started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
@@ -58,8 +58,8 @@
 [INFO ] 2020-02-18 10:00:54 [Thread-3] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
 [INFO ] 2020-02-18 10:00:54 [Thread-3] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
 [INFO ] 2020-02-18 10:00:54 [Thread-3] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
-[INFO ] 2020-02-18 10:13:55 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 32748 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
-[INFO ] 2020-02-18 10:13:55 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-18 10:13:55 [restartedMain] com.shiep.StaryAnimalsApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 32748 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-18 10:13:55 [restartedMain] com.shiep.StaryAnimalsApplication - No active profile set, falling back to default profiles: default
 [INFO ] 2020-02-18 10:13:55 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 [INFO ] 2020-02-18 10:13:55 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 [INFO ] 2020-02-18 10:13:55 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
@@ -77,9 +77,9 @@
 [INFO ] 2020-02-18 10:13:55 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
 [INFO ] 2020-02-18 10:13:55 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
 [INFO ] 2020-02-18 10:13:55 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
-[INFO ] 2020-02-18 10:13:55 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 7.908 seconds (JVM running for 11.499)
-[INFO ] 2020-02-18 10:32:20 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 26556 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
-[INFO ] 2020-02-18 10:32:20 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-18 10:13:55 [restartedMain] com.shiep.StaryAnimalsApplication - Started SpringBootApplication in 7.908 seconds (JVM running for 11.499)
+[INFO ] 2020-02-18 10:32:20 [restartedMain] com.shiep.StaryAnimalsApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 26556 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-18 10:32:20 [restartedMain] com.shiep.StaryAnimalsApplication - No active profile set, falling back to default profiles: default
 [INFO ] 2020-02-18 10:32:20 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 [INFO ] 2020-02-18 10:32:20 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 [INFO ] 2020-02-18 10:32:20 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
@@ -97,12 +97,12 @@
 [INFO ] 2020-02-18 10:32:20 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
 [INFO ] 2020-02-18 10:32:20 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
 [INFO ] 2020-02-18 10:32:20 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
-[INFO ] 2020-02-18 10:32:20 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 7.674 seconds (JVM running for 10.955)
+[INFO ] 2020-02-18 10:32:20 [restartedMain] com.shiep.StaryAnimalsApplication - Started SpringBootApplication in 7.674 seconds (JVM running for 10.955)
 [INFO ] 2020-02-18 10:32:20 [Thread-20] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
 [INFO ] 2020-02-18 10:32:20 [Thread-20] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
 [INFO ] 2020-02-18 10:32:20 [Thread-20] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
-[INFO ] 2020-02-18 10:49:10 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 26556 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
-[INFO ] 2020-02-18 10:49:10 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-18 10:49:10 [restartedMain] com.shiep.StaryAnimalsApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 26556 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-18 10:49:10 [restartedMain] com.shiep.StaryAnimalsApplication - No active profile set, falling back to default profiles: default
 [INFO ] 2020-02-18 10:49:10 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 [INFO ] 2020-02-18 10:49:10 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 [INFO ] 2020-02-18 10:49:10 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40ms. Found 0 repository interfaces.
@@ -118,13 +118,13 @@
 [INFO ] 2020-02-18 10:49:10 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
 [INFO ] 2020-02-18 10:49:10 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
 [INFO ] 2020-02-18 10:49:10 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
-[INFO ] 2020-02-18 10:49:10 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 3.746 seconds (JVM running for 1018.352)
+[INFO ] 2020-02-18 10:49:10 [restartedMain] com.shiep.StaryAnimalsApplication - Started SpringBootApplication in 3.746 seconds (JVM running for 1018.352)
 [INFO ] 2020-02-18 10:49:10 [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
 [INFO ] 2020-02-18 10:49:10 [Thread-29] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
 [INFO ] 2020-02-18 10:49:10 [Thread-29] c.alibaba.druid.pool.DruidDataSource - {dataSource-2} closing ...
 [INFO ] 2020-02-18 10:49:10 [Thread-29] c.alibaba.druid.pool.DruidDataSource - {dataSource-2} closed
-[INFO ] 2020-02-18 10:53:00 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 26556 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
-[INFO ] 2020-02-18 10:53:00 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-18 10:53:00 [restartedMain] com.shiep.StaryAnimalsApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 26556 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-18 10:53:00 [restartedMain] com.shiep.StaryAnimalsApplication - No active profile set, falling back to default profiles: default
 [INFO ] 2020-02-18 10:53:00 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 [INFO ] 2020-02-18 10:53:00 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 [INFO ] 2020-02-18 10:53:00 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32ms. Found 0 repository interfaces.
@@ -139,8 +139,8 @@
 [INFO ] 2020-02-18 10:53:00 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-3} closing ...
 [INFO ] 2020-02-18 10:53:00 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-3} closed
 [INFO ] 2020-02-18 10:53:00 [restartedMain] o.a.catalina.core.StandardService - Stopping service [Tomcat]
-[INFO ] 2020-02-18 10:53:26 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 26556 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
-[INFO ] 2020-02-18 10:53:26 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-18 10:53:26 [restartedMain] com.shiep.StaryAnimalsApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 26556 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-18 10:53:26 [restartedMain] com.shiep.StaryAnimalsApplication - No active profile set, falling back to default profiles: default
 [INFO ] 2020-02-18 10:53:26 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 [INFO ] 2020-02-18 10:53:26 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 [INFO ] 2020-02-18 10:53:26 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 49ms. Found 0 repository interfaces.
@@ -155,8 +155,8 @@
 [INFO ] 2020-02-18 10:53:26 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-4} closing ...
 [INFO ] 2020-02-18 10:53:26 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-4} closed
 [INFO ] 2020-02-18 10:53:26 [restartedMain] o.a.catalina.core.StandardService - Stopping service [Tomcat]
-[INFO ] 2020-02-18 10:54:49 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 26556 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
-[INFO ] 2020-02-18 10:54:49 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-18 10:54:49 [restartedMain] com.shiep.StaryAnimalsApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 26556 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-18 10:54:49 [restartedMain] com.shiep.StaryAnimalsApplication - No active profile set, falling back to default profiles: default
 [INFO ] 2020-02-18 10:54:49 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 [INFO ] 2020-02-18 10:54:49 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 [INFO ] 2020-02-18 10:54:49 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23ms. Found 0 repository interfaces.
@@ -171,8 +171,8 @@
 [INFO ] 2020-02-18 10:54:49 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-5} closing ...
 [INFO ] 2020-02-18 10:54:49 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-5} closed
 [INFO ] 2020-02-18 10:54:49 [restartedMain] o.a.catalina.core.StandardService - Stopping service [Tomcat]
-[INFO ] 2020-02-18 11:00:03 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 26556 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
-[INFO ] 2020-02-18 11:00:03 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-18 11:00:03 [restartedMain] com.shiep.StaryAnimalsApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 26556 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-18 11:00:03 [restartedMain] com.shiep.StaryAnimalsApplication - No active profile set, falling back to default profiles: default
 [INFO ] 2020-02-18 11:00:03 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 [INFO ] 2020-02-18 11:00:03 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 [INFO ] 2020-02-18 11:00:03 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 93ms. Found 0 repository interfaces.
@@ -187,8 +187,8 @@
 [INFO ] 2020-02-18 11:00:03 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-6} closing ...
 [INFO ] 2020-02-18 11:00:03 [restartedMain] c.alibaba.druid.pool.DruidDataSource - {dataSource-6} closed
 [INFO ] 2020-02-18 11:00:03 [restartedMain] o.a.catalina.core.StandardService - Stopping service [Tomcat]
-[INFO ] 2020-02-18 11:07:48 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 24140 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
-[INFO ] 2020-02-18 11:07:48 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-18 11:07:48 [restartedMain] com.shiep.StaryAnimalsApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 24140 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-18 11:07:48 [restartedMain] com.shiep.StaryAnimalsApplication - No active profile set, falling back to default profiles: default
 [INFO ] 2020-02-18 11:07:48 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 [INFO ] 2020-02-18 11:07:48 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 [INFO ] 2020-02-18 11:07:48 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
@@ -206,15 +206,15 @@
 [INFO ] 2020-02-18 11:07:48 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
 [INFO ] 2020-02-18 11:07:48 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
 [INFO ] 2020-02-18 11:07:48 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
-[INFO ] 2020-02-18 11:07:48 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 6.809 seconds (JVM running for 9.61)
+[INFO ] 2020-02-18 11:07:48 [restartedMain] com.shiep.StaryAnimalsApplication - Started SpringBootApplication in 6.809 seconds (JVM running for 9.61)
 [INFO ] 2020-02-18 11:07:48 [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 [INFO ] 2020-02-18 11:07:48 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 [INFO ] 2020-02-18 11:07:48 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 51 ms
 [INFO ] 2020-02-18 11:07:48 [Thread-19] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
 [INFO ] 2020-02-18 11:07:48 [Thread-19] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
 [INFO ] 2020-02-18 11:07:48 [Thread-19] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
-[INFO ] 2020-02-18 11:18:50 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 24140 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
-[INFO ] 2020-02-18 11:18:50 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-18 11:18:50 [restartedMain] com.shiep.StaryAnimalsApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 24140 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-18 11:18:50 [restartedMain] com.shiep.StaryAnimalsApplication - No active profile set, falling back to default profiles: default
 [INFO ] 2020-02-18 11:18:50 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 [INFO ] 2020-02-18 11:18:50 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 [INFO ] 2020-02-18 11:18:50 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34ms. Found 0 repository interfaces.
@@ -230,10 +230,10 @@
 [INFO ] 2020-02-18 11:18:50 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
 [INFO ] 2020-02-18 11:18:50 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
 [INFO ] 2020-02-18 11:18:50 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
-[INFO ] 2020-02-18 11:18:50 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 2.713 seconds (JVM running for 668.234)
+[INFO ] 2020-02-18 11:18:50 [restartedMain] com.shiep.StaryAnimalsApplication - Started SpringBootApplication in 2.713 seconds (JVM running for 668.234)
 [INFO ] 2020-02-18 11:18:50 [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[INFO ] 2020-02-18 11:19:05 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 6520 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
-[INFO ] 2020-02-18 11:19:05 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-18 11:19:05 [restartedMain] com.shiep.StaryAnimalsApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 6520 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-18 11:19:05 [restartedMain] com.shiep.StaryAnimalsApplication - No active profile set, falling back to default profiles: default
 [INFO ] 2020-02-18 11:19:05 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 [INFO ] 2020-02-18 11:19:05 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 [INFO ] 2020-02-18 11:19:05 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
@@ -251,14 +251,14 @@
 [INFO ] 2020-02-18 11:19:05 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
 [INFO ] 2020-02-18 11:19:05 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
 [INFO ] 2020-02-18 11:19:05 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
-[INFO ] 2020-02-18 11:19:05 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 6.541 seconds (JVM running for 9.154)
+[INFO ] 2020-02-18 11:19:05 [restartedMain] com.shiep.StaryAnimalsApplication - Started SpringBootApplication in 6.541 seconds (JVM running for 9.154)
 [INFO ] 2020-02-18 11:19:05 [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 [INFO ] 2020-02-18 11:19:05 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 [INFO ] 2020-02-18 11:19:05 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 14 ms
 [INFO ] 2020-02-18 11:19:05 [http-nio-8080-exec-8] io.lettuce.core.EpollProvider - Starting without optional epoll library
 [INFO ] 2020-02-18 11:19:05 [http-nio-8080-exec-8] io.lettuce.core.KqueueProvider - Starting without optional kqueue library
-[INFO ] 2020-02-18 11:28:52 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 22808 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
-[INFO ] 2020-02-18 11:28:52 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-18 11:28:52 [restartedMain] com.shiep.StaryAnimalsApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 22808 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-18 11:28:52 [restartedMain] com.shiep.StaryAnimalsApplication - No active profile set, falling back to default profiles: default
 [INFO ] 2020-02-18 11:28:52 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 [INFO ] 2020-02-18 11:28:52 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 [INFO ] 2020-02-18 11:28:52 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
@@ -276,12 +276,12 @@
 [INFO ] 2020-02-18 11:28:52 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
 [INFO ] 2020-02-18 11:28:52 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
 [INFO ] 2020-02-18 11:28:52 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
-[INFO ] 2020-02-18 11:28:52 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 7.913 seconds (JVM running for 10.019)
+[INFO ] 2020-02-18 11:28:52 [restartedMain] com.shiep.StaryAnimalsApplication - Started SpringBootApplication in 7.913 seconds (JVM running for 10.019)
 [INFO ] 2020-02-18 11:28:52 [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 [INFO ] 2020-02-18 11:28:52 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 [INFO ] 2020-02-18 11:28:52 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms
-[INFO ] 2020-02-18 11:39:18 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 27836 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
-[INFO ] 2020-02-18 11:39:18 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-18 11:39:18 [restartedMain] com.shiep.StaryAnimalsApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 27836 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-18 11:39:18 [restartedMain] com.shiep.StaryAnimalsApplication - No active profile set, falling back to default profiles: default
 [INFO ] 2020-02-18 11:39:18 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 [INFO ] 2020-02-18 11:39:18 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 [INFO ] 2020-02-18 11:39:18 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
@@ -299,12 +299,12 @@
 [INFO ] 2020-02-18 11:39:18 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
 [INFO ] 2020-02-18 11:39:18 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
 [INFO ] 2020-02-18 11:39:18 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
-[INFO ] 2020-02-18 11:39:18 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 7.145 seconds (JVM running for 9.317)
+[INFO ] 2020-02-18 11:39:18 [restartedMain] com.shiep.StaryAnimalsApplication - Started SpringBootApplication in 7.145 seconds (JVM running for 9.317)
 [INFO ] 2020-02-18 11:39:18 [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 [INFO ] 2020-02-18 11:39:18 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 [INFO ] 2020-02-18 11:39:18 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 14 ms
-[INFO ] 2020-02-18 11:42:10 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 11712 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
-[INFO ] 2020-02-18 11:42:10 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-18 11:42:10 [restartedMain] com.shiep.StaryAnimalsApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 11712 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-18 11:42:10 [restartedMain] com.shiep.StaryAnimalsApplication - No active profile set, falling back to default profiles: default
 [INFO ] 2020-02-18 11:42:10 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 [INFO ] 2020-02-18 11:42:10 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 [INFO ] 2020-02-18 11:42:10 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
@@ -322,12 +322,12 @@
 [INFO ] 2020-02-18 11:42:10 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
 [INFO ] 2020-02-18 11:42:10 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
 [INFO ] 2020-02-18 11:42:10 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
-[INFO ] 2020-02-18 11:42:10 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 6.39 seconds (JVM running for 8.544)
+[INFO ] 2020-02-18 11:42:10 [restartedMain] com.shiep.StaryAnimalsApplication - Started SpringBootApplication in 6.39 seconds (JVM running for 8.544)
 [INFO ] 2020-02-18 11:42:10 [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 [INFO ] 2020-02-18 11:42:10 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 [INFO ] 2020-02-18 11:42:10 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 13 ms
-[INFO ] 2020-02-18 11:45:03 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 34700 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
-[INFO ] 2020-02-18 11:45:03 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-18 11:45:03 [restartedMain] com.shiep.StaryAnimalsApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 34700 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-18 11:45:03 [restartedMain] com.shiep.StaryAnimalsApplication - No active profile set, falling back to default profiles: default
 [INFO ] 2020-02-18 11:45:03 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 [INFO ] 2020-02-18 11:45:03 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 [INFO ] 2020-02-18 11:45:03 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
@@ -345,15 +345,15 @@
 [INFO ] 2020-02-18 11:45:03 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
 [INFO ] 2020-02-18 11:45:03 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
 [INFO ] 2020-02-18 11:45:03 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
-[INFO ] 2020-02-18 11:45:03 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 10.1 seconds (JVM running for 15.078)
+[INFO ] 2020-02-18 11:45:03 [restartedMain] com.shiep.StaryAnimalsApplication - Started SpringBootApplication in 10.1 seconds (JVM running for 15.078)
 [INFO ] 2020-02-18 11:45:03 [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 [INFO ] 2020-02-18 11:45:03 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 [INFO ] 2020-02-18 11:45:03 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 20 ms
 [INFO ] 2020-02-18 11:45:03 [Thread-28] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
 [INFO ] 2020-02-18 11:45:03 [Thread-28] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
 [INFO ] 2020-02-18 11:45:03 [Thread-28] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
-[INFO ] 2020-02-18 11:49:47 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 32736 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
-[INFO ] 2020-02-18 11:49:47 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-18 11:49:47 [restartedMain] com.shiep.StaryAnimalsApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 32736 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-18 11:49:47 [restartedMain] com.shiep.StaryAnimalsApplication - No active profile set, falling back to default profiles: default
 [INFO ] 2020-02-18 11:49:47 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 [INFO ] 2020-02-18 11:49:47 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 [INFO ] 2020-02-18 11:49:47 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
@@ -371,12 +371,12 @@
 [INFO ] 2020-02-18 11:49:47 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
 [INFO ] 2020-02-18 11:49:47 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
 [INFO ] 2020-02-18 11:49:47 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
-[INFO ] 2020-02-18 11:49:47 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 6.321 seconds (JVM running for 8.755)
+[INFO ] 2020-02-18 11:49:47 [restartedMain] com.shiep.StaryAnimalsApplication - Started SpringBootApplication in 6.321 seconds (JVM running for 8.755)
 [INFO ] 2020-02-18 11:49:47 [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 [INFO ] 2020-02-18 11:49:47 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 [INFO ] 2020-02-18 11:49:47 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 13 ms
-[INFO ] 2020-02-18 12:02:05 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 32376 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
-[INFO ] 2020-02-18 12:02:05 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-18 12:02:05 [restartedMain] com.shiep.StaryAnimalsApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 32376 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-18 12:02:05 [restartedMain] com.shiep.StaryAnimalsApplication - No active profile set, falling back to default profiles: default
 [INFO ] 2020-02-18 12:02:05 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 [INFO ] 2020-02-18 12:02:05 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 [INFO ] 2020-02-18 12:02:05 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
@@ -394,12 +394,12 @@
 [INFO ] 2020-02-18 12:02:05 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
 [INFO ] 2020-02-18 12:02:05 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
 [INFO ] 2020-02-18 12:02:05 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
-[INFO ] 2020-02-18 12:02:05 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 7.724 seconds (JVM running for 10.098)
+[INFO ] 2020-02-18 12:02:05 [restartedMain] com.shiep.StaryAnimalsApplication - Started SpringBootApplication in 7.724 seconds (JVM running for 10.098)
 [INFO ] 2020-02-18 12:02:05 [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 [INFO ] 2020-02-18 12:02:05 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 [INFO ] 2020-02-18 12:02:05 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 13 ms
-[INFO ] 2020-02-18 12:07:19 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 4524 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
-[INFO ] 2020-02-18 12:07:19 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-18 12:07:19 [restartedMain] com.shiep.StaryAnimalsApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 4524 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-18 12:07:19 [restartedMain] com.shiep.StaryAnimalsApplication - No active profile set, falling back to default profiles: default
 [INFO ] 2020-02-18 12:07:19 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 [INFO ] 2020-02-18 12:07:19 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 [INFO ] 2020-02-18 12:07:19 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
@@ -417,12 +417,12 @@
 [INFO ] 2020-02-18 12:07:19 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
 [INFO ] 2020-02-18 12:07:19 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
 [INFO ] 2020-02-18 12:07:19 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
-[INFO ] 2020-02-18 12:07:19 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 7.92 seconds (JVM running for 10.236)
+[INFO ] 2020-02-18 12:07:19 [restartedMain] com.shiep.StaryAnimalsApplication - Started SpringBootApplication in 7.92 seconds (JVM running for 10.236)
 [INFO ] 2020-02-18 12:07:19 [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 [INFO ] 2020-02-18 12:07:19 [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 [INFO ] 2020-02-18 12:07:19 [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
-[INFO ] 2020-02-18 12:11:07 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 23428 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
-[INFO ] 2020-02-18 12:11:07 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-18 12:11:07 [restartedMain] com.shiep.StaryAnimalsApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 23428 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-18 12:11:07 [restartedMain] com.shiep.StaryAnimalsApplication - No active profile set, falling back to default profiles: default
 [INFO ] 2020-02-18 12:11:07 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 [INFO ] 2020-02-18 12:11:07 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 [INFO ] 2020-02-18 12:11:07 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
@@ -440,12 +440,12 @@
 [INFO ] 2020-02-18 12:11:07 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
 [INFO ] 2020-02-18 12:11:07 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
 [INFO ] 2020-02-18 12:11:07 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
-[INFO ] 2020-02-18 12:11:07 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 6.08 seconds (JVM running for 8.443)
+[INFO ] 2020-02-18 12:11:07 [restartedMain] com.shiep.StaryAnimalsApplication - Started SpringBootApplication in 6.08 seconds (JVM running for 8.443)
 [INFO ] 2020-02-18 12:11:07 [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 [INFO ] 2020-02-18 12:11:07 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 [INFO ] 2020-02-18 12:11:07 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 10 ms
-[INFO ] 2020-02-18 12:14:53 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 33864 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
-[INFO ] 2020-02-18 12:14:53 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-18 12:14:53 [restartedMain] com.shiep.StaryAnimalsApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 33864 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-18 12:14:53 [restartedMain] com.shiep.StaryAnimalsApplication - No active profile set, falling back to default profiles: default
 [INFO ] 2020-02-18 12:14:53 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 [INFO ] 2020-02-18 12:14:53 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 [INFO ] 2020-02-18 12:14:53 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
@@ -463,12 +463,12 @@
 [INFO ] 2020-02-18 12:14:53 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
 [INFO ] 2020-02-18 12:14:53 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
 [INFO ] 2020-02-18 12:14:53 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
-[INFO ] 2020-02-18 12:14:53 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 6.713 seconds (JVM running for 9.329)
+[INFO ] 2020-02-18 12:14:53 [restartedMain] com.shiep.StaryAnimalsApplication - Started SpringBootApplication in 6.713 seconds (JVM running for 9.329)
 [INFO ] 2020-02-18 12:14:53 [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 [INFO ] 2020-02-18 12:14:53 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 [INFO ] 2020-02-18 12:14:53 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
-[INFO ] 2020-02-18 12:19:12 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 28920 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
-[INFO ] 2020-02-18 12:19:12 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-18 12:19:12 [restartedMain] com.shiep.StaryAnimalsApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 28920 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-18 12:19:12 [restartedMain] com.shiep.StaryAnimalsApplication - No active profile set, falling back to default profiles: default
 [INFO ] 2020-02-18 12:19:12 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 [INFO ] 2020-02-18 12:19:12 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 [INFO ] 2020-02-18 12:19:12 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
@@ -486,12 +486,12 @@
 [INFO ] 2020-02-18 12:19:12 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
 [INFO ] 2020-02-18 12:19:12 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
 [INFO ] 2020-02-18 12:19:12 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
-[INFO ] 2020-02-18 12:19:12 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 6.173 seconds (JVM running for 8.711)
+[INFO ] 2020-02-18 12:19:12 [restartedMain] com.shiep.StaryAnimalsApplication - Started SpringBootApplication in 6.173 seconds (JVM running for 8.711)
 [INFO ] 2020-02-18 12:19:12 [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 [INFO ] 2020-02-18 12:19:12 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 [INFO ] 2020-02-18 12:19:12 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 13 ms
-[INFO ] 2020-02-18 12:23:07 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 5988 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
-[INFO ] 2020-02-18 12:23:07 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-18 12:23:07 [restartedMain] com.shiep.StaryAnimalsApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 5988 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-18 12:23:07 [restartedMain] com.shiep.StaryAnimalsApplication - No active profile set, falling back to default profiles: default
 [INFO ] 2020-02-18 12:23:07 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 [INFO ] 2020-02-18 12:23:07 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 [INFO ] 2020-02-18 12:23:07 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
@@ -509,12 +509,12 @@
 [INFO ] 2020-02-18 12:23:07 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
 [INFO ] 2020-02-18 12:23:07 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
 [INFO ] 2020-02-18 12:23:07 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
-[INFO ] 2020-02-18 12:23:07 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 6.209 seconds (JVM running for 8.663)
+[INFO ] 2020-02-18 12:23:07 [restartedMain] com.shiep.StaryAnimalsApplication - Started SpringBootApplication in 6.209 seconds (JVM running for 8.663)
 [INFO ] 2020-02-18 12:23:07 [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 [INFO ] 2020-02-18 12:23:07 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 [INFO ] 2020-02-18 12:23:07 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 11 ms
-[INFO ] 2020-02-18 12:24:44 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 32556 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
-[INFO ] 2020-02-18 12:24:44 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-18 12:24:44 [restartedMain] com.shiep.StaryAnimalsApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 32556 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-18 12:24:44 [restartedMain] com.shiep.StaryAnimalsApplication - No active profile set, falling back to default profiles: default
 [INFO ] 2020-02-18 12:24:44 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 [INFO ] 2020-02-18 12:24:44 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 [INFO ] 2020-02-18 12:24:44 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
@@ -532,14 +532,14 @@
 [INFO ] 2020-02-18 12:24:44 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
 [INFO ] 2020-02-18 12:24:44 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
 [INFO ] 2020-02-18 12:24:44 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
-[INFO ] 2020-02-18 12:24:44 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 6.267 seconds (JVM running for 8.583)
+[INFO ] 2020-02-18 12:24:44 [restartedMain] com.shiep.StaryAnimalsApplication - Started SpringBootApplication in 6.267 seconds (JVM running for 8.583)
 [INFO ] 2020-02-18 12:24:44 [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 [INFO ] 2020-02-18 12:24:44 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 [INFO ] 2020-02-18 12:24:44 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms
 [INFO ] 2020-02-18 12:24:44 [http-nio-8080-exec-5] io.lettuce.core.EpollProvider - Starting without optional epoll library
 [INFO ] 2020-02-18 12:24:44 [http-nio-8080-exec-5] io.lettuce.core.KqueueProvider - Starting without optional kqueue library
-[INFO ] 2020-02-18 12:31:25 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 33296 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
-[INFO ] 2020-02-18 12:31:25 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-18 12:31:25 [restartedMain] com.shiep.StaryAnimalsApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 33296 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-18 12:31:25 [restartedMain] com.shiep.StaryAnimalsApplication - No active profile set, falling back to default profiles: default
 [INFO ] 2020-02-18 12:31:25 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 [INFO ] 2020-02-18 12:31:25 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 [INFO ] 2020-02-18 12:31:25 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
@@ -557,12 +557,12 @@
 [INFO ] 2020-02-18 12:31:25 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
 [INFO ] 2020-02-18 12:31:25 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
 [INFO ] 2020-02-18 12:31:25 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
-[INFO ] 2020-02-18 12:31:25 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 6.383 seconds (JVM running for 8.699)
+[INFO ] 2020-02-18 12:31:25 [restartedMain] com.shiep.StaryAnimalsApplication - Started SpringBootApplication in 6.383 seconds (JVM running for 8.699)
 [INFO ] 2020-02-18 12:31:25 [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 [INFO ] 2020-02-18 12:31:25 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 [INFO ] 2020-02-18 12:31:25 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms
-[INFO ] 2020-02-18 13:03:58 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 34828 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
-[INFO ] 2020-02-18 13:03:58 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-18 13:03:58 [restartedMain] com.shiep.StaryAnimalsApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 34828 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-18 13:03:58 [restartedMain] com.shiep.StaryAnimalsApplication - No active profile set, falling back to default profiles: default
 [INFO ] 2020-02-18 13:03:58 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 [INFO ] 2020-02-18 13:03:58 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 [INFO ] 2020-02-18 13:03:58 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
@@ -580,12 +580,12 @@
 [INFO ] 2020-02-18 13:03:58 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
 [INFO ] 2020-02-18 13:03:58 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
 [INFO ] 2020-02-18 13:03:58 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
-[INFO ] 2020-02-18 13:03:58 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 6.522 seconds (JVM running for 8.986)
+[INFO ] 2020-02-18 13:03:58 [restartedMain] com.shiep.StaryAnimalsApplication - Started SpringBootApplication in 6.522 seconds (JVM running for 8.986)
 [INFO ] 2020-02-18 13:03:58 [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 [INFO ] 2020-02-18 13:03:58 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 [INFO ] 2020-02-18 13:03:58 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 12 ms
-[INFO ] 2020-02-18 13:08:16 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 35556 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
-[INFO ] 2020-02-18 13:08:16 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-18 13:08:16 [restartedMain] com.shiep.StaryAnimalsApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 35556 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-18 13:08:16 [restartedMain] com.shiep.StaryAnimalsApplication - No active profile set, falling back to default profiles: default
 [INFO ] 2020-02-18 13:08:16 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 [INFO ] 2020-02-18 13:08:16 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 [INFO ] 2020-02-18 13:08:16 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
@@ -603,14 +603,14 @@
 [INFO ] 2020-02-18 13:08:16 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
 [INFO ] 2020-02-18 13:08:16 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
 [INFO ] 2020-02-18 13:08:16 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
-[INFO ] 2020-02-18 13:08:16 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 9.52 seconds (JVM running for 12.486)
+[INFO ] 2020-02-18 13:08:16 [restartedMain] com.shiep.StaryAnimalsApplication - Started SpringBootApplication in 9.52 seconds (JVM running for 12.486)
 [INFO ] 2020-02-18 13:08:16 [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 [INFO ] 2020-02-18 13:08:16 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 [INFO ] 2020-02-18 13:08:16 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 11 ms
 [INFO ] 2020-02-18 13:08:16 [http-nio-8080-exec-1] io.lettuce.core.EpollProvider - Starting without optional epoll library
 [INFO ] 2020-02-18 13:08:16 [http-nio-8080-exec-1] io.lettuce.core.KqueueProvider - Starting without optional kqueue library
-[INFO ] 2020-02-18 13:14:45 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 34036 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
-[INFO ] 2020-02-18 13:14:45 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-18 13:14:45 [restartedMain] com.shiep.StaryAnimalsApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 34036 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-18 13:14:45 [restartedMain] com.shiep.StaryAnimalsApplication - No active profile set, falling back to default profiles: default
 [INFO ] 2020-02-18 13:14:45 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 [INFO ] 2020-02-18 13:14:45 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 [INFO ] 2020-02-18 13:14:45 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
@@ -628,12 +628,12 @@
 [INFO ] 2020-02-18 13:14:45 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
 [INFO ] 2020-02-18 13:14:45 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
 [INFO ] 2020-02-18 13:14:45 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
-[INFO ] 2020-02-18 13:14:45 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 6.219 seconds (JVM running for 8.541)
+[INFO ] 2020-02-18 13:14:45 [restartedMain] com.shiep.StaryAnimalsApplication - Started SpringBootApplication in 6.219 seconds (JVM running for 8.541)
 [INFO ] 2020-02-18 13:14:45 [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 [INFO ] 2020-02-18 13:14:45 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 [INFO ] 2020-02-18 13:14:45 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 11 ms
-[INFO ] 2020-02-18 13:31:07 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 33552 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
-[INFO ] 2020-02-18 13:31:07 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-18 13:31:07 [restartedMain] com.shiep.StaryAnimalsApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 33552 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-18 13:31:07 [restartedMain] com.shiep.StaryAnimalsApplication - No active profile set, falling back to default profiles: default
 [INFO ] 2020-02-18 13:31:07 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 [INFO ] 2020-02-18 13:31:07 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 [INFO ] 2020-02-18 13:31:07 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
@@ -651,12 +651,12 @@
 [INFO ] 2020-02-18 13:31:07 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
 [INFO ] 2020-02-18 13:31:07 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
 [INFO ] 2020-02-18 13:31:07 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
-[INFO ] 2020-02-18 13:31:07 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 5.788 seconds (JVM running for 8.089)
+[INFO ] 2020-02-18 13:31:07 [restartedMain] com.shiep.StaryAnimalsApplication - Started SpringBootApplication in 5.788 seconds (JVM running for 8.089)
 [INFO ] 2020-02-18 13:31:07 [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 [INFO ] 2020-02-18 13:31:07 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 [INFO ] 2020-02-18 13:31:07 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 13 ms
-[INFO ] 2020-02-18 13:43:53 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 5064 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
-[INFO ] 2020-02-18 13:43:53 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-18 13:43:53 [restartedMain] com.shiep.StaryAnimalsApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 5064 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-18 13:43:53 [restartedMain] com.shiep.StaryAnimalsApplication - No active profile set, falling back to default profiles: default
 [INFO ] 2020-02-18 13:43:53 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 [INFO ] 2020-02-18 13:43:53 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 [INFO ] 2020-02-18 13:43:53 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
@@ -674,12 +674,12 @@
 [INFO ] 2020-02-18 13:43:53 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
 [INFO ] 2020-02-18 13:43:53 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
 [INFO ] 2020-02-18 13:43:53 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
-[INFO ] 2020-02-18 13:43:53 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 6.394 seconds (JVM running for 8.836)
+[INFO ] 2020-02-18 13:43:53 [restartedMain] com.shiep.StaryAnimalsApplication - Started SpringBootApplication in 6.394 seconds (JVM running for 8.836)
 [INFO ] 2020-02-18 13:43:53 [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 [INFO ] 2020-02-18 13:43:53 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 [INFO ] 2020-02-18 13:43:53 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 14 ms
-[INFO ] 2020-02-18 14:56:24 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 34396 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
-[INFO ] 2020-02-18 14:56:24 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-18 14:56:24 [restartedMain] com.shiep.StaryAnimalsApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 34396 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-18 14:56:24 [restartedMain] com.shiep.StaryAnimalsApplication - No active profile set, falling back to default profiles: default
 [INFO ] 2020-02-18 14:56:24 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 [INFO ] 2020-02-18 14:56:24 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 [INFO ] 2020-02-18 14:56:24 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
@@ -697,12 +697,12 @@
 [INFO ] 2020-02-18 14:56:24 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
 [INFO ] 2020-02-18 14:56:24 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
 [INFO ] 2020-02-18 14:56:24 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
-[INFO ] 2020-02-18 14:56:24 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 7.318 seconds (JVM running for 9.758)
+[INFO ] 2020-02-18 14:56:24 [restartedMain] com.shiep.StaryAnimalsApplication - Started SpringBootApplication in 7.318 seconds (JVM running for 9.758)
 [INFO ] 2020-02-18 14:56:24 [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 [INFO ] 2020-02-18 14:56:24 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 [INFO ] 2020-02-18 14:56:24 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
-[INFO ] 2020-02-18 14:59:06 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 36644 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
-[INFO ] 2020-02-18 14:59:06 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-18 14:59:06 [restartedMain] com.shiep.StaryAnimalsApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 36644 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-18 14:59:06 [restartedMain] com.shiep.StaryAnimalsApplication - No active profile set, falling back to default profiles: default
 [INFO ] 2020-02-18 14:59:06 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 [INFO ] 2020-02-18 14:59:06 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 [INFO ] 2020-02-18 14:59:06 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
@@ -720,12 +720,12 @@
 [INFO ] 2020-02-18 14:59:06 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
 [INFO ] 2020-02-18 14:59:06 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
 [INFO ] 2020-02-18 14:59:06 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
-[INFO ] 2020-02-18 14:59:06 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 6.452 seconds (JVM running for 8.773)
+[INFO ] 2020-02-18 14:59:06 [restartedMain] com.shiep.StaryAnimalsApplication - Started SpringBootApplication in 6.452 seconds (JVM running for 8.773)
 [INFO ] 2020-02-18 14:59:06 [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 [INFO ] 2020-02-18 14:59:06 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 [INFO ] 2020-02-18 14:59:06 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 11 ms
-[INFO ] 2020-02-18 15:04:34 [restartedMain] com.shiep.SpringBootApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 14468 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
-[INFO ] 2020-02-18 15:04:34 [restartedMain] com.shiep.SpringBootApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-02-18 15:04:34 [restartedMain] com.shiep.StaryAnimalsApplication - Starting SpringBootApplication on DESKTOP-6UGKRGF with PID 14468 (D:\Tool_Workspace\IDEA\stary-animals\target\classes started by tuoji in D:\Tool_Workspace\IDEA\stary-animals)
+[INFO ] 2020-02-18 15:04:34 [restartedMain] com.shiep.StaryAnimalsApplication - No active profile set, falling back to default profiles: default
 [INFO ] 2020-02-18 15:04:34 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 [INFO ] 2020-02-18 15:04:34 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 [INFO ] 2020-02-18 15:04:34 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
@@ -743,7 +743,7 @@
 [INFO ] 2020-02-18 15:04:34 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
 [INFO ] 2020-02-18 15:04:34 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
 [INFO ] 2020-02-18 15:04:34 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/stary-animals'
-[INFO ] 2020-02-18 15:04:34 [restartedMain] com.shiep.SpringBootApplication - Started SpringBootApplication in 7.683 seconds (JVM running for 10.327)
+[INFO ] 2020-02-18 15:04:34 [restartedMain] com.shiep.StaryAnimalsApplication - Started SpringBootApplication in 7.683 seconds (JVM running for 10.327)
 [INFO ] 2020-02-18 15:04:34 [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/stary-animals] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 [INFO ] 2020-02-18 15:04:34 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 [INFO ] 2020-02-18 15:04:34 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 10 ms

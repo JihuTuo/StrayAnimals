@@ -1,19 +1,20 @@
 server:
-  port: 8080
+  port: 80
   servlet:
     context-path: /stary-animals   # 添加项目运行后的名称 localhost:8080/stary-animals
+
 spring:   # 表示该配置直接由Spring容器进行负责处理
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource    # 配置当前要使用的数据源的操作类型
     driver-class-name: org.gjt.mm.mysql.Driver      # 配置MySQL驱动程序
     url: jdbc:mysql://localhost:3306/sa?useUnicode=true&amp;characterEncoding=utf-8   # 连接地址
     username: root     # 配置数据库用户名
-    password: mysqladmin    # 数据库连接密码
+    password: mysqladmin12345@    # 数据库连接密码
     dbcp2:
-      min-idle: 5       # 数据库连接池的最小维持连接数
-      initial-size: 5   # 初始化提供的连接数
-      max-total: 5      # 最大连接数
-      max-wait-millis: 200   # 等待连接获取的最大超时时间
+      min-idle: 10       # 数据库连接池的最小维持连接数
+      initial-size: 20   # 初始化提供的连接数
+      max-total: 20      # 最大连接数
+      max-wait-millis: 10000   # 等待连接获取的最大超时时间
       # 邮件服务
   mail:
     host: smtp.qq.com   # 腾讯服务器
@@ -46,6 +47,7 @@ mybatis-plus:
     use-generated-keys: true
     default-statement-timeout: 60
     default-fetch-size: 100
+
 # 配置jwt,会在配置类中进行读取
 shiep:
   jwt:
@@ -56,6 +58,7 @@ shiep:
     # header 名称
     header: token
     cookieName: SHIEP_TOKEN
+
 # 配置分页助手
 pagehelper:
   helper-dialect: mysql

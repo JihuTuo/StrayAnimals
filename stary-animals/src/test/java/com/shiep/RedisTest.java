@@ -12,7 +12,7 @@ import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = SpringBootApplication.class)
+@SpringBootTest(classes = StaryAnimalsApplication.class)
 public class RedisTest {
 
     @Autowired   // stringRedisTemplate 对String和Hash的key和value实现了String Seriazible 序列化

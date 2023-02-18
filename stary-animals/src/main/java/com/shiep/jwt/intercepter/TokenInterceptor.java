@@ -23,6 +23,7 @@ public class TokenInterceptor extends HandlerInterceptorAdapter {
        //** 地址过滤 *//*
         String uri = request.getRequestURI() ;
         if (uri.contains("/login")
+                || uri.contains("/test")
                 || uri.contains("/register")
                 || uri.contains("/ueditor/config")
                 || uri.contains("/ueditor/upload")
