@@ -30,7 +30,7 @@ const ue2 = {
         UE.Editor.prototype._bkGetActionUrl = UE.Editor.prototype.getActionUrl;
         UE.Editor.prototype.getActionUrl = function(action) {
             if (action === 'uploadimage'){
-                return 'http://127.0.0.1/stary-animals/ueditor/upload'; //!* 你自己的图片上传action *!/
+                return 'http://127.0.0.1:8081/stary-animals/ueditor/upload'; //!* 你自己的图片上传action *!/
             }else{
                 return this._bkGetActionUrl.call(this, action);
             }

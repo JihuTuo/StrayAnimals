@@ -69,24 +69,10 @@
                 <li class="slide1"></li>
                 <li class="slide2"></li>
                 <li><a  class="active" href="index.html">首页</a></li>
-                <li><a href="news.html">资讯</a></li>
-                <li><a href="rescue.html">救助</a></li>
+                <li><a href="rescue.html">社区帖子</a></li>
                 <li><a href="adopt.html">领养</a></li>
                 <li><a href="search.html">寻宠</a></li>
                 <li><a href="help.html">帮助</a></li>
-                <li><a href="about-us.html">关于我们</a></li>
-                <!-- 搜索框 -->
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;
-                </p>
-                <li>
-                    <div class="search d7">
-                        <form>
-                            <input type="text" placeholder="搜索从这里开始...">
-                            <button type="submit"></button>
-                        </form>
-                    </div>
-                </li>
             </ul>
         </div>
         <br><br>
@@ -269,14 +255,6 @@
 
         <!--发布信息部分-右侧-->
         <div class="adopt-publish-message">
-            <!--首先是一个搜索框-->
-            <div style="height: 35px;">
-                <form action="">
-                    <input class="input" type="text" placeholder="请输入领养内容">
-                    <button class="search-btn" type="button"><span class="	glyphicon glyphicon-search"></span>
-                    </button>
-                </form>
-            </div>
             <br>
             <!--发布信息和信息管理-->
             <div style="height: 40px;">
@@ -300,18 +278,12 @@
                     <div style="width: 80px;height: 90px;float: left;">
                         <img src="img/cat/1.jpg" style="width: 90px;height: 90px">
                     </div>
+                    <br/>
                     <!--作者相关信息-->
                     <div style="float: left;padding-left: 15px;">
-                        用户名：{{animalAdoptVo.user.username}}
+                        发布用户：{{animalAdoptVo.user.username}}
                         <br>
                         注册时间：{{animalAdoptVo.user.createTime}}
-                        <br>
-                        <br>
-                        <a href="javascript:void (0);" >
-                            <div style="background-color: #FF0000;color: white;width: 80px;" @click="noneMsg">
-                                <span class="el-icon-chat-dot-round"> &nbsp;发私信</span>
-                            </div>
-                        </a>
                     </div>
                 </div>
                 <a href="javascript:void (0)">

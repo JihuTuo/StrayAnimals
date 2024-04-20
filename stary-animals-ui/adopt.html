@@ -68,24 +68,10 @@
                 <li class="slide1"></li>
                 <li class="slide2"></li>
                 <li><a  class="active" href="index.html">首页</a></li>
-                <li><a href="news.html">资讯</a></li>
-                <li><a href="rescue.html">救助</a></li>
+                <li><a href="rescue.html">社区帖子</a></li>
                 <li><a href="adopt.html">领养</a></li>
                 <li><a href="search.html">寻宠</a></li>
                 <li><a href="help.html">帮助</a></li>
-                <li><a href="about-us.html">关于我们</a></li>
-                <!-- 搜索框 -->
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;
-                </p>
-                <li>
-                    <div class="search d7">
-                        <form>
-                            <input type="text" placeholder="搜索从这里开始...">
-                            <button type="submit"></button>
-                        </form>
-                    </div>
-                </li>
             </ul>
         </div>
         <br><br>
@@ -123,19 +109,6 @@
         <br><br>  <!-- 流出空隙 -->
         <!--信息部分-左侧-->
         <div class="adopt-message">
-            <!-- 过滤不同状态的消息 -->
-            <div class="adopt-message-status">
-                <a href="javascript:void(0)">
-                    <div class="adopt-message-status-font">最新消息</div>
-                </a>
-                <!--中间的空格-->
-                <div class="adopt-message-status-font-black"></div>
-
-                <a href="javascript:void(0)">
-                    <div class="adopt-message-status-font-active">搞定了</div>
-                </a>
-            </div>
-            <br>  <!--换行-->
             <!--开始显示总条数-->
             <div class="total-amount">
                 &emsp;    <!--这里需要渲染数据-->
@@ -192,14 +165,6 @@
 
         <!--发布信息部分-右侧-->
         <div class="adopt-publish-message">
-            <!--首先是一个搜索框-->
-            <div style="height: 35px;">
-                <form action="">
-                    <input class="input" type="text" placeholder="请输入领养内容">
-                    <button class="search-btn" type="button"><span class="	glyphicon glyphicon-search"></span>
-                    </button>
-                </form>
-            </div>
             <br>
             <!--发布信息和信息管理-->
             <div style="height: 40px;">
@@ -217,7 +182,7 @@
             <br>
             <!--发布领养信息必读公告-->
             <div style="height: 30px;background-color: #F9F0DA">
-                <a href="javascript:void (0)">
+                <a href="help.html">
                     <span style="color: #FF0000;padding-left: 10px;line-height: 30px">[必读]</span><span
                         style="padding-left: 10px;line-height: 30px">领养信息发布规则</span>
                 </a>
@@ -253,7 +218,7 @@
             // 宠类过滤器
             categoryId: 1,
             // 县区过滤器
-            countyId: 1,
+            countyId: !ly.store.getJson("counties").id  ? ly.store.getJson("city").id  : 1,
             animalAdopts: [],
             // 分页组件参数
             pagination: {
@@ -265,6 +230,9 @@
             isactive : -1,
         },
         created () {
+            this.cityId = !ly.store.getJson("city").id  ? ly.store.getJson("city").id  : 1;
+            this.countyId = !ly.store.getJson("counties").id  ? ly.store.getJson("counties").id  : 1;
+
           // 获取所有宠物类型
             this.getAllAnimalCategory();
             this.getAllAnimalAdoptInPage();
@@ -377,7 +345,6 @@
             changeCategory(id, index) {
                 this.isactive = index;
                 this.categoryId = id;
-                console.log("categoryId" + id);
                 // 每当产生变化的时候就调用函数获取分页
                 this.getAllAnimalAdoptInPage();
                 /*console.log( "===============-----------------==========");

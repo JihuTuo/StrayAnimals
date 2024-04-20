@@ -14,6 +14,7 @@ import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.event.EventListener;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.util.ResourceUtils;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -23,6 +24,7 @@ import javax.annotation.PostConstruct;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.UUID;
 
 @Controller
@@ -51,7 +53,7 @@ public class UploadFileController {
     private static String searchFileUploadPath;
     private static String searchFileUploadDeskPath;
 
-    @EventListener(ApplicationReadyEvent.class)
+//    @EventListener(ApplicationReadyEvent.class)
     public void test() {
         reportMapper.findAll().forEach(report -> {
             String content = report.getContent();
@@ -65,13 +67,14 @@ public class UploadFileController {
     }
 
     @PostConstruct
-    public void init() {
-        String fileUploadDeskPrefix = System.getProperty("user.dir") + File.separator + "stary-animals-ui" + File.separator + "upload";
-        adoptFileUploadDeskPath = fileUploadDeskPrefix + ADOPT_PATH_SUFFIX;
-        searchFileUploadDeskPath = fileUploadDeskPrefix + SEARCH_PATH_SUFFIX;
-
-//        String fileUploadPrefix = "127.0.0.1:9001" + File.separator + "upload";
+    public void init() throws FileNotFoundException {
         String fileUploadPrefix = "upload";
+        String projectPath = ResourceUtils.getURL("classpath:").getPath().split("/target/classes/")[0];
+        String uiProjectPath = projectPath + "-ui" + File.separator + fileUploadPrefix;
+
+        adoptFileUploadDeskPath = uiProjectPath + ADOPT_PATH_SUFFIX;
+        searchFileUploadDeskPath = uiProjectPath + SEARCH_PATH_SUFFIX;
+
         adoptFileUpload_path = fileUploadPrefix + ADOPT_PATH_SUFFIX;
         searchFileUploadPath = fileUploadPrefix + SEARCH_PATH_SUFFIX;
     }
@@ -81,7 +84,6 @@ public class UploadFileController {
                                             Long animalAdoptId, HttpServletRequest request) {
         String contentType = file.getContentType(); // 图片文件类型
         String fileName =	file.getOriginalFilename();	 // 图片名字
-        System.out.println(animalAdoptId + "adopt-----"+ contentType + fileName + animalAdoptId) ;
         UUID uuid=UUID.randomUUID();
         // 文件名称
         String newfileName = uuid + fileName.substring(fileName.indexOf('.')); //文件重命名

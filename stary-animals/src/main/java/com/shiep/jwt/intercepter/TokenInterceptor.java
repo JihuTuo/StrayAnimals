@@ -48,8 +48,7 @@ public class TokenInterceptor extends HandlerInterceptorAdapter {
         if (!StringUtils.isEmpty(token)) {
             Claims claims = jwtConfig.getTokenClaim(token);
             UserInfo userInfo = this.jwtConfig.getUserInfoFromToken(token);
-            System.out.println("拦截器" + claims ) ;
-            System.out.println("拦截器" +userInfo) ;
+            System.out.println("身份验证拦截器" + claims );
             if (userInfo == null || claims == null || jwtConfig.isTokenExpired(claims.getExpiration())) {
                 throw new SignatureException(jwtConfig.getHeader()+ "身份验证未通过！");
             }

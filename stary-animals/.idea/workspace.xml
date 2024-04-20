@@ -1,13 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e7362d5-eb98-41f2-9f76-4868887a3ef8" name="Default Changelist" comment="" />
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <ignored path="$PROJECT_DIR$/shiep-auth/target/" />
-    <ignored path="$PROJECT_DIR$/shiep-auth/shiep-auth-common/target/" />
-    <ignored path="$PROJECT_DIR$/shiep-auth/shiep-auth-service/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="6e7362d5-eb98-41f2-9f76-4868887a3ef8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../stary-animals-ui/about-us.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stary-animals-ui/adopt-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stary-animals-ui/adopt-details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stary-animals-ui/adopt-manage-message.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stary-animals-ui/adopt-manage-message.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stary-animals-ui/adopt-publish-message.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stary-animals-ui/adopt-publish-message.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stary-animals-ui/adopt.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stary-animals-ui/adopt.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stary-animals-ui/find-password.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stary-animals-ui/help.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stary-animals-ui/help.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stary-animals-ui/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stary-animals-ui/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stary-animals-ui/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/../stary-animals-ui/js/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stary-animals-ui/js/pages/UEdit.js" beforeDir="false" afterPath="$PROJECT_DIR$/../stary-animals-ui/js/pages/UEdit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stary-animals-ui/js/pages/UEdit2.js" beforeDir="false" afterPath="$PROJECT_DIR$/../stary-animals-ui/js/pages/UEdit2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stary-animals-ui/js/pages/shotcut.js" beforeDir="false" afterPath="$PROJECT_DIR$/../stary-animals-ui/js/pages/shotcut.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stary-animals-ui/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stary-animals-ui/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stary-animals-ui/news-details.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stary-animals-ui/news.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stary-animals-ui/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../stary-animals-ui/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stary-animals-ui/regist.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stary-animals-ui/regist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stary-animals-ui/rescue-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stary-animals-ui/rescue-details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stary-animals-ui/rescue.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stary-animals-ui/rescue.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stary-animals-ui/search-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stary-animals-ui/search-details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stary-animals-ui/search-manage-message.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stary-animals-ui/search-manage-message.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stary-animals-ui/search-publish-message.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stary-animals-ui/search-publish-message.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stary-animals-ui/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stary-animals-ui/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stary-animals-ui/src/public/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stary-animals-ui/src/public/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stary-animals-ui/src/public/navacate.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stary-animals-ui/src/public/navacate.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stary-animals-ui/static/UI/ueditor.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../stary-animals-ui/static/UI/ueditor.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stary-animals-ui/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stary-animals-ui/template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stary-animals-ui/test-edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stary-animals-ui/test-edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stary-animals-ui/upload/adopt/2aa6a176-3608-4532-b948-7daa3ff78500.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stary-animals-ui/upload/adopt/4bb4ccaf-7d09-4e31-b6e4-684f42d92937.0DF05D59.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stary-animals-ui/upload/adopt/849e3616-743e-4e44-a8e7-3e05ff6940a9.0DF05D59.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stary-animals-ui/upload/adopt/dcc23221-0bc9-432d-b9cf-960097b0d445.0DF05D59.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stary-animals-ui/upload/adopt/ddb0222d-3b90-4e87-ab2f-a08502b1c79a.0DF05D59.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stary-animals-ui/upload/adopt/ea5a6801-d330-4045-b5b2-bd71b40a0e9d.0DF05D59.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stary-animals-ui/upload/adopt/ef1d87bf-cefb-4000-98f4-7f850dffba48.0DF05D59.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stary-animals-ui/upload/upload/adopt/bb20c649-7e88-4d72-bdc4-28617d9b7955.0DF05D59.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stary-animals-ui/user-update-password.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stary-animals-ui/user-update-password.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stary-animals-ui/user-update-photo.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stary-animals-ui/user-update-photo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stary-animals-ui/user-update.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stary-animals-ui/user-update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shiep/controller/AnimalSearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shiep/controller/AnimalSearchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shiep/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shiep/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shiep/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shiep/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shiep/controller/UploadFileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shiep/controller/UploadFileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shiep/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shiep/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shiep/jwt/intercepter/TokenInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shiep/jwt/intercepter/TokenInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shiep/mapper/IUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shiep/mapper/IUserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shiep/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shiep/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shiep/util/FileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shiep/util/FileUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shiep/controller/AnimalSearchController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shiep/controller/AnimalSearchController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shiep/controller/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shiep/controller/AuthController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shiep/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shiep/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shiep/controller/UploadFileController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shiep/controller/UploadFileController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shiep/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shiep/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shiep/jwt/intercepter/TokenInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shiep/jwt/intercepter/TokenInterceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shiep/mapper/IUserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shiep/mapper/IUserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shiep/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shiep/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shiep/util/FileUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shiep/util/FileUtil.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,49 +88,6 @@
     </option>
     <expand />
     <select />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="stary-animals" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/shiep/controller/AnimalAdoptController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="71" column="68" selection-start-line="71" selection-start-column="68" selection-end-line="71" selection-end-column="68" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/shiep/service/IAnimalAdoptService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/shiep/service/impl/AnimalAdoptServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="136" column="77" selection-start-line="136" selection-start-column="77" selection-end-line="136" selection-end-column="77" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/shiep/mapper/IAnimalAdoptMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="35" column="45" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -98,6 +114,9 @@
       <replace>animalSearchId</replace>
       <replace />
     </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -163,17 +182,15 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="mavenHome" value="D:/Tools-install/Maven/apache-maven-3.6.1" />
         <option name="userSettingsFile" value="D:\Tools-install\Maven\apache-maven-3.6.1\conf\settings.xml" />
       </MavenGeneralSettings>
-    </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
     </option>
   </component>
   <component name="MavenProjectNavigator">
@@ -198,6 +215,8 @@
     <option name="width" value="1300" />
     <option name="height" value="810" />
   </component>
+  <component name="ProjectId" id="2fH01PrptYcPUczny2i0uY9LToV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -285,24 +304,33 @@
       <pane id="PackagesPane" />
     </panes>
   </component>
-  <component name="PropertiesComponent">
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1589716821529" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15965834" />
-    <property name="project.structure.side.proportion" value="0.32838154" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/jihu/GitRepository/my_own_repo/StrayAnimals/stary-animals",
+    "spring.configuration.checksum": "9ed38eaa068fe3fc7aba6a9c4706fb7a",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Tool_Workspace\IDEA\stary-animals\src\main\java\com\shiep\util" />
+      <recent name="D:\Tool_Workspace\IDEA\stary-animals\src\test\java\com\shiep" />
+      <recent name="D:\Tool_Workspace\IDEA\stary-animals\src\main\resources" />
+      <recent name="D:\Tool_Workspace\IDEA\stary-animals\src\main\java\com\shiep\common\ueditor" />
+      <recent name="D:\Tool_Workspace\IDEA\stary-animals\src\main\resources\static" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Tool_Workspace\IDEA\stary-animals\src\main\resources" />
     </key>
@@ -313,27 +341,8 @@
       <recent name="com.shiep.jwt.util" />
       <recent name="com.shiep.jwt.pojo" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Tool_Workspace\IDEA\stary-animals\src\main\java\com\shiep\util" />
-      <recent name="D:\Tool_Workspace\IDEA\stary-animals\src\test\java\com\shiep" />
-      <recent name="D:\Tool_Workspace\IDEA\stary-animals\src\main\resources" />
-      <recent name="D:\Tool_Workspace\IDEA\stary-animals\src\main\java\com\shiep\common\ueditor" />
-      <recent name="D:\Tool_Workspace\IDEA\stary-animals\src\main\resources\static" />
-    </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Spring Boot.SpringBootApplication">
+  <component name="RunManager" selected="Spring Boot.StaryAnimalsApplication">
     <configuration name="DBtest.printAllBeans" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="stary-animals" />
       <extension name="coverage">
@@ -391,26 +400,33 @@
     </configuration>
     <configuration name="SpringBootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="stary-animals" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.shiep.SpringBootApplication" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.shiep.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.shiep.SpringBootApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="StaryAnimalApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="stary-animals" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.shiep.StaryAnimalApplication" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.shiep.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.shiep.StaryAnimalApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StaryAnimalsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="stary-animals" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.shiep.StaryAnimalsApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -489,6 +505,7 @@
       <item itemvalue="JUnit.DBtest.testMail" />
       <item itemvalue="JUnit.DBtest.teststr" />
       <item itemvalue="JUnit.DBtest.printAllBeans" />
+      <item itemvalue="Spring Boot.StaryAnimalsApplication" />
       <item itemvalue="Spring Boot.ShiepAuthApplication" />
       <item itemvalue="Spring Boot.SpringBootApplication" />
       <item itemvalue="Spring Boot.StaryAnimalApplication" />
@@ -504,6 +521,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -534,6 +552,8 @@
       <workItem from="1589372920971" duration="6501000" />
       <workItem from="1589410276673" duration="2249000" />
       <workItem from="1589682956945" duration="20093000" />
+      <workItem from="1713442481217" duration="12046000" />
+      <workItem from="1713582285349" duration="2343000" />
     </task>
     <servers />
   </component>
@@ -660,7 +680,18 @@
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -668,26 +699,102 @@
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/shiep/service/impl/AnimalSearchServiceImpl.java</url>
           <line>180</line>
-          <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/shiep/service/impl/UserServiceImpl.java</url>
           <line>106</line>
-          <properties />
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/shiep/service/impl/AnimalAdoptServiceImpl.java</url>
           <line>136</line>
-          <properties />
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/shiep/service/impl/AnimalAdoptServiceImpl.java</url>
           <line>138</line>
-          <properties />
           <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/shiep/service/impl/UserServiceImpl.java</url>
+          <line>192</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/shiep/service/impl/UserServiceImpl.java</url>
+          <line>204</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/shiep/controller/UserController.java</url>
+          <line>86</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/shiep/controller/UserController.java</url>
+          <line>87</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/shiep/controller/UserController.java</url>
+          <line>88</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/shiep/controller/UserController.java</url>
+          <line>90</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/shiep/service/impl/UserServiceImpl.java</url>
+          <line>203</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/shiep/service/impl/UserServiceImpl.java</url>
+          <line>194</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/shiep/service/impl/UserServiceImpl.java</url>
+          <line>200</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/shiep/controller/LoginController.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/shiep/controller/LoginController.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/shiep/controller/LoginController.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/shiep/controller/UploadFileController.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/shiep/controller/UploadFileController.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/shiep/controller/UploadFileController.java</url>
+          <line>77</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/shiep/controller/UploadFileController.java</url>
+          <line>78</line>
+          <option name="timeStamp" value="54" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/shiep/service/impl/INewServiceImpl.java</url>

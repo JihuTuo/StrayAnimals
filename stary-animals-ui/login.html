@@ -75,24 +75,14 @@
                 <li class="slide1"></li>
                 <li class="slide2"></li>
                 <li><a class="active" href="index.html">首页</a></li>
-                <li><a href="#/">资讯</a></li>
-                <li><a href="rescue.html">救助</a></li>
+                <li><a href="rescue.html">社区帖子</a></li>
                 <li><a href="adopt.html">领养</a></li>
                 <li><a href="search.html">寻宠</a></li>
                 <li><a href="help.html">帮助</a></li>
-                <li><a href="about-us.html">关于我们</a></li>
                 <!-- 搜索框 -->
                 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     &nbsp;&nbsp;
                 </p>
-                <li>
-                    <div class="search d7">
-                        <form>
-                            <input type="text" placeholder="搜索从这里开始...">
-                            <button type="submit"></button>
-                        </form>
-                    </div>
-                </li>
             </ul>
         </div>
         <br><br>
@@ -122,27 +112,17 @@
                                style="width: 80%"><br>
                         <div class="form-group">
                             <div id="slideBar"></div>
-                            <label class="checkbox">
-                                &emsp;&emsp;<input type="checkbox" name="remember" value="1"/>记住我
-                            </label>
                         </div>
 
                         <div class="form-group col-md-offset-2">
                             <!--  @click 表示点击事件 submit 是绑定的事件方法 -->
                             <button @click.stop="submit" id="login-btn" type="button" class="btn btn-success">登录
                             </button>
-                            &emsp;&emsp;&emsp;<a href="find-password.html">忘记密码？</a>
                         </div>
                         &emsp;&emsp;&emsp;还不是社区用户？<a href="regist.html">赶紧去注册</a><br>
                         <!--错误信息提示-->
                         <br>
                     </form>
-
-                    <!--其他登录方式-->
-                    <!--<a>QQ登录</a><br>
-                    <a>微信登录</a>-->
-
-
                 </div>
             </div>
 
@@ -204,23 +184,26 @@
                 // 校验通过，提交表单
                 leyou.http.post("/auth/login", leyou.stringify(this.user))
                     .then(resp => {
-                        if (resp.status === 200) {  // 如果传过来的状态码是201
+                        if (resp.status === 200) {  // 如果传过来的状态码是200
                             // 登录成功,之后会跳转到首页
-                            let token = resp.data;
-                            console.log(token);
-                            // 调用封装好的呃 ，设置 window.localStorage.setItem("token", token);
-                            ly.store.set("token", token);
-                            // 设置初始的地区
-                            ly.store.setJson("province", "{id: 1, name: \"上海\"}\n");
-                            ly.store.setJson("city", "{id: 1, name: \"上海\", provinceId: 1}");
-                            window.location = '/index.html';
-                        }
-                        ;
-                        if (resp.status === 202) {
-                            _this.showFaileMsg("用户名或密码错误，请重新输入！");
+                            var code = resp.data.code;
+                            if (code === 200) {
+                                let token = resp.data.data;
+                                console.log(token);
+                                // 调用封装好的呃 ，设置 window.localStorage.setItem("token", token);
+                                ly.store.set("token", token);
+                                // 设置初始的地区
+                                ly.store.setJson("province", "{id: 1, name: \"上海\"}\n");
+                                ly.store.setJson("city", "{id: 1, name: \"上海\", provinceId: 1}");
+                                window.location = '/index.html';
+                            } else if (code === 404) {
+                                _this.showFaileMsg("用户不存在！");
+                            } else if (code === 100) {
+                                _this.showFaileMsg("用户名或密码错误，请重新输入！");
+                            }
                         }
                     })
-                    .catch( () => {_this.showFaileMsg("服务异常！");})
+                    .catch( () => {_this.showFaileMsg("服务异常！请检查后端服务是否正常运行！");})
             }
         }
     });

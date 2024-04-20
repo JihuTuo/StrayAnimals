@@ -33,12 +33,12 @@
 
 
     <!--element 上传组件-->
-    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.4.0/css/bootstrap.min.css"/>
-    <!--<link rel="stylesheet" href="https://cdn.staticfile.org/element-ui/2.4.11/theme-chalk/index.css"/>
-    <link rel="stylesheet" href="https://cdn.staticfile.org/animate.css/3.7.0/animate.min.css"/>-->
-    <!--element-->
-    <link rel="stylesheet" href="static/element-2.12.0/index.css">
-    <script src="static/element-2.12.0/index.js"></script>
+    <!-- import Vue before Element -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <!-- 引入组件库 -->
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
 
     <style type="text/css">
         input.el-upload__input {
@@ -75,24 +75,10 @@
                 <li class="slide1"></li>
                 <li class="slide2"></li>
                 <li><a  class="active" href="index.html">首页</a></li>
-                <li><a href="#/">资讯</a></li>
-                <li><a href="rescue.html">救助</a></li>
+                <li><a href="rescue.html">社区帖子</a></li>
                 <li><a href="adopt.html">领养</a></li>
                 <li><a href="search.html">寻宠</a></li>
                 <li><a href="help.html">帮助</a></li>
-                <li><a href="about-us.html">关于我们</a></li>
-                <!-- 搜索框 -->
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;
-                </p>
-                <li>
-                    <div class="search d7">
-                        <form>
-                            <input type="text" placeholder="搜索从这里开始...">
-                            <button type="submit"></button>
-                        </form>
-                    </div>
-                </li>
             </ul>
         </div>
         <br><br>
@@ -224,7 +210,7 @@
                                     ref="upload"
                                     class="upload-demo"
                                     name="file"
-                                    action="http://127.0.0.1/stary-animals/upload/search"
+                                    action="http://127.0.0.1:8081/stary-animals/upload/search"
                                     :before-upload="beforeUpload"
                                     :data="uploadParams"
                                     :headers="myHeader"

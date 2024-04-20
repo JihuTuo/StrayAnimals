@@ -72,81 +72,24 @@
                 <li class="slide1"></li>
                 <li class="slide2"></li>
                 <li><a  class="active" href="index.html">首页</a></li>
-                <li><a href="#/">资讯</a></li>
-                <li><a href="rescue.html">救助</a></li>
+                <li><a href="rescue.html">社区帖子</a></li>
                 <li><a href="adopt.html">领养</a></li>
                 <li><a href="search.html">寻宠</a></li>
                 <li><a href="help.html">帮助</a></li>
-                <li><a href="about-us.html">关于我们</a></li>
-                <!-- 搜索框 -->
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;
-                </p>
-                <li>
-                    <div class="search d7">
-                        <form>
-                            <input type="text" placeholder="搜索从这里开始...">
-                            <button type="submit"></button>
-                        </form>
-                    </div>
-                </li>
             </ul>
         </div>
         <br><br>
 
         <!----=========================内容开始==============================-->
 
-        <!-- 面包屑导航 -->
-        <div>
-            <ul class="breadcrumb">
-                <li><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
-                <li>本地社区</li>
-            </ul>
-        </div>
-
-        <!-- 地区选择器、分类等 显示div -->                                  <!--border 边框族系， solod 颜色-->
-        <div class="adopt-city">
-            <!-- 城市区域 -->
-            <div class="select-city">
-                <div class="show-city">
-                    <!--这里动态展示城市列表-->
-                    &emsp;上级板块：
-                    <!--<span v-for="c in counties"> </span>-->
-                    <span style="padding-right: 15px">无</span>
-                </div>
-                <!--  中划线隔开-->
-                <hr style="height:1px;border:none;border-top:1px dashed #0066CC;"/>
-                <!-- 全部时间 -->
-                <div class="select-pet">
-                    &emsp;下级板块：
-                   <span style="padding-right: 15px">无</span>
-                </div>
-            </div>
-        </div>
-        <div style="height: 15px"></div>
-        <!--发帖按钮-->
-        <div style="background-color: white;width: 150px;height: 60px;">
-            <div style="width: 140px;margin: auto; border-radius:5px; border:2px solid #d9d9d9;height: 52px;">
-                <div style="width: 130px;height: 48px;margin: auto;padding-left: 10px;padding-top: 5px">
-                    <a href="#publishArea" style="color: black;text-decoration:none">
-                        <img width="42" height="36" src="img/comiis_01.gif">
-                        <span>发表帖子</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <br><br>  <!-- 流出空隙 -->
+            <div style="height: 15px"></div>
         <!--信息部分-左侧-->
         <div class="adopt-message">
             <!-- 过滤不同状态的消息 -->
             <div class="adopt-message-status">
                 <a href="javascript:void(0)">
-                    <div class="adopt-message-status-font">帖子</div>
+                    <div class="adopt-message-status-font">社区帖子</div>
                 </a>
-                <div style="height: 30px;float: right">
-                    <input type="button" value="搜索" class="search-btn" type="button" style="float: right">
-                    <input class="input" type="text" placeholder="请输入内容" style="float: right">
-                </div>
             </div>
             <!--首先是一个搜索框-->
 
@@ -161,37 +104,6 @@
                 <a v-for="(c,index) in reportTypes" href="javascript:void(0);"
                    :class="isCountyActive == index ? 'addclass' : '' " @click="changeType(c.id, index)"><span
                         style="padding-right: 15px">{{c.type}}</span></a>
-            </div>
-            <!--时间-->
-            <div class="total-amount2">
-                &emsp;    <!--这里需要渲染数据-->
-                &emsp;<strong style="padding-left: 13px">全部时间</strong>&emsp;|
-                <!--<span v-for="c in counties"> </span>-->
-                <a  :style="redStyle1" href="javascript:void(0);" @click="changeDayTime(1)">
-                    <span style="padding-right: 10px;padding-left: 10px;line-height: 40px">
-                        一天
-                    </span>
-                </a>    |
-                <a  :style="redStyle2" href="javascript:void(0);" @click="changeDayTime(2)">
-                    <span style="padding-right: 10px;padding-left: 10px;line-height: 40px">
-                        一周
-                    </span>
-                </a>   |
-                <a  :style="redStyle3" href="javascript:void(0);" @click="changeDayTime(3)">
-                    <span style="padding-right: 10px;padding-left: 10px;line-height: 40px">
-                        一个月
-                    </span>  |
-                </a>
-                <a  :style="redStyle4" href="javascript:void(0);" @click="changeDayTime('')">
-                    <span style="padding-right: 10px;padding-left: 10px;line-height: 40px">
-                        最后发表
-                    </span>
-                </a>
-            </div>
-            <!--主题-->
-            <!--时间-->
-            <div class="total-amount3">
-                <span style="padding-left: 30px; font-size: larger;line-height: 40px"><strong>主题</strong></span>
             </div>
             <!--帖子的主要内容-->
             <div class="total-amount4">

@@ -74,7 +74,6 @@ public class AuthController {
 
     @PostMapping("/register")
     public ResponseEntity<Void> register(User user) {
-        System.out.println("没有范根到呀" + user) ;
         boolean register = this.userService.register(user);
         if (register) {
             return ResponseEntity.ok().build();

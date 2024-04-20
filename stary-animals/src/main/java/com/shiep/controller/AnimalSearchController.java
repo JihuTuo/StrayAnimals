@@ -37,6 +37,8 @@ public class AnimalSearchController {
     @PostMapping("save")
     public ResponseEntity<Long> saveAnimalSearch(AnimalSearch animalSearch) {
         if (this.animalSearchService.saveAnimalSearch(animalSearch)) {
+            // 默认可见（status = 1, 页面可见； 0 ：不可见）
+            animalSearch.setVerifyStatus(1);
             Long lastAutoIncrementId = this.animalSearchMapper.getLastAutoIncrementId();
             return ResponseEntity.ok(lastAutoIncrementId);
         }

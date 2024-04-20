@@ -12,8 +12,8 @@ public interface IUserMapper extends BaseMapper<User> {
     @Update("UPDATE sa_user SET photo = #{photo} WHERE id = #{userId}")
     int updatePhotoById(Long userId, String photo);
 
-    @Update("UPDATE sa_user SET password = #{newPwd} WHERE id = #{userId} AND email = #{email} AND password = #{oldPwd}")
-    int updatePwd(Long userId, String oldPwd, String newPwd, String email);
+    @Update("UPDATE sa_user SET password = #{newPwd} WHERE id = #{userId} AND password = #{oldPwd}")
+    int updatePwd(Long userId, String oldPwd, String newPwd);
 
 
     @Update("UPDATE sa_user SET delete_status = 1 WHERE id = #{userId}")

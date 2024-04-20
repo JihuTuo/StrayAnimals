@@ -80,10 +80,11 @@ public class UserController {
         return ResponseEntity.ok().build();
     }
 
-    @PostMapping("updatePwdById")
+    @PostMapping("/updatePwdById")
     public ResponseEntity<Void> updatePwdById(@RequestParam("userId")Long userId, @RequestParam("oldPwd")String oldPwd,
-                        @RequestParam("newPwd")String newPwd, @RequestParam("email")String email) {
-        boolean pwd = this.userService.updatePwd(userId, oldPwd, newPwd, email);
+                        @RequestParam("newPwd")String newPwd) {
+        System.out.println("test reset pd=======");
+        boolean pwd = this.userService.updatePwd(userId, oldPwd, newPwd, "");
         if (pwd) {
             return ResponseEntity.ok().build();
         }

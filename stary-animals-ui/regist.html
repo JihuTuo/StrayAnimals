@@ -73,24 +73,10 @@
                 <li class="slide1"></li>
                 <li class="slide2"></li>
                 <li><a class="active" href="index.html">首页</a></li>
-                <li><a href="#/">资讯</a></li>
-                <li><a href="rescue.html">救助</a></li>
+                <li><a href="rescue.html">社区帖子</a></li>
                 <li><a href="adopt.html">领养</a></li>
                 <li><a href="search.html">寻宠</a></li>
                 <li><a href="help.html">帮助</a></li>
-                <li><a href="about-us.html">关于我们</a></li>
-                <!-- 搜索框 -->
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;
-                </p>
-                <li>
-                    <div class="search d7">
-                        <form>
-                            <input type="text" placeholder="搜索从这里开始...">
-                            <button type="submit"></button>
-                        </form>
-                    </div>
-                </li>
             </ul>
         </div>
         <br><br>
@@ -110,9 +96,6 @@
                     &emsp;&emsp;用户名：<input v-model="user.username" type="text" placeholder="您的用户名和登录名"><br><br>
                     &emsp;&emsp;密&emsp;码：<input v-model="user.password" type="password" placeholder="建议至少两种字符组合"><br><br>
                     &emsp;验证密码：<input v-model="passwordConfirm" type="password" placeholder="请再次验证密码"><br><br>
-                    &emsp;&emsp;邮&emsp;箱：<input v-model="user.email" type="text" placeholder="建议输入常用邮箱"><br><br>
-                    <button @click="generateCode" type="button" style="color: #8ab9ff">获取验证码</button>
-                    ：<input v-model="code" type="text" placeholder="请输入验证码"><br><br>
 
                     <div class="form-group col-md-offset-2">
                         <button @click="submit" type="button" class="btn btn-success">&emsp;注冊&emsp;</button>
@@ -228,10 +211,6 @@
                     this.showFaileMsg("两次输入的密码不一致！");
                     return null;
                 };
-                if (this.code !== this.codeInCache) {
-                    this.showFaileMsg("验证码输入错误，请重新获取！");
-                    return null;
-                };
                 this.user.createTime = ly.formatDate(new Date(), "yyyy-MM-dd hh:mm");
                 let _this = this;
                 ly.http.post("/auth/register", ly.stringify(this.user)).then(resp => {
@@ -241,10 +220,10 @@
                             window.location = "login.html";
                         }, 1000);
                     } else {
-                        _this.showFaileMsg("注册失败！（用户名或邮箱已经被注册过了）！");
+                        _this.showFaileMsg("注册失败！");
                     }
                 }).catch(() => {
-                    _this.showFaileMsg("注册失败！（用户名或邮箱已经被注册过了）！");
+                    _this.showFaileMsg("注册失败！");
                 });
             },
 

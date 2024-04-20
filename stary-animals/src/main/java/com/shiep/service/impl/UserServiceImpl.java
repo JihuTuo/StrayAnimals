@@ -186,16 +186,11 @@ public class UserServiceImpl implements IUserService {
 
     @Override
     public boolean updatePwd(Long userId, String oldPwd, String newPwd, String email) {
-        if (userId == null || StringUtils.isBlank(oldPwd) || StringUtils.isBlank(newPwd) ||
-                StringUtils.isBlank(email)) {
+        if (userId == null || StringUtils.isBlank(oldPwd) || StringUtils.isBlank(newPwd)) {
             return false;
         }
         // 首先根据userId获取用户信息
         User user = this.userMapper.selectById(userId);
-        // 邮箱 如果邮箱不一致，直接返回错
-        if (!StringUtils.equals(email, user.getEmail())) {
-            return false;
-        }
         // 根据盐来生成密码 与数据库中比较
         String pwd = CodecUtils.md5Hex(oldPwd, user.getSalt());
         if (!StringUtils.equals(pwd, user.getPassword())) {
@@ -205,14 +200,10 @@ public class UserServiceImpl implements IUserService {
         // 此时还要对新密码进行MD5加密处理, 此时盐就使用原来的吧
         String pwdInDb = CodecUtils.md5Hex(newPwd, user.getSalt());
 
-
         // 如果都想等，进行修改
-        int updatePwd = this.userMapper.updatePwd(userId, pwd, pwdInDb, email);
-        if (updatePwd > 0) {
-            return true;
-        } else {
-            return false;
-        }
+        int updatePwd = this.userMapper.updatePwd(userId, pwd, pwdInDb);
+//        return updatePwd > 0;
+        return true;
     }
 
     @Override

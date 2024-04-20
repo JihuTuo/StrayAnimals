@@ -3,8 +3,9 @@ const shotcut ={
         "    <div class=\"header\">   <!--line-height: 30px 将文字宽度与div一致 让文字居中 -->\n" +
         "        <div style=\"margin:0 auto;width:900px;height: 30px;line-height: 30px;font-size:15px\">\n" +
         "            <span class=\"glyphicon glyphicon-home\">&nbsp;</span>请选择您所在的地区：<span style=\"color: red\"><span\n" +
-        "                id=\"city\">上海-上海</span></span>\n" +
+        "                id=\"city\">山西-太原</span></span>\n" +
         "            <!-- 按钮触发模态框 -->\n" +
+        // "            <span data-toggle=\"modal\" data-target=\"#area-modal\"><a href=\"javascript:void(0);\">[切换]</a></span>\n" +
         "            <span data-toggle=\"modal\" data-target=\"#area-modal\"><a href=\"javascript:void(0);\">[切换]</a></span>\n" +
         "            <span :style=\"loginTo\">\n" +
         "                <span style=\"float:right\">\n" +

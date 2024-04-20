@@ -39,7 +39,7 @@
         //, serverUrl: URL + "jsp/controller.jsp"
             // 配置成自己定会的接口,解决跨域问题
 
-        , serverUrl: "http://127.0.0.1/stary-animals/ueditor/config"
+        , serverUrl: "http://127.0.0.1:8081/stary-animals/ueditor/config"
 
         //工具栏上的所有的功能按钮和下拉框，可以在new编辑器的实例时选择自己需要的重新定义
         , toolbars: [[

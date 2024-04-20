@@ -513,7 +513,7 @@ const stringify = function(object, options) {
 
 /* 这里是axios 请求是设置的基础URL*/
 // axios.defaults.baseURL = "http://api.sa.com/stary-animals";
-axios.defaults.baseURL = "http://127.0.0.1/stary-animals";
+axios.defaults.baseURL = "http://127.0.0.1:8081/stary-animals";
 axios.defaults.timeout = 5000;
 axios.defaults.withCredentials = true;
 /*设置axios拦截器,为每一个axios请求都加上token到header中，这里拦截的是request请求*/

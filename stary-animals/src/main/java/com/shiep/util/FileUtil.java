@@ -5,10 +5,10 @@ import java.io.FileOutputStream;
 
 public class FileUtil {
 
-	public static final String AttachmentServerPath = "http://192.168.9.121:8088/fileServer";
 
 	// 文件上传工具类服务方法
 	public static void uploadFile(byte[] file, String filePath, String fileName) throws Exception {
+		System.out.println("upload file, path: " + filePath + ", name: " + fileName);
 		File targetFile = new File(filePath);
 		if (!targetFile.exists()) {
 			targetFile.mkdirs();

@@ -69,24 +69,11 @@
                 <li class="slide1"></li>
                 <li class="slide2"></li>
                 <li><a  class="active" href="index.html">首页</a></li>
-                <li><a href="#/">资讯</a></li>
-                <li><a href="rescue.html">救助</a></li>
+                <li><a href="rescue.html">社区帖子</a></li>
                 <li><a href="adopt.html">领养</a></li>
                 <li><a href="search.html">寻宠</a></li>
                 <li><a href="help.html">帮助</a></li>
                 <li><a href="about-us.html">关于我们</a></li>
-                <!-- 搜索框 -->
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;
-                </p>
-                <li>
-                    <div class="search d7">
-                        <form>
-                            <input type="text" placeholder="搜索从这里开始...">
-                            <button type="submit"></button>
-                        </form>
-                    </div>
-                </li>
             </ul>
         </div>
         <br><br>
@@ -272,10 +259,9 @@
             },
             remove (id) {
                 let _this = this;
-                let flag = confirm("确认删除吗？");
+                let flag = confirm("确认删除该条记录吗？");
                // this.removeSuccess("删除成功！");
                 if(flag) {
-                    console.log("id" + id);
                     ly.http.get("/search/deleteById?id=" + id)
                         .then(resp => {
                             if (resp.status === 200) {
@@ -289,7 +275,7 @@
                 }
             },
             edit (id) {
-                console.log("id" + id);
+                this.removeSuccess("暂不支持修改功能，请删除后重新发布！");
             },
             toPublish () {
                 if (!ly.store.get("token")) {
